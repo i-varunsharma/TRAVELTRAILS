@@ -1,0 +1,230 @@
+[
+    {
+      "name": "Himachal Pradesh",
+      "imgUrl": "https://montaxe.com/wp-content/uploads/2024/04/Himachal-Tourism.webp",
+      "treks": [
+        "Rupin Pass Trek",
+        "Hampta Pass Trek",
+        "Lamkhaga Pass Trek",
+        "Bhrigu Lake Trek",
+        "Kheerganga Trek",
+        "Pin Parvati Trek",
+        "Beas Kund Trek",
+        "Bhaba Pass Trek",
+        "Deo Tibba Base Camp Trek",
+        "Janjehli Valley Trek",
+        "Malana Village Trek",
+        "Triund Trek",
+        "Prashar Lake Trek",
+        "Nag Tibba Trek",
+        "Kareri Lake Trek",
+        "Chandratal Lake Trek",
+        "Sar Pass Trek",
+        "Tosh Valley Trek",
+        "Bali Pass Trek",
+        "Parvati Valley Trek",
+        "Saurkundi Pass Trek",
+        "Indrahar Pass Trek",
+        "Kinnaur Kailash Trek",
+        "Pin Bhaba Pass Trek",
+        "Sangla Valley Trek",
+        "Barot Valley Trek",
+        "Kullu Valley Trek"
+      ]
+    },
+    {
+      "name": "Jharkhand",
+      "imgUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/c3/cc/4c/dassam-falls.jpg?w=1400&h=1400&s=1",
+      "treks": [
+        "Netarhat Trek",
+        "Betla National Park Trek",
+        "Hazaribagh Trek"
+      ]
+    },
+    {
+      "name": "Karnataka",
+      "imgUrl": "https://i.ytimg.com/vi/EP9T0kZZs2w/mqdefault.jpg?days_since_epoch=20196",
+      "treks": [
+        "Kumara Parvatha Trek",
+        "Tadiandamol Trek",
+        "Mullayanagiri Trek",
+        "Kudremukh Trek",
+        "Brahmagiri Trek",
+        "Nandi Hills Trek",
+        "Savandurga Trek"
+      ]
+    },
+    {
+      "name": "Kerala",
+      "imgUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/c9/7b/10/ranipuram-hills.jpg?w=500&h=500&s=1",
+      "treks": [
+        "Agasthyakoodam Trek",
+        "Chembra Peak Trek",
+        "Meesapulimala Trek",
+        "Anamudi Peak Trek",
+        "Wayanad Trek",
+        "Silent Valley Trek"
+      ]
+    },
+    {
+      "name": "Maharashtra",
+      "imgUrl": "https://www.treksandtrails.org/blog/wp-content/uploads/2021/06/Harihar-Monsoon-trek-7-1024x768.jpg",
+      "treks": [
+        "Harishchandragad Trek",
+        "Rajmachi Trek",
+        "Kalsubai Peak Trek",
+        "Torna Fort Trek",
+        "Lohagad Fort Trek",
+        "Matheran Trek",
+        "Korigad Trek",
+        "Bhivpuri Waterfall Trek",
+        "Sandhan Valley Trek",
+        "Kedarnath Trek",
+        "Tadiandamol Trek",
+        "Mahabaleshwar Trek",
+        "Pawna Lake Trek",
+        "Rajgad Fort Trek",
+        "Visapur Fort Trek",
+        "Karnala Fort Trek",
+        "Vikatgad Trek",
+        "Kalavantin Durg Trek",
+        "Prabalgad Trek",
+        "Vasota Trek",
+        "Khandala Trek",
+        "Bhaje Caves Trek",
+        "Bedsa Caves Trek",
+        "Chanderi Trek",
+        "Mulshi Trek",
+        "Chorla Ghat Trek",
+        "Amboli Trek",
+        "Bhandardara Trek"
+      ]
+    },
+    {
+      "name": "Manipur",
+      "imgUrl": "https://res.cloudinary.com/dyiffrkzh/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_center,h_400,q_auto,w_700/v1703751666/bbj/jpjbwzd78modbhnjhx7g.webp",
+      "treks": [
+        "Dzukou Valley Trek",
+        "Loktak Lake Trek"
+      ]
+    },
+    {
+      "name": "Meghalaya",
+      "imgUrl": "https://www.lovelytrails.com/admin/image.php?path=privateToursImages%2F16274744660.jpg",
+      "treks": [
+        "Cherrapunji Trek",
+        "Mawlynnong Village Trek",
+        "Nohkalikai Falls Trek",
+        "Double Decker Living Root Bridge Trek"
+      ]
+    },
+    {
+      "name": "Mizoram",
+      "imgUrl": "https://www.india.com/wp-content/uploads/2024/07/Phawngpui-Peak-Trek.jpg",
+      "treks": [
+        "Phawngpui Trek (Blue Mountain)",
+        "Dampa Tiger Reserve Trek"
+      ]
+    },
+    {
+      "name": "Nagaland",
+      "imgUrl": "https://altitudeadventureholidays.com/wp-content/uploads/2024/04/IMG_20191210_1600370001-scaled-1.webp",
+      "treks": [
+        "Dzükou Valley Trek",
+        "Mount Saramati Trek",
+        "Khonoma Village Trek"
+      ]
+    },
+    {
+      "name": "Odisha",
+      "imgUrl": "https://blogs.revv.co.in/blogs/wp-content/uploads/2021/12/Daringbadi-1024x603.png",
+      "treks": [
+        "Chilika Lake Trek",
+        "Daringbadi Trek",
+        "Deomali Trek",
+        "Similipal National Park Trek"
+      ]
+    },
+    {
+      "name": "Sikkim",
+      "imgUrl": "https://www.trekkinginsikkim.com/assets/images/tour/sikkim-trekking-05.webp",
+      "treks": [
+        "Goechala Trek",
+        "Dzongri Trek",
+        "Kanchenjunga Base Camp Trek",
+        "Singalila Ridge Trek",
+        "Yuksom Trek",
+        "Lachung Valley Trek",
+        "Zuluk Trek",
+        "Green Lake Trek"
+      ]
+    },
+    {
+      "name": "Tamil Nadu",
+      "imgUrl": "https://s3.india.com/wp-content/uploads/2024/11/Yelagiri-trekking.jpg",
+      "treks": [
+        "Meesapulimala Trek",
+        "Kodaikanal Trek",
+        "Nilgiri Hills Trek",
+        "Yelagiri Trek",
+        "Anaimalai Hills Trek",
+        "Valparai Trek"
+      ]
+    },
+    {
+      "name": "Telangana",
+      "imgUrl": "https://www.godigit.com/content/dam/godigit/directportal/en/telangana-trekking.jpg",
+      "treks": [
+        "Ananthagiri Hills Trek",
+        "Keesaragutta Trek",
+        "Bhongir Fort Trek"
+      ]
+    },
+    {
+      "name": "Tripura",
+      "imgUrl": "https://content3.jdmagicbox.com/comp/west_tripura/m9/9999px381.x381.230909033356.p4m9/catalogue/montang-valley-west-tripura-tourist-attraction-fC1BHCDMbp.jpg",
+      "treks": [
+        "Jampui Hills Trek",
+        "Sepahijala Wildlife Sanctuary Trek"
+      ]
+    },
+    {
+      "name": "Uttarakhand",
+      "imgUrl": "https://media.istockphoto.com/id/484389570/photo/himalayas.jpg?s=612x612&w=0&k=20&c=6jM32XJBWlvv6x7AF-av52jlncPkz5hn_AEhjaDSFYI=",
+      "treks": [
+        "Valley of Flowers Trek",
+        "Roopkund Trek",
+        "Har Ki Dun Trek",
+        "Kedarkantha Trek",
+        "Nanda Devi Base Camp Trek",
+        "Chopta Tungnath Trek",
+        "Kuari Pass Trek",
+        "Dayara Bugyal Trek",
+        "Pindari Glacier Trek",
+        "Brahmatal Trek",
+        "Gaumukh Tapovan Trek",
+        "Hemkund Sahib Trek",
+        "Satopanth Tal Trek",
+        "Kedarnath Trek",
+        "Gangotri Trek",
+        "Bhagirathi Trek",
+        "Haridwar to Rishikesh Trek",
+        "Deoria Tal Trek",
+        "Munsiyari Trek"
+      ]
+    },
+    {
+      "name": "West Bengal",
+      "imgUrl": "https://backiee.com/static/wallpapers/560x315/325947.jpg",
+      "treks": [
+        "Sandakphu Trek",
+        "Goechala Trek",
+        "Singalila Ridge Trek",
+        "Darjeeling Trek",
+        "Kalimpong Trek",
+        "Neora Valley Trek",
+        "Jaldapara Wildlife Sanctuary Trek"
+      ]
+    }
+  ]
+  
