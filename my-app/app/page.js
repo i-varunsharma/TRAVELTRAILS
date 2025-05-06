@@ -1,7 +1,11 @@
+import Navbar from "./components/AddressBar";
+
 export default function Home() {
   return (
     <>
-      <div className="relative h-[calc(100vh-4.5rem)] bg-cover bg-center bg-[url('/bgimg.jpg')] overflow-hidden">
+      {/* h-[calc(100vh-4.5rem) */}
+      <Navbar />
+      <div className="relative h-screen bg-cover bg-center bg-[url('/bgimg.jpg')] overflow-hidden">
         {/* Dark overlay for better contrast */}
         <div className="absolute inset-0 bg-black/40" />
 
