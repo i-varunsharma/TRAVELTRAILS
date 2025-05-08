@@ -7,7 +7,7 @@ function Navbar() {
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
     { name: 'Places', path: '/places' },
-    { name: 'Contact', path: '/contact' },
+    { name: 'Contact', path: '../contact' },
     { name: 'Gallery', path: '/gallery' },
   ];
 
