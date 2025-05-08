@@ -1,4 +1,4 @@
-import Navbar from '../components/AddressBar';
+import Navbar from './components/AddressBar';
 
 const About = () => {
   return (
@@ -11,11 +11,11 @@ const About = () => {
 
         <div className="relative z-10 max-w-5xl mx-auto py-20 px-6 text-white">
           {/* Heading */}
-          <h1 className="text-5xl font-extrabold text-center mb-8">Discover the Spirit of Adventure with Trek India</h1>
+          <h1 className="text-5xl font-extrabold text-center mb-8">Discover the Spirit of Adventure with TrekTrails</h1>
 
           {/* Intro */}
           <p className="text-lg text-center mb-10">
-            At <span className="font-semibold text-yellow-400">Trek India</span>, we believe every mountain has a story and every trekker deserves to be part of it. With over a decade of experience guiding thrill-seekers across India’s breathtaking trails, we're here to turn your hiking dreams into unforgettable journeys.
+            At <span className="font-semibold text-yellow-400">TrekTrails</span>, we believe every mountain has a story and every trekker deserves to be part of it. With over a decade of experience guiding thrill-seekers across India’s breathtaking trails, we're here to turn your hiking dreams into unforgettable journeys.
           </p>
 
           {/* Mission + Why Choose Us */}
@@ -27,7 +27,7 @@ const About = () => {
               </p>
             </div>
 
-            <div>
+            <div className='pl-23'>
               <h2 className="text-2xl font-bold text-yellow-400 mb-4">🌟 Why Choose Us?</h2>
               <ul className="list-disc list-inside space-y-2 text-md">
                 <li>Certified and experienced trek leaders</li>
@@ -70,10 +70,34 @@ const About = () => {
             </div>
           </div>
 
+          {/* CEO Details */}
+          <div className="bg-yellow-100/20 rounded-2xl p-8 shadow-lg mb-12">
+            <h2 className="text-3xl font-bold text-center text-yellow-400 mb-6">🌟 Meet Our CEO: Varun Sharma</h2>
+
+            <div className="flex flex-col md:flex-row items-center justify-center">
+              <div className="w-40 h-40 md:w-52 md:h-52 rounded-full overflow-hidden mb-6 md:mb-0 shadow-xl">
+                {/* CEO Image */}
+                <img src="ceo.jpg" alt="Varun Sharma, CEO" className="w-full h-full object-cover" />
+              </div>
+
+              <div className="ml-0 md:ml-8 text-center md:text-left">
+                <p className="text-lg mb-4">
+                  <span className="font-semibold text-yellow-300">Varun Sharma</span>, aged 19, is the visionary founder and CEO of <span className="font-semibold text-yellow-300">TrekTrails</span>. Currently pursuing a BTech degree at Newton School of Technology, Varun is passionate about making trekking more accessible and enjoyable for everyone.
+                </p>
+                <p className="mb-4">
+                  Under Varun's leadership, TrekTrails has quickly grown into one of India's leading trekking companies, earning the trust of thousands of trekkers. His forward-thinking approach, combined with a dedication to safety and sustainability, has helped shape TrekTrails into the company it is today.
+                </p>
+                <p>
+                  Join us at TrekTrails, where Varun’s passion for adventure and commitment to excellence drive every journey.
+                </p>
+              </div>
+            </div>
+          </div>
+
           {/* Trust message */}
-          <div className="text-center text-lg">
+          <div className="text-center text-lg mt-12">
             <p>
-              Join <span className="text-yellow-300 font-semibold">Trek India</span> and become a part of India’s fastest-growing trekking community. Whether you're aiming for the snowy Himalayas or the tropical Western Ghats, we’re here to guide you, protect you, and help you explore with confidence.
+              Join <span className="text-yellow-300 font-semibold">TrekTrails</span> and become a part of India’s fastest-growing trekking community. Whether you're aiming for the snowy Himalayas or the tropical Western Ghats, we’re here to guide you, protect you, and help you explore with confidence.
             </p>
             <p className="mt-6 font-bold text-xl text-yellow-400">Adventure Awaits. Let's Trek Together! 🥾</p>
           </div>

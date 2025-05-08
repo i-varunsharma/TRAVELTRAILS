@@ -1,4 +1,4 @@
-import Navbar from "./components/AddressBar";
+import Navbar from "./about/components/AddressBar";
 
 export default function Home() {
   return (
