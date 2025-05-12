@@ -70,30 +70,7 @@ const About = () => {
             </div>
           </div>
 
-          {/* CEO Details */}
-          <div className="bg-yellow-100/20 rounded-2xl p-8 shadow-lg mb-12">
-            <h2 className="text-3xl font-bold text-center text-yellow-400 mb-6">🌟 Meet Our CEO: Varun Sharma</h2>
-
-            <div className="flex flex-col md:flex-row items-center justify-center">
-              <div className="w-40 h-40 md:w-52 md:h-52 rounded-full overflow-hidden mb-6 md:mb-0 shadow-xl">
-                {/* CEO Image */}
-                <img src="ceo.jpg" alt="Varun Sharma, CEO" className="w-full h-full object-cover" />
-              </div>
-
-              <div className="ml-0 md:ml-8 text-center md:text-left">
-                <p className="text-lg mb-4">
-                  <span className="font-semibold text-yellow-300">Varun Sharma</span>, aged 19, is the visionary founder and CEO of <span className="font-semibold text-yellow-300">TrekTrails</span>. Currently pursuing a BTech degree at Newton School of Technology, Varun is passionate about making trekking more accessible and enjoyable for everyone.
-                </p>
-                <p className="mb-4">
-                  Under Varun's leadership, TrekTrails has quickly grown into one of India's leading trekking companies, earning the trust of thousands of trekkers. His forward-thinking approach, combined with a dedication to safety and sustainability, has helped shape TrekTrails into the company it is today.
-                </p>
-                <p>
-                  Join us at TrekTrails, where Varun’s passion for adventure and commitment to excellence drive every journey.
-                </p>
-              </div>
-            </div>
-          </div>
-
+          
           {/* Trust message */}
           <div className="text-center text-lg mt-12">
             <p>
