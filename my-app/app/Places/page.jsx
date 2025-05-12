@@ -33,7 +33,7 @@ const Places = () => {
         {states.map((state, idx) => (
           <div
             key={idx}
-            className="relative rounded-3xl overflow-hidden shadow-lg cursor-pointer hover:shadow-2xl transform hover:scale-105 transition duration-300 ease-in-out group"
+            className="relative rounded-4xl overflow-hidden shadow-lg cursor-pointer hover:shadow-2xl transform hover:scale-105 transition duration-300 ease-in-out group "
           >
             <img
               src={state.imgUrl}
