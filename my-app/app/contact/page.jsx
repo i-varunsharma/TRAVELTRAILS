@@ -29,7 +29,7 @@ const Contact = () => {
                 </div>
                 <div className="flex items-center gap-4">
                   <MapPin className="text-green-400" />
-                  <span className="text-lg">Karnal, Haryana, India</span>
+                  <span className="text-lg"> New Delhi, India</span>
                 </div>
               </div>
 
