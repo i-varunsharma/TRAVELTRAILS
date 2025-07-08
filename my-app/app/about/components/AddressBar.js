@@ -1,8 +1,23 @@
 'use client'; // Important if used inside app router
 import Link from 'next/link';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { useRouter } from 'next/navigation';
 
 function Navbar() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const router = useRouter();
+
+  useEffect(() => {
+    const loggedIn = localStorage.getItem('isLoggedIn');
+    setIsLoggedIn(loggedIn === 'true');
+  }, []);
+
+  const handleLogout = () => {
+    localStorage.removeItem('isLoggedIn');
+    setIsLoggedIn(false);
+    router.push('/login');
+  };
+
   const navLinks = [
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
@@ -32,11 +47,21 @@ function Navbar() {
             ))}
           </ul>
 
-          <Link href='/login'>
-            <button className='bg-green-700 text-white px-5 py-2 rounded-2xl hover:bg-green-600 transition-all duration-300 shadow-md'>
-              Login
+          {/* ✅ Only this block is added */}
+          {isLoggedIn ? (
+            <button
+              onClick={handleLogout}
+              className='bg-red-600 text-white px-5 py-2 rounded-2xl hover:bg-red-500 transition-all duration-300 shadow-md'
+            >
+              Logout
             </button>
-          </Link>
+          ) : (
+            <Link href='/login'>
+              <button className='bg-green-700 text-white px-5 py-2 rounded-2xl hover:bg-green-600 transition-all duration-300 shadow-md'>
+                Login
+              </button>
+            </Link>
+          )}
         </div>
       </nav>
     </header>
@@ -44,5 +69,3 @@ function Navbar() {
 }
 
 export default Navbar;
-
-
