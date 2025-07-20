@@ -28,10 +28,6 @@ export default function Home() {
       {/* Tailwind animation (include this in your global CSS or index.css) */}
       <style>
         {`
-          @tailwind base;
-          @tailwind components;
-          @tailwind utilities;
-
           @layer utilities {
             .animate-fade-in {
               animation: fadeIn 1.2s ease-out forwards;
