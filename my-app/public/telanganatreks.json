@@ -1,0 +1,29 @@
+[
+    {
+        "name": "Ananthagiri Hills Trek",
+        "height": "1,168 m",
+        "cost": "₹800",
+        "duration": "1 day",
+        "best_time": "October to March",
+        "distance": "5–7 km",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Ananthagiri_Hills_Vikarabad.jpg"
+    },
+    {
+        "name": "Keesaragutta Trek",
+        "height": "605 m",
+        "cost": "₹500",
+        "duration": "Half day",
+        "best_time": "November to February",
+        "distance": "2–3 km",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/75/Keesaragutta_Temple.jpg"
+    },
+    {
+        "name": "Bhongir Fort Trek",
+        "height": "610 m",
+        "cost": "₹700",
+        "duration": "1 day",
+        "best_time": "October to March",
+        "distance": "3 km",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/18/Bhongir_Fort.jpg"
+    }
+]

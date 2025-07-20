@@ -1,0 +1,245 @@
+[
+  {
+    "name": "Rupin Pass Trek",
+    "height": "4650 m",
+    "cost": "₹11,500",
+    "duration": "7 days",
+    "best_time": "May to June, Sept–Oct",
+    "distance": "52 km",
+    "image_url": "https://www.trekthehimalayas.com/images/rupin‑pass‑trek.jpg"
+  },
+  {
+    "name": "Hampta Pass Trek",
+    "height": "4270 m",
+    "cost": "₹9,000",
+    "duration": "5 days",
+    "best_time": "June to September",
+    "distance": "35 km",
+    "image_url": "https://example.com/images/hampta‑pass.jpg"
+  },
+  {
+    "name": "Lamkhaga Pass Trek",
+    "height": "5284 m",
+    "cost": "₹18,000",
+    "duration": "10 days",
+    "best_time": "May to June",
+    "distance": "90 km",
+    "image_url": "https://example.com/images/lamkhaga‑pass.jpg"
+  },
+  {
+    "name": "Bhrigu Lake Trek",
+    "height": "4300 m",
+    "cost": "₹7,500",
+    "duration": "3 days",
+    "best_time": "June to September",
+    "distance": "25 km",
+    "image_url": "https://example.com/images/bhrigu‑lake.jpg"
+  },
+  {
+    "name": "Kheerganga Trek",
+    "height": "2950 m",
+    "cost": "₹2,500",
+    "duration": "2 days",
+    "best_time": "April to June, Sept–Nov",
+    "distance": "24 km",
+    "image_url": "https://example.com/images/kheerganga.jpg"
+  },
+  {
+    "name": "Pin Parvati Trek",
+    "height": "5319 m",
+    "cost": "₹20,000",
+    "duration": "10 days",
+    "best_time": "July to September",
+    "distance": "110 km",
+    "image_url": "https://example.com/images/pin‑parvati.jpg"
+  },
+  {
+    "name": "Beas Kund Trek",
+    "height": "3700 m",
+    "cost": "₹6,500",
+    "duration": "3 days",
+    "best_time": "May to October",
+    "distance": "16 km",
+    "image_url": "https://example.com/images/beas‑kund.jpg"
+  },
+  {
+    "name": "Bhaba Pass Trek",
+    "height": "4890 m",
+    "cost": "₹14,000",
+    "duration": "7 days",
+    "best_time": "June to October",
+    "distance": "50 km",
+    "image_url": "https://example.com/images/bhaba‑pass.jpg"
+  },
+  {
+    "name": "Deo Tibba Base Camp Trek",
+    "height": "4480 m",
+    "cost": "₹13,000",
+    "duration": "6 days",
+    "best_time": "May to October",
+    "distance": "37 km",
+    "image_url": "https://example.com/images/deo‑tibba‑base‑camp.jpg"
+  },
+  {
+    "name": "Janjehli Valley Trek",
+    "height": "2800 m",
+    "cost": "₹6,000",
+    "duration": "4 days",
+    "best_time": "April to June, Sept–Nov",
+    "distance": "30 km",
+    "image_url": "https://example.com/images/janjehli‑valley.jpg"
+  },
+  {
+    "name": "Malana Village Trek",
+    "height": "2652 m",
+    "cost": "₹3,500",
+    "duration": "2 days",
+    "best_time": "May to August",
+    "distance": "10 km",
+    "image_url": "https://example.com/images/malana‑village.jpg"
+  },
+  {
+    "name": "Triund Trek",
+    "height": "2850 m",
+    "cost": "₹2,000",
+    "duration": "2 days",
+    "best_time": "March to June, Sept–Dec",
+    "distance": "14 km",
+    "image_url": "https://example.com/images/triund.jpg"
+  },
+  {
+    "name": "Prashar Lake Trek",
+    "height": "2730 m",
+    "cost": "₹3,000",
+    "duration": "2 days",
+    "best_time": "Dec–Feb (snow), Apr–Jun",
+    "distance": "16 km",
+    "image_url": "https://example.com/images/prashar‑lake.jpg"
+  },
+  {
+    "name": "Nag Tibba Trek",
+    "height": "3022 m",
+    "cost": "₹2,500",
+    "duration": "2 days",
+    "best_time": "Oct to March",
+    "distance": "16 km",
+    "image_url": "https://example.com/images/nag‑tibba.jpg"
+  },
+  {
+    "name": "Kareri Lake Trek",
+    "height": "2934 m",
+    "cost": "₹3,200",
+    "duration": "2 days",
+    "best_time": "May–July, Sept–Nov",
+    "distance": "26 km",
+    "image_url": "https://example.com/images/kareri‑lake.jpg"
+  },
+  {
+    "name": "Chandratal Lake Trek",
+    "height": "4300 m",
+    "cost": "₹6,500",
+    "duration": "3 days",
+    "best_time": "July–October",
+    "distance": "20 km",
+    "image_url": "https://example.com/images/chandratal‑lake.jpg"
+  },
+  {
+    "name": "Sar Pass Trek",
+    "height": "4220 m",
+    "cost": "₹9,500",
+    "duration": "5 days",
+    "best_time": "May to October",
+    "distance": "48 km",
+    "image_url": "https://example.com/images/sar‑pass.jpg"
+  },
+  {
+    "name": "Tosh Valley Trek",
+    "height": "2400 m",
+    "cost": "₹2,000",
+    "duration": "1–2 days",
+    "best_time": "April to October",
+    "distance": "13 km",
+    "image_url": "https://example.com/images/tosh‑valley.jpg"
+  },
+  {
+    "name": "Bali Pass Trek",
+    "height": "4950 m",
+    "cost": "₹15,500",
+    "duration": "8 days",
+    "best_time": "May–June, Sept–Oct",
+    "distance": "67 km",
+    "image_url": "https://example.com/images/bali‑pass.jpg"
+  },
+  {
+    "name": "Parvati Valley Trek",
+    "height": "3500 m",
+    "cost": "₹8,500",
+    "duration": "5 days",
+    "best_time": "April to November",
+    "distance": "45 km",
+    "image_url": "https://example.com/images/parvati‑valley.jpg"
+  },
+  {
+    "name": "Saurkundi Pass Trek",
+    "height": "3890 m",
+    "cost": "₹7,500",
+    "duration": "6 days",
+    "best_time": "May to June",
+    "distance": "44 km",
+    "image_url": "https://example.com/images/saurkundi‑pass.jpg"
+  },
+  {
+    "name": "Indrahar Pass Trek",
+    "height": "4350 m",
+    "cost": "₹7,000",
+    "duration": "4 days",
+    "best_time": "May to October",
+    "distance": "35 km",
+    "image_url": "https://example.com/images/indrahar‑pass.jpg"
+  },
+  {
+    "name": "Kinnaur Kailash Trek",
+    "height": "5242 m",
+    "cost": "₹18,000",
+    "duration": "9 days",
+    "best_time": "June to September",
+    "distance": "61 km",
+    "image_url": "https://example.com/images/kinnaur‑kailash.jpg"
+  },
+  {
+    "name": "Pin Bhaba Pass Trek",
+    "height": "4850 m",
+    "cost": "₹16,000",
+    "duration": "9 days",
+    "best_time": "June to September",
+    "distance": "51 km",
+    "image_url": "https://example.com/images/pin‑bhaba‑pass.jpg"
+  },
+  {
+    "name": "Sangla Valley Trek",
+    "height": "3500 m",
+    "cost": "₹6,500",
+    "duration": "4 days",
+    "best_time": "May to October",
+    "distance": "35 km",
+    "image_url": "https://example.com/images/sangla‑valley.jpg"
+  },
+  {
+    "name": "Barot Valley Trek",
+    "height": "2200 m",
+    "cost": "₹4,000",
+    "duration": "2 days",
+    "best_time": "Apr–Jun, Sept–Oct",
+    "distance": "14 km",
+    "image_url": "https://example.com/images/barot‑valley.jpg"
+  },
+  {
+    "name": "Kullu Valley Trek",
+    "height": "3000 m",
+    "cost": "₹7,000",
+    "duration": "5 days",
+    "best_time": "May to October",
+    "distance": "40 km",
+    "image_url": "https://example.com/images/kullu‑valley.jpg"
+  }
+]

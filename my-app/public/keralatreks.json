@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Agasthyakoodam Trek",
+        "height": "1868 m",
+        "cost": "₹3,000",
+        "duration": "2 days",
+        "best_time": "January to March",
+        "distance": "20 km",
+        "image_url": "https://example.com/images/agasthyakoodam.jpg"
+    },
+    {
+        "name": "Chembra Peak Trek",
+        "height": "2100 m",
+        "cost": "₹1,800",
+        "duration": "1 day",
+        "best_time": "September to February",
+        "distance": "7 km",
+        "image_url": "https://example.com/images/chembra-peak.jpg"
+    },
+    {
+        "name": "Meesapulimala Trek",
+        "height": "2640 m",
+        "cost": "₹2,500",
+        "duration": "2 days",
+        "best_time": "October to March",
+        "distance": "15 km",
+        "image_url": "https://example.com/images/meesapulimala.jpg"
+    },
+    {
+        "name": "Anamudi Peak Trek",
+        "height": "2695 m (highest in South India)",
+        "cost": "₹3,200",
+        "duration": "2 days",
+        "best_time": "October to February",
+        "distance": "16 km",
+        "image_url": "https://example.com/images/anamudi.jpg"
+    },
+    {
+        "name": "Wayanad Trek",
+        "height": "2100 m (varies by route)",
+        "cost": "₹2,000",
+        "duration": "2 days",
+        "best_time": "September to March",
+        "distance": "10–18 km",
+        "image_url": "https://example.com/images/wayanad.jpg"
+    },
+    {
+        "name": "Silent Valley Trek",
+        "height": "1455 m",
+        "cost": "₹1,500",
+        "duration": "1 day",
+        "best_time": "December to April",
+        "distance": "12 km",
+        "image_url": "https://example.com/images/silent-valley.jpg"
+    }
+]

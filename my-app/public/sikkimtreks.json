@@ -1,0 +1,74 @@
+[
+    {
+        "name": "Goechala Trek",
+        "height": "4,940 m",
+        "cost": "₹16,000",
+        "duration": "10–11 days",
+        "best_time": "April to June, September to November",
+        "distance": "90 km",
+        "image_url": "https://example.com/images/goechala.jpg"
+    },
+    {
+        "name": "Dzongri Trek",
+        "height": "4,020 m",
+        "cost": "₹12,000",
+        "duration": "5–6 days",
+        "best_time": "March to May, September to November",
+        "distance": "50 km",
+        "image_url": "https://example.com/images/dzongri.jpg"
+    },
+    {
+        "name": "Kanchenjunga Base Camp Trek",
+        "height": "5,143 m",
+        "cost": "₹22,000",
+        "duration": "12–15 days",
+        "best_time": "March to May, September to November",
+        "distance": "100–110 km",
+        "image_url": "https://example.com/images/kbc-trek.jpg"
+    },
+    {
+        "name": "Singalila Ridge Trek",
+        "height": "3,636 m",
+        "cost": "₹10,000",
+        "duration": "6–7 days",
+        "best_time": "March to May, October to December",
+        "distance": "55 km",
+        "image_url": "https://example.com/images/singalila.jpg"
+    },
+    {
+        "name": "Yuksom Trek",
+        "height": "1,780 m",
+        "cost": "₹8,000",
+        "duration": "3–4 days",
+        "best_time": "March to May, October to November",
+        "distance": "30 km",
+        "image_url": "https://example.com/images/yuksom.jpg"
+    },
+    {
+        "name": "Lachung Valley Trek",
+        "height": "2,700 m",
+        "cost": "₹9,500",
+        "duration": "3–4 days",
+        "best_time": "April to June, September to November",
+        "distance": "28 km",
+        "image_url": "https://example.com/images/lachung.jpg"
+    },
+    {
+        "name": "Zuluk Trek",
+        "height": "2,865 m",
+        "cost": "₹9,000",
+        "duration": "2–3 days",
+        "best_time": "April to June, September to December",
+        "distance": "25 km",
+        "image_url": "https://example.com/images/zuluk.jpg"
+    },
+    {
+        "name": "Green Lake Trek",
+        "height": "5,000 m",
+        "cost": "₹20,000",
+        "duration": "10–12 days",
+        "best_time": "April to May, October to November",
+        "distance": "80–90 km",
+        "image_url": "https://example.com/images/green-lake.jpg"
+    }
+]

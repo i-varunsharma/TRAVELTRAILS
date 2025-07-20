@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Cherrapunji Trek",
+        "height": "1,484 m",
+        "cost": "₹3,200",
+        "duration": "2 days",
+        "best_time": "October to May",
+        "distance": "15 km",
+        "image_url": "https://example.com/images/cherrapunji-trek.jpg"
+    },
+    {
+        "name": "Mawlynnong Village Trek",
+        "height": "1,220 m",
+        "cost": "₹2,500",
+        "duration": "1 day",
+        "best_time": "October to April",
+        "distance": "6 km",
+        "image_url": "https://example.com/images/mawlynnong-village.jpg"
+    },
+    {
+        "name": "Nohkalikai Falls Trek",
+        "height": "1,100 m",
+        "cost": "₹3,000",
+        "duration": "1 day",
+        "best_time": "November to February",
+        "distance": "7 km",
+        "image_url": "https://example.com/images/nohkalikai-falls.jpg"
+    },
+    {
+        "name": "Double Decker Living Root Bridge Trek",
+        "height": "1,200 m",
+        "cost": "₹3,500",
+        "duration": "1–2 days",
+        "best_time": "October to March",
+        "distance": "6–7 km (one way)",
+        "image_url": "https://example.com/images/double-decker-root-bridge.jpg"
+    }
+]

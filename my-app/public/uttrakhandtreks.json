@@ -1,0 +1,173 @@
+[
+    {
+        "name": "Valley of Flowers Trek",
+        "height": "3,658 m",
+        "cost": "₹6,000",
+        "duration": "6 days",
+        "best_time": "July to September",
+        "distance": "38 km",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Valley_of_Flowers_view.jpg"
+    },
+    {
+        "name": "Roopkund Trek",
+        "height": "5,029 m",
+        "cost": "₹9,000",
+        "duration": "8 days",
+        "best_time": "May to June, September to October",
+        "distance": "53 km",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Roopkund_lake.jpg"
+    },
+    {
+        "name": "Har Ki Dun Trek",
+        "height": "3,566 m",
+        "cost": "₹8,000",
+        "duration": "7 days",
+        "best_time": "April to June, September to December",
+        "distance": "44 km",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/85/Har_ki_Dun_Valley.jpg"
+    },
+    {
+        "name": "Kedarkantha Trek",
+        "height": "3,800 m",
+        "cost": "₹6,500",
+        "duration": "6 days",
+        "best_time": "December to April",
+        "distance": "20 km",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Kedarkantha_Trek_View.jpg"
+    },
+    {
+        "name": "Nanda Devi Base Camp Trek",
+        "height": "4,000 m",
+        "cost": "₹12,000",
+        "duration": "10 days",
+        "best_time": "May to June, September to October",
+        "distance": "110 km",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Nanda_Devi_from_Auli.jpg"
+    },
+    {
+        "name": "Chopta Tungnath Trek",
+        "height": "3,680 m",
+        "cost": "₹3,500",
+        "duration": "3 days",
+        "best_time": "March to May, September to November",
+        "distance": "10 km",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Tungnath_Temple.jpg"
+    },
+    {
+        "name": "Kuari Pass Trek",
+        "height": "3,658 m",
+        "cost": "₹6,000",
+        "duration": "6 days",
+        "best_time": "March to June, September to November",
+        "distance": "33 km",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Kuari_Pass_Trek.jpg"
+    },
+    {
+        "name": "Dayara Bugyal Trek",
+        "height": "3,408 m",
+        "cost": "₹5,500",
+        "duration": "5 days",
+        "best_time": "May to July, September to December",
+        "distance": "20 km",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Dayara_Bugyal.jpg"
+    },
+    {
+        "name": "Pindari Glacier Trek",
+        "height": "3,660 m",
+        "cost": "₹7,000",
+        "duration": "7 days",
+        "best_time": "April to June, September to October",
+        "distance": "90 km",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Pindari_Glacier.jpg"
+    },
+    {
+        "name": "Brahmatal Trek",
+        "height": "3,734 m",
+        "cost": "₹6,000",
+        "duration": "6 days",
+        "best_time": "December to March",
+        "distance": "22 km",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Brahmatal_Trek_View.jpg"
+    },
+    {
+        "name": "Gaumukh Tapovan Trek",
+        "height": "4,463 m",
+        "cost": "₹8,500",
+        "duration": "8 days",
+        "best_time": "May to June, September to October",
+        "distance": "46 km",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Gaumukh_Glacier.jpg"
+    },
+    {
+        "name": "Hemkund Sahib Trek",
+        "height": "4,572 m",
+        "cost": "₹5,500",
+        "duration": "5 days",
+        "best_time": "June to October",
+        "distance": "12 km",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Hemkund_Sahib_Lake.jpg"
+    },
+    {
+        "name": "Satopanth Tal Trek",
+        "height": "4,600 m",
+        "cost": "₹9,000",
+        "duration": "7 days",
+        "best_time": "May to June, September",
+        "distance": "60 km",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Satopanth_Lake_Uttarakhand.jpg"
+    },
+    {
+        "name": "Kedarnath Trek",
+        "height": "3,583 m",
+        "cost": "₹2,000",
+        "duration": "2 days",
+        "best_time": "May to June, September to October",
+        "distance": "16 km",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Kedarnath_Temple_View.jpg"
+    },
+    {
+        "name": "Gangotri Trek",
+        "height": "3,415 m",
+        "cost": "₹4,500",
+        "duration": "3 days",
+        "best_time": "May to June, September to October",
+        "distance": "19 km",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Gangotri_Dham.jpg"
+    },
+    {
+        "name": "Bhagirathi Trek",
+        "height": "4,000 m",
+        "cost": "₹7,000",
+        "duration": "6 days",
+        "best_time": "May to June, September",
+        "distance": "42 km",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/44/Bhagirathi_Peak_View.jpg"
+    },
+    {
+        "name": "Haridwar to Rishikesh Trek",
+        "height": "300 m",
+        "cost": "₹500",
+        "duration": "1 day",
+        "best_time": "October to March",
+        "distance": "25 km",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Haridwar_Ghat_View.jpg"
+    },
+    {
+        "name": "Deoria Tal Trek",
+        "height": "2,438 m",
+        "cost": "₹3,000",
+        "duration": "2 days",
+        "best_time": "March to May, September to November",
+        "distance": "3 km",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Deoria_Tal_Uttarakhand.jpg"
+    },
+    {
+        "name": "Munsiyari Trek",
+        "height": "2,298 m",
+        "cost": "₹7,000",
+        "duration": "6 days",
+        "best_time": "April to June, September to October",
+        "distance": "45 km",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Munsiyari_View.jpg"
+    }
+]

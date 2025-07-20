@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Meesapulimala Trek",
+        "height": "2,640 m",
+        "cost": "₹2,000",
+        "duration": "1–2 days",
+        "best_time": "October to February",
+        "distance": "15 km",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Meesapulimala_peak.jpg"
+    },
+    {
+        "name": "Kodaikanal Trek",
+        "height": "2,133 m",
+        "cost": "₹1,500",
+        "duration": "1–2 days",
+        "best_time": "October to June",
+        "distance": "10–15 km",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Kodaikanal_view.jpg"
+    },
+    {
+        "name": "Nilgiri Hills Trek",
+        "height": "2,637 m",
+        "cost": "₹3,000",
+        "duration": "2–3 days",
+        "best_time": "September to May",
+        "distance": "20 km",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Nilgiri_Hills.JPG"
+    },
+    {
+        "name": "Yelagiri Trek",
+        "height": "1,110 m",
+        "cost": "₹1,000",
+        "duration": "1 day",
+        "best_time": "November to February",
+        "distance": "6–8 km",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Yelagiri_Hills.jpg"
+    },
+    {
+        "name": "Anaimalai Hills Trek",
+        "height": "2,695 m",
+        "cost": "₹2,500",
+        "duration": "2 days",
+        "best_time": "October to March",
+        "distance": "12–15 km",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Anaimalai_Hills.jpg"
+    },
+    {
+        "name": "Valparai Trek",
+        "height": "1,193 m",
+        "cost": "₹1,200",
+        "duration": "1–2 days",
+        "best_time": "October to March",
+        "distance": "10–12 km",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Valparai_-_Tamil_Nadu.jpg"
+    }
+]

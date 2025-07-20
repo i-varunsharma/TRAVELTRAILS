@@ -1,0 +1,254 @@
+[
+    {
+        "name": "Harishchandragad Trek",
+        "height": "1422 m",
+        "cost": "₹1,200",
+        "duration": "2 days",
+        "best_time": "October to February",
+        "distance": "18 km",
+        "image_url": "https://example.com/images/harishchandragad.jpg"
+    },
+    {
+        "name": "Rajmachi Trek",
+        "height": "826 m",
+        "cost": "₹900",
+        "duration": "1 day",
+        "best_time": "June to September",
+        "distance": "16 km",
+        "image_url": "https://example.com/images/rajmachi.jpg"
+    },
+    {
+        "name": "Kalsubai Peak Trek",
+        "height": "1646 m (highest in Maharashtra)",
+        "cost": "₹1,400",
+        "duration": "1 day",
+        "best_time": "October to March",
+        "distance": "12 km",
+        "image_url": "https://example.com/images/kalsubai.jpg"
+    },
+    {
+        "name": "Torna Fort Trek",
+        "height": "1403 m",
+        "cost": "₹1,000",
+        "duration": "1 day",
+        "best_time": "October to March",
+        "distance": "10 km",
+        "image_url": "https://example.com/images/torna.jpg"
+    },
+    {
+        "name": "Lohagad Fort Trek",
+        "height": "1033 m",
+        "cost": "₹800",
+        "duration": "1 day",
+        "best_time": "June to August",
+        "distance": "6 km",
+        "image_url": "https://example.com/images/lohagad.jpg"
+    },
+    {
+        "name": "Matheran Trek",
+        "height": "800 m",
+        "cost": "₹700",
+        "duration": "1 day",
+        "best_time": "November to February",
+        "distance": "8 km",
+        "image_url": "https://example.com/images/matheran.jpg"
+    },
+    {
+        "name": "Korigad Trek",
+        "height": "923 m",
+        "cost": "₹900",
+        "duration": "1 day",
+        "best_time": "September to March",
+        "distance": "6 km",
+        "image_url": "https://example.com/images/korigad.jpg"
+    },
+    {
+        "name": "Bhivpuri Waterfall Trek",
+        "height": "approx 500 m",
+        "cost": "₹600",
+        "duration": "1 day",
+        "best_time": "July to September",
+        "distance": "5 km",
+        "image_url": "https://example.com/images/bhivpuri.jpg"
+    },
+    {
+        "name": "Sandhan Valley Trek",
+        "height": "1000 m",
+        "cost": "₹1,800",
+        "duration": "2 days",
+        "best_time": "November to February",
+        "distance": "14 km",
+        "image_url": "https://example.com/images/sandhan.jpg"
+    },
+    {
+        "name": "Kedarnath Trek",
+        "height": "3583 m",
+        "cost": "₹6,000",
+        "duration": "3–5 days",
+        "best_time": "May to June & September to October",
+        "distance": "16 km",
+        "image_url": "https://example.com/images/kedarnath.jpg"
+    },
+    {
+        "name": "Tadiandamol Trek",
+        "height": "1748 m",
+        "cost": "₹1,200",
+        "duration": "1 day",
+        "best_time": "October to February",
+        "distance": "8 km",
+        "image_url": "https://example.com/images/tadiandamol.jpg"
+    },
+    {
+        "name": "Mahabaleshwar Trek",
+        "height": "1438 m",
+        "cost": "₹1,000",
+        "duration": "1 day",
+        "best_time": "October to March",
+        "distance": "10 km",
+        "image_url": "https://example.com/images/mahabaleshwar.jpg"
+    },
+    {
+        "name": "Pawna Lake Trek",
+        "height": "650 m",
+        "cost": "₹700",
+        "duration": "1 day",
+        "best_time": "October to March",
+        "distance": "5 km",
+        "image_url": "https://example.com/images/pawna.jpg"
+    },
+    {
+        "name": "Rajgad Fort Trek",
+        "height": "1374 m",
+        "cost": "₹1,200",
+        "duration": "1–2 days",
+        "best_time": "October to March",
+        "distance": "11 km",
+        "image_url": "https://example.com/images/rajgad.jpg"
+    },
+    {
+        "name": "Visapur Fort Trek",
+        "height": "1084 m",
+        "cost": "₹1,000",
+        "duration": "1 day",
+        "best_time": "June to September",
+        "distance": "7 km",
+        "image_url": "https://example.com/images/visapur.jpg"
+    },
+    {
+        "name": "Karnala Fort Trek",
+        "height": "439 m",
+        "cost": "₹600",
+        "duration": "1 day",
+        "best_time": "November to February",
+        "distance": "3 km",
+        "image_url": "https://example.com/images/karnala.jpg"
+    },
+    {
+        "name": "Vikatgad Trek",
+        "height": "2106 ft (642 m)",
+        "cost": "₹800",
+        "duration": "1 day",
+        "best_time": "July to February",
+        "distance": "7 km",
+        "image_url": "https://example.com/images/vikatgad.jpg"
+    },
+    {
+        "name": "Kalavantin Durg Trek",
+        "height": "686 m",
+        "cost": "₹1,000",
+        "duration": "1 day",
+        "best_time": "October to March",
+        "distance": "6 km",
+        "image_url": "https://example.com/images/kalavantin.jpg"
+    },
+    {
+        "name": "Prabalgad Trek",
+        "height": "2300 ft (701 m)",
+        "cost": "₹900",
+        "duration": "1 day",
+        "best_time": "October to March",
+        "distance": "7 km",
+        "image_url": "https://example.com/images/prabalgad.jpg"
+    },
+    {
+        "name": "Vasota Trek",
+        "height": "1171 m",
+        "cost": "₹1,500",
+        "duration": "2 days",
+        "best_time": "November to March",
+        "distance": "10 km",
+        "image_url": "https://example.com/images/vasota.jpg"
+    },
+    {
+        "name": "Khandala Trek",
+        "height": "550 m",
+        "cost": "₹700",
+        "duration": "1 day",
+        "best_time": "October to February",
+        "distance": "5 km",
+        "image_url": "https://example.com/images/khandala.jpg"
+    },
+    {
+        "name": "Bhaje Caves Trek",
+        "height": "100 m elevation",
+        "cost": "₹500",
+        "duration": "Half day",
+        "best_time": "October to March",
+        "distance": "2 km",
+        "image_url": "https://example.com/images/bhaje.jpg"
+    },
+    {
+        "name": "Bedsa Caves Trek",
+        "height": "450 m",
+        "cost": "₹500",
+        "duration": "1 day",
+        "best_time": "November to February",
+        "distance": "3 km",
+        "image_url": "https://example.com/images/bedsa.jpg"
+    },
+    {
+        "name": "Chanderi Trek",
+        "height": "790 m",
+        "cost": "₹1,200",
+        "duration": "1 day",
+        "best_time": "October to February",
+        "distance": "8 km",
+        "image_url": "https://example.com/images/chanderi.jpg"
+    },
+    {
+        "name": "Mulshi Trek",
+        "height": "varies",
+        "cost": "₹900",
+        "duration": "1 day",
+        "best_time": "July to October",
+        "distance": "6 km",
+        "image_url": "https://example.com/images/mulshi.jpg"
+    },
+    {
+        "name": "Chorla Ghat Trek",
+        "height": "800 m approx",
+        "cost": "₹1,000",
+        "duration": "1 day",
+        "best_time": "June to September",
+        "distance": "6 km",
+        "image_url": "https://example.com/images/chorla.jpg"
+    },
+    {
+        "name": "Amboli Trek",
+        "height": "690 m",
+        "cost": "₹900",
+        "duration": "1 day",
+        "best_time": "July to December",
+        "distance": "5 km",
+        "image_url": "https://example.com/images/amboli.jpg"
+    },
+    {
+        "name": "Bhandardara Trek",
+        "height": "750 m",
+        "cost": "₹1,000",
+        "duration": "2 days",
+        "best_time": "October to March",
+        "distance": "10 km",
+        "image_url": "https://example.com/images/bhandardara.jpg"
+    }
+]

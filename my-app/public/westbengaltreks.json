@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Sandakphu Trek",
+        "height": "3636 m",
+        "cost": "₹9,500",
+        "duration": "6 days",
+        "best_time": "April to May, October to December",
+        "distance": "52 km",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Sandakphu.jpg"
+    },
+    {
+        "name": "Goechala Trek",
+        "height": "4940 m",
+        "cost": "₹17,000",
+        "duration": "10 days",
+        "best_time": "April to June, September to November",
+        "distance": "90 km",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/39/View_of_Mount_Pandim_from_Goecha_La_pass.jpg"
+    },
+    {
+        "name": "Singalila Ridge Trek",
+        "height": "3600 m",
+        "cost": "₹10,000",
+        "duration": "6 days",
+        "best_time": "March to June, October to December",
+        "distance": "60 km",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Singalila_Ridge_Trek_-_IndiaHikes.jpg"
+    },
+    {
+        "name": "Darjeeling Trek",
+        "height": "2042 m",
+        "cost": "₹6,000",
+        "duration": "3 days",
+        "best_time": "March to June, September to December",
+        "distance": "30 km",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Darjeeling_town_India_2011.jpg"
+    },
+    {
+        "name": "Kalimpong Trek",
+        "height": "1250 m",
+        "cost": "₹4,500",
+        "duration": "2 days",
+        "best_time": "March to May, October to November",
+        "distance": "15 km",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Kalimpong_from_deolo.jpg"
+    },
+    {
+        "name": "Neora Valley Trek",
+        "height": "3200 m",
+        "cost": "₹8,000",
+        "duration": "5 days",
+        "best_time": "October to April",
+        "distance": "45 km",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/37/Neora_Valley_National_Park.jpg"
+    },
+    {
+        "name": "Jaldapara Wildlife Sanctuary Trek",
+        "height": "61 m",
+        "cost": "₹3,500",
+        "duration": "1–2 days",
+        "best_time": "October to May",
+        "distance": "10–15 km",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Jaldapara_Wildlife_Sanctuary.JPG"
+    }
+]

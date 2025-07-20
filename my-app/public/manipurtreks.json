@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Dzukou Valley Trek",
+        "height": "2452 m",
+        "cost": "₹3,500",
+        "duration": "2 days",
+        "best_time": "June to September",
+        "distance": "17 km",
+        "image_url": "https://example.com/images/dzukou-valley.jpg"
+    },
+    {
+        "name": "Loktak Lake Trek",
+        "height": "850 m",
+        "cost": "₹2,000",
+        "duration": "1 day",
+        "best_time": "November to March",
+        "distance": "10 km",
+        "image_url": "https://example.com/images/loktak-lake.jpg"
+    }
+]

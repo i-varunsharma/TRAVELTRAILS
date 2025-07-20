@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Jampui Hills Trek",
+        "height": "1,000 m",
+        "cost": "₹1,200",
+        "duration": "2 days",
+        "best_time": "October to February",
+        "distance": "8–10 km",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/84/Jampui_Hill_View.jpg"
+    },
+    {
+        "name": "Sepahijala Wildlife Sanctuary Trek",
+        "height": "100–200 m",
+        "cost": "₹600",
+        "duration": "1 day",
+        "best_time": "November to March",
+        "distance": "3–5 km",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Sepahijala_Wildlife_Sanctuary.jpg"
+    }
+]

@@ -1,0 +1,29 @@
+[
+    {
+        "name": "Dzükou Valley Trek",
+        "height": "2,452 m",
+        "cost": "₹3,500",
+        "duration": "2 days",
+        "best_time": "June to September",
+        "distance": "17 km",
+        "image_url": "https://example.com/images/dzukou-valley.jpg"
+    },
+    {
+        "name": "Mount Saramati Trek",
+        "height": "3,826 m",
+        "cost": "₹6,500",
+        "duration": "5 days",
+        "best_time": "October to April",
+        "distance": "22 km",
+        "image_url": "https://example.com/images/mount-saramati.jpg"
+    },
+    {
+        "name": "Khonoma Village Trek",
+        "height": "1,690 m",
+        "cost": "₹2,500",
+        "duration": "1–2 days",
+        "best_time": "October to March",
+        "distance": "8–10 km",
+        "image_url": "https://example.com/images/khonoma-village.jpg"
+    }
+]

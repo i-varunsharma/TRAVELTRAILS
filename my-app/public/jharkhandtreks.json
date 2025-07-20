@@ -1,0 +1,27 @@
+[{
+    "name": "Netarhat Trek",
+    "height": "1128 m",
+    "cost": "₹3,500",
+    "duration": "2 days",
+    "best_time": "October to March",
+    "distance": "15 km",
+    "image_url": "https://example.com/images/netarhat-trek.jpg"
+},
+{
+    "name": "Betla National Park Trek",
+    "height": "1200 m",
+    "cost": "₹4,000",
+    "duration": "2–3 days",
+    "best_time": "November to March",
+    "distance": "18 km",
+    "image_url": "https://example.com/images/betla-national-park.jpg"
+},
+{
+    "name": "Hazaribagh Trek",
+    "height": "615 m",
+    "cost": "₹3,000",
+    "duration": "2 days",
+    "best_time": "October to February",
+    "distance": "12 km",
+    "image_url": "https://example.com/images/hazaribagh-trek.jpg"
+}]

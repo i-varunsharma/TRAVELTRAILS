@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Chilika Lake Trek",
+        "height": "1,100 m",
+        "cost": "₹3,000",
+        "duration": "1–2 days",
+        "best_time": "November to February",
+        "distance": "10–12 km",
+        "image_url": "https://example.com/images/chilika-lake.jpg"
+    },
+    {
+        "name": "Daringbadi Trek",
+        "height": "915 m",
+        "cost": "₹3,200",
+        "duration": "2 days",
+        "best_time": "October to March",
+        "distance": "14 km",
+        "image_url": "https://example.com/images/daringbadi.jpg"
+    },
+    {
+        "name": "Deomali Trek",
+        "height": "1,672 m",
+        "cost": "₹4,000",
+        "duration": "2–3 days",
+        "best_time": "October to February",
+        "distance": "16 km",
+        "image_url": "https://example.com/images/deomali.jpg"
+    },
+    {
+        "name": "Similipal National Park Trek",
+        "height": "985 m",
+        "cost": "₹3,800",
+        "duration": "3 days",
+        "best_time": "November to April",
+        "distance": "18 km",
+        "image_url": "https://example.com/images/similipal.jpg"
+    }
+]

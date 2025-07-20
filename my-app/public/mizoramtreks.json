@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Phawngpui Trek (Blue Mountain)",
+        "height": "2,157 m",
+        "cost": "₹4,000",
+        "duration": "3 days",
+        "best_time": "November to April",
+        "distance": "20 km",
+        "image_url": "https://example.com/images/phawngpui-blue-mountain.jpg"
+    },
+    {
+        "name": "Dampa Tiger Reserve Trek",
+        "height": "800 – 1,000 m",
+        "cost": "₹3,200",
+        "duration": "2 days",
+        "best_time": "October to March",
+        "distance": "12 km",
+        "image_url": "https://example.com/images/dampa-tiger-reserve.jpg"
+    }
+]
