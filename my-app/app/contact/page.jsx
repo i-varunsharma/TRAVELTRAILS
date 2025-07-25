@@ -1,8 +1,35 @@
-import React from 'react';
+'use client';
+import React, { useState } from 'react';
 import Navbar from '../about/components/AddressBar';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 
 const Contact = () => {
+  const [popupVisible, setPopupVisible] = useState(false);
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setPopupVisible(true);
+
+    // Clear form fields
+    setFormData({
+      name: '',
+      email: '',
+      message: ''
+    });
+
+    // Hide popup after 3 seconds
+    setTimeout(() => setPopupVisible(false), 3000);
+  };
+
   return (
     <>
       <Navbar />
@@ -29,34 +56,46 @@ const Contact = () => {
                 </div>
                 <div className="flex items-center gap-4">
                   <MapPin className="text-green-400" />
-                  <span className="text-lg"> New Delhi, India</span>
+                  <span className="text-lg">New Delhi, India</span>
                 </div>
               </div>
 
               {/* Form Section */}
-              <form className="space-y-6">
+              <form className="space-y-6" onSubmit={handleSubmit}>
                 <div>
                   <label className="block mb-1 font-semibold text-white">Full Name</label>
                   <input
                     type="text"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
                     className="w-full bg-white/70 px-4 py-3 rounded-xl shadow-inner focus:outline-none focus:ring-2 focus:ring-green-400"
                     placeholder="Your Name"
+                    required
                   />
                 </div>
                 <div>
                   <label className="block mb-1 font-semibold text-white">Email Address</label>
                   <input
                     type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
                     className="w-full bg-white/70 px-4 py-3 rounded-xl shadow-inner focus:outline-none focus:ring-2 focus:ring-green-400"
                     placeholder="you@example.com"
+                    required
                   />
                 </div>
                 <div>
                   <label className="block mb-1 font-semibold text-white">Message</label>
                   <textarea
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
                     className="w-full bg-white/70 px-4 py-4 rounded-xl shadow-inner focus:outline-none focus:ring-2 focus:ring-green-400"
                     rows="5"
                     placeholder="Tell us about your trekking needs..."
+                    required
                   ></textarea>
                 </div>
                 <button
@@ -68,6 +107,13 @@ const Contact = () => {
                 </button>
               </form>
             </div>
+
+            {/* Success Popup */}
+            {popupVisible && (
+              <div className="center bg-green-500 text-white px-6 py-3 rounded-xl shadow-lg z-50 animate-bounce">
+                Message sent successfully!
+              </div>
+            )}
           </div>
         </div>
       </div>
