@@ -23,7 +23,7 @@ const StatePage = () => {
   useEffect(() => {
     const getData = async () => {
       try {
-        const res = await fetch('/trekkingData.json');
+        const res = await fetch('/trekkingdata.json');
         const data = await res.json();
         const formattedName = stateName.replace(/-/g, ' ').toLowerCase();
         const match = data.find(state => state.name.toLowerCase() === formattedName);

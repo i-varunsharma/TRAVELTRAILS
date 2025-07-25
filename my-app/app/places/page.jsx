@@ -10,7 +10,7 @@ const Places = () => {
   useEffect(() => {
     const dataFetch = async () => {
       try {
-        const response = await fetch('/trekkingData.json');
+        const response = await fetch('/trekkingdata.json');
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
         const result = await response.json();
         setStates(result);
