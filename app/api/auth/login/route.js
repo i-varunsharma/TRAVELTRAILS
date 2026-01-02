@@ -4,9 +4,12 @@ import crypto from 'crypto';
 
 export async function POST(request) {
   try {
+    console.log('Login API called');
     await connectDB();
+    console.log('DB connected for login');
     
     const { email, password } = await request.json();
+    console.log('Login attempt for:', email);
 
     if (!email || !password) {
       return Response.json({ success: false, message: 'Email and password required' });
@@ -18,6 +21,8 @@ export async function POST(request) {
       return Response.json({ success: false, message: 'User not found' });
     }
 
+    console.log('User found, checking password');
+    
     // Check if password is hashed (contains :) or plain text
     let isValidPassword = false;
     
@@ -35,6 +40,7 @@ export async function POST(request) {
       return Response.json({ success: false, message: 'Wrong password' });
     }
 
+    console.log('Login successful');
     return Response.json({
       success: true,
       message: 'Login successful',
@@ -46,7 +52,11 @@ export async function POST(request) {
     });
 
   } catch (error) {
-    console.error('Login error:', error);
-    return Response.json({ success: false, message: 'Server error' });
+    console.error('Login error details:', error);
+    return Response.json({ 
+      success: false, 
+      message: 'Server error',
+      error: process.env.NODE_ENV === 'development' ? error.message : undefined
+    });
   }
 }

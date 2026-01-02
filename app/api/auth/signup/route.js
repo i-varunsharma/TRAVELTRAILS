@@ -4,9 +4,12 @@ import crypto from 'crypto';
 
 export async function POST(request) {
   try {
+    console.log('Signup API called');
     await connectDB();
+    console.log('DB connected');
     
     const { name, email, password } = await request.json();
+    console.log('Request data:', { name, email, passwordLength: password?.length });
 
     if (!name || !email || !password) {
       return Response.json({ success: false, message: 'All fields required' });
@@ -34,6 +37,7 @@ export async function POST(request) {
       password: hashedPassword
     });
 
+    console.log('User created successfully');
     return Response.json({
       success: true,
       message: 'User created successfully',
@@ -41,7 +45,11 @@ export async function POST(request) {
     });
 
   } catch (error) {
-    console.error('Signup error:', error);
-    return Response.json({ success: false, message: 'Something went wrong. Please try again.' });
+    console.error('Signup error details:', error);
+    return Response.json({ 
+      success: false, 
+      message: 'Server error',
+      error: process.env.NODE_ENV === 'development' ? error.message : undefined
+    });
   }
 }
