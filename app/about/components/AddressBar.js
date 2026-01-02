@@ -19,6 +19,16 @@ function Navbar() {
     return () => window.removeEventListener('storage', checkAuth);
   }, []);
 
+  const handleLogout = () => {
+    localStorage.removeItem('isLoggedIn');
+    localStorage.removeItem('userName');
+    localStorage.removeItem('userEmail');
+    localStorage.removeItem('userId');
+    document.cookie = 'isLoggedIn=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT';
+    setIsLoggedIn(false);
+    router.push('/');
+  };
+
   const handleProtectedClick = (e, path) => {
     if (!isLoggedIn) {
       e.preventDefault();
@@ -54,13 +64,20 @@ function Navbar() {
             ))}
           </ul>
           
-          {!isLoggedIn && (
+          {!isLoggedIn ? (
             <Link
               href='/login'
               className='bg-green-700 text-white text-xs sm:text-sm px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl hover:bg-green-600 transition duration-300'
             >
               Login
             </Link>
+          ) : (
+            <button
+              onClick={handleLogout}
+              className='bg-red-600 text-white text-xs sm:text-sm px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl hover:bg-red-500 transition duration-300'
+            >
+              Logout
+            </button>
           )}
         </div>
       </nav>
