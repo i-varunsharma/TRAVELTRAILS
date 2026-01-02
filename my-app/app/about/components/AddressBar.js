@@ -5,34 +5,31 @@ import { useRouter } from 'next/navigation';
 
 function Navbar() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [initials, setInitials] = useState('');
   const router = useRouter();
 
   useEffect(() => {
-    const loggedIn = localStorage.getItem('isLoggedIn') === 'true';
-    setIsLoggedIn(loggedIn);
-
-    const name = localStorage.getItem('userName');
-    if (name) {
-      const nameParts = name.trim().split(' ');
-      const first = nameParts[0]?.charAt(0) || '';
-      const last = nameParts[1]?.charAt(0) || '';
-      setInitials((first + last).toUpperCase());
-    }
+    const checkAuth = () => {
+      const loggedIn = localStorage.getItem('isLoggedIn') === 'true';
+      setIsLoggedIn(loggedIn);
+    };
+    
+    checkAuth();
+    window.addEventListener('storage', checkAuth);
+    
+    return () => window.removeEventListener('storage', checkAuth);
   }, []);
 
-  const handleLogout = () => {
-    localStorage.removeItem('isLoggedIn');
-    localStorage.removeItem('userName');
-    setIsLoggedIn(false);
-    setInitials('');
-    router.push('/login');
+  const handleProtectedClick = (e, path) => {
+    if (!isLoggedIn) {
+      e.preventDefault();
+      router.push(`/login?returnUrl=${path}`);
+    }
   };
 
   const navLinks = [
     { name: 'About', path: '/about' },
     { name: 'Places', path: '/places' },
-    { name: 'Contact', path: '../contact' }
+    { name: 'Contact', path: '/contact' }
   ];
 
   return (
@@ -48,6 +45,7 @@ function Navbar() {
               <li key={index}>
                 <Link
                   href={link.path}
+                  onClick={(e) => handleProtectedClick(e, link.path)}
                   className='text-xs sm:text-sm md:text-base font-medium uppercase hover:text-green-500 transition-all duration-200'
                 >
                   {link.name}
@@ -55,26 +53,13 @@ function Navbar() {
               </li>
             ))}
           </ul>
-
-          {isLoggedIn ? (
-            <>
-              <div className="flex items-center gap-3">
-                <div className="bg-green-700 text-white font-bold rounded-full w-9 h-9 flex items-center justify-center">
-                  {initials}
-                </div>
-                <button
-                  onClick={handleLogout}
-                  className='bg-red-600 text-white text-xs sm:text-sm px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl hover:bg-red-500 transition duration-300'
-                >
-                  Logout
-                </button>
-              </div>
-            </>
-          ) : (
-            <Link href='/login'>
-              <button className='bg-green-700 text-white text-xs sm:text-sm px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl hover:bg-green-600 transition duration-300'>
-                Login
-              </button>
+          
+          {!isLoggedIn && (
+            <Link
+              href='/login'
+              className='bg-green-700 text-white text-xs sm:text-sm px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl hover:bg-green-600 transition duration-300'
+            >
+              Login
             </Link>
           )}
         </div>

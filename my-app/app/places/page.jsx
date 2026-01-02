@@ -22,7 +22,7 @@ const Places = () => {
     dataFetch();
   }, []);
   return (
-    <div className="relative min-h-screen p-6 bg-gradient-to-br pt-30 bg-cover bg-center bg-[url('/bgimg.jpg')] background-blur-sm bg-white">
+    <div className="relative min-h-screen p-6 bg-gradient-to-br pt-30 bg-cover bg-center bg-[url('/bgimg.jpg')] bg-white">
         <Navbar />
       <h1 className="text-4xl font-extrabold text-center text-gray-800 mb-10 drop-shadow-md">
         Trekking States of India
@@ -33,7 +33,7 @@ const Places = () => {
         {states.map((state, idx) => (
           <Link href={`/places/${state.name.toLowerCase().replace(/ /g, '-')}`} key={idx}>
             <div
-              className="relative rounded-4xl overflow-hidden shadow-lg cursor-pointer hover:shadow-2xl transform hover:scale-105 transition duration-300 ease-in-out group "
+              className="relative rounded-xl overflow-hidden shadow-lg cursor-pointer hover:shadow-2xl transform hover:scale-105 transition duration-300 ease-in-out group"
             >
               <img
                 src={state.imgUrl}
