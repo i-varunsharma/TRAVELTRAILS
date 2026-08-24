@@ -2,45 +2,40 @@
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
+import { fetchCurrentUser, logout } from '@/lib/auth-client';
+
+const navLinks = [
+  { name: 'About', path: '/about' },
+  { name: 'Places', path: '/places' },
+  { name: 'Contact', path: '/contact' },
+];
 
 function Navbar() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [user, setUser] = useState(null);
   const router = useRouter();
+  const isLoggedIn = Boolean(user);
 
+  // Every page mounts its own Navbar, so this runs fresh on every navigation
+  // and always reflects the current session.
   useEffect(() => {
-    const checkAuth = () => {
-      const loggedIn = localStorage.getItem('isLoggedIn') === 'true';
-      setIsLoggedIn(loggedIn);
-    };
-    
-    checkAuth();
-    window.addEventListener('storage', checkAuth);
-    
-    return () => window.removeEventListener('storage', checkAuth);
+    fetchCurrentUser().then(setUser);
   }, []);
 
-  const handleLogout = () => {
-    localStorage.removeItem('isLoggedIn');
-    localStorage.removeItem('userName');
-    localStorage.removeItem('userEmail');
-    localStorage.removeItem('userId');
-    document.cookie = 'isLoggedIn=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT';
-    setIsLoggedIn(false);
+  const handleLogout = async () => {
+    await logout();
+    setUser(null);
     router.push('/');
   };
 
+  // If someone who isn't logged in clicks a protected link, send them to
+  // /login instead of letting the click go through (middleware.js would
+  // redirect them anyway, but this skips the extra round trip).
   const handleProtectedClick = (e, path) => {
     if (!isLoggedIn) {
       e.preventDefault();
       router.push(`/login?returnUrl=${path}`);
     }
   };
-
-  const navLinks = [
-    { name: 'About', path: '/about' },
-    { name: 'Places', path: '/places' },
-    { name: 'Contact', path: '/contact' }
-  ];
 
   return (
     <header className='fixed top-5 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-[1000px] px-4 py-2 sm:py-3 rounded-2xl shadow-xl bg-white/90 backdrop-blur-md text-zinc-800'>
@@ -51,8 +46,8 @@ function Navbar() {
 
         <div className='flex items-center gap-3 sm:gap-5'>
           <ul className='flex items-center gap-3 sm:gap-5'>
-            {navLinks.map((link, index) => (
-              <li key={index}>
+            {navLinks.map((link) => (
+              <li key={link.path}>
                 <Link
                   href={link.path}
                   onClick={(e) => handleProtectedClick(e, link.path)}
@@ -62,8 +57,18 @@ function Navbar() {
                 </Link>
               </li>
             ))}
+            {user?.role === 'admin' && (
+              <li>
+                <Link
+                  href='/admin'
+                  className='text-xs sm:text-sm md:text-base font-medium uppercase text-green-700 hover:text-green-500 transition-all duration-200'
+                >
+                  Admin
+                </Link>
+              </li>
+            )}
           </ul>
-          
+
           {!isLoggedIn ? (
             <Link
               href='/login'

@@ -1,18 +1,16 @@
 import React from 'react'
-import Navbar from '../about/components/AddressBar';
+import Navbar from '@/app/components/Navbar';
 
+// Placeholder page: the photo gallery itself hasn't been built yet, this
+// just sets up the background and navbar so the route doesn't 404.
 const Gallery = () => {
   return (
-  <div className="relative min-h-screen">
-      {/* Background image - moved to separate element */}
+    <div className="relative min-h-screen">
       <div className="fixed inset-0 bg-[url('/bgimg.jpg')] bg-cover bg-center"></div>
-      
-      {/* Your existing overlay with reduced opacity */}
       <div className="fixed inset-0 bg-black/30 backdrop-blur-sm"></div>
-      
-      {/* Content container - added relative positioning */}
+
       <div className="relative pt-20">
-        <Navbar/>
+        <Navbar />
       </div>
     </div>
   )

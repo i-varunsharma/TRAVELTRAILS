@@ -1,29 +1,29 @@
 import { NextResponse } from 'next/server';
+import { verifyToken } from '@/lib/jwt';
 
-export function middleware(request) {
+// Routes that require a logged-in session
+const protectedRoutes = ['/places', '/contact', '/about', '/admin'];
+
+export async function middleware(request) {
   const { pathname } = request.nextUrl;
-  
-  // Protected routes that require authentication
-  const protectedRoutes = ['/places', '/contact', '/about'];
-  
-  // Check if current path is protected
+
   const isProtectedRoute = protectedRoutes.some(route => pathname.startsWith(route));
-  
-  if (isProtectedRoute) {
-    // Check for authentication cookie
-    const isLoggedIn = request.cookies.get('isLoggedIn')?.value === 'true';
-    
-    if (!isLoggedIn) {
-      // Redirect to login with return URL
-      const loginUrl = new URL('/login', request.url);
-      loginUrl.searchParams.set('returnUrl', pathname);
-      return NextResponse.redirect(loginUrl);
-    }
+  if (!isProtectedRoute) {
+    return NextResponse.next();
   }
-  
+
+  const token = request.cookies.get('token')?.value;
+  const session = token ? await verifyToken(token) : null;
+
+  if (!session) {
+    const loginUrl = new URL('/login', request.url);
+    loginUrl.searchParams.set('returnUrl', pathname);
+    return NextResponse.redirect(loginUrl);
+  }
+
   return NextResponse.next();
 }
 
 export const config = {
-  matcher: ['/places/:path*', '/contact/:path*', '/about/:path*']
+  matcher: ['/places/:path*', '/contact/:path*', '/about/:path*', '/admin/:path*']
 };

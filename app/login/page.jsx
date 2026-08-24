@@ -35,17 +35,8 @@ export default function LoginSignupPage() {
       const data = await response.json();
 
       if (data.success) {
-        // Set cookie and localStorage silently
-        document.cookie = 'isLoggedIn=true; path=/; max-age=86400';
-        localStorage.setItem('isLoggedIn', 'true');
-        localStorage.setItem('userEmail', data.user.email);
-        localStorage.setItem('userName', data.user.name);
-        localStorage.setItem('userId', data.user.id);
-        
-        // Trigger navbar refresh
-        window.dispatchEvent(new Event('storage'));
-        
-        // Redirect back to where they came from or home
+        // The server already logged us in via a Set-Cookie header.
+        // Redirect back to where they came from or home.
         const returnUrl = new URLSearchParams(window.location.search).get('returnUrl') || '/';
         router.push(returnUrl);
       } else {

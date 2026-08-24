@@ -1,4 +1,4 @@
-import Navbar from './components/AddressBar';
+import Navbar from '@/app/components/Navbar';
 
 const About = () => {
   return (

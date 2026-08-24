@@ -1,10 +1,12 @@
 'use client';
 import React, { useState } from 'react';
-import Navbar from '../about/components/AddressBar';
+import Navbar from '@/app/components/Navbar';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 
 const Contact = () => {
   const [popupVisible, setPopupVisible] = useState(false);
+  const [error, setError] = useState('');
+  const [sending, setSending] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -15,19 +17,32 @@ const Contact = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setPopupVisible(true);
+    setSending(true);
+    setError('');
 
-    // Clear form fields
-    setFormData({
-      name: '',
-      email: '',
-      message: ''
-    });
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+      const data = await response.json();
 
-    // Hide popup after 3 seconds
-    setTimeout(() => setPopupVisible(false), 3000);
+      if (!data.success) {
+        setError(data.message);
+        return;
+      }
+
+      setFormData({ name: '', email: '', message: '' });
+      setPopupVisible(true);
+      setTimeout(() => setPopupVisible(false), 3000);
+    } catch (err) {
+      setError('Something went wrong. Please try again.');
+    } finally {
+      setSending(false);
+    }
   };
 
   return (
@@ -62,6 +77,11 @@ const Contact = () => {
 
               {/* Form Section */}
               <form className="space-y-6" onSubmit={handleSubmit}>
+                {error && (
+                  <div className="bg-red-500/20 border border-red-500/30 rounded-xl p-3">
+                    <p className="text-red-200 text-sm text-center">{error}</p>
+                  </div>
+                )}
                 <div>
                   <label className="block mb-1 font-semibold text-white">Full Name</label>
                   <input
@@ -100,10 +120,11 @@ const Contact = () => {
                 </div>
                 <button
                   type="submit"
-                  className="flex items-center justify-center gap-2 bg-green-600 hover:bg-green-500 text-white font-bold py-3 px-6 rounded-xl transition duration-300 shadow-md hover:shadow-xl w-full"
+                  disabled={sending}
+                  className="flex items-center justify-center gap-2 bg-green-600 hover:bg-green-500 text-white font-bold py-3 px-6 rounded-xl transition duration-300 shadow-md hover:shadow-xl w-full disabled:opacity-50"
                 >
                   <Send size={18} />
-                  Send Message
+                  {sending ? 'Sending...' : 'Send Message'}
                 </button>
               </form>
             </div>
