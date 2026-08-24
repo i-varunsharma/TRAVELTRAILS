@@ -28,7 +28,7 @@ const Places = () => {
     <>
       <Navbar />
       <div className="max-w-6xl mx-auto px-6 py-16">
-        <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 text-center mb-10">
+        <h1 className="font-display text-3xl sm:text-4xl font-semibold text-gray-900 text-center mb-10">
           Trekking States of India
         </h1>
         {error && <p className="text-red-600 text-center font-medium">{error}</p>}
@@ -43,7 +43,7 @@ const Places = () => {
                   className="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="p-4">
-                  <h2 className="font-semibold text-gray-900">{state.name}</h2>
+                  <h2 className="font-display font-semibold text-gray-900">{state.name}</h2>
                   <p className="text-sm text-gray-500 mt-0.5">
                     {state.treks.length} trek spots
                   </p>

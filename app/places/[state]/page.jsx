@@ -51,7 +51,7 @@ const StatePage = () => {
           <ArrowLeft size={16} /> Back to states
         </Link>
 
-        <h1 className="text-3xl font-bold text-gray-900 mb-1">{stateData.name}</h1>
+        <h1 className="font-display text-3xl font-semibold text-gray-900 mb-1">{stateData.name}</h1>
         <p className="text-gray-500 mb-10">{stateData.trekData.length} treks to choose from</p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
@@ -66,7 +66,7 @@ const StatePage = () => {
                 className="w-full h-44 object-cover"
               />
               <div className="p-5 flex flex-col gap-3 grow">
-                <h2 className="text-lg font-semibold text-gray-900">
+                <h2 className="font-display text-lg font-semibold text-gray-900">
                   {trek.name}
                 </h2>
 

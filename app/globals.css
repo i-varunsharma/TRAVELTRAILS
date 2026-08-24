@@ -1,9 +1,19 @@
 @import "tailwindcss";
-html {
-  scroll-behavior: smooth;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+    background-color: #FAFAF8;
+  }
 }
 
-body {
-  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+@layer utilities {
+  .font-display {
+    font-family: var(--font-fraunces), Georgia, serif;
+  }
 }
 

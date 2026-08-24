@@ -7,11 +7,13 @@ export default function Home() {
     <>
       <Navbar />
       <div className="relative h-[85vh] bg-cover bg-center bg-[url('/bgimg.jpg')] overflow-hidden">
-        <div className="absolute inset-0 bg-black/35" />
+        {/* Scrim only over the top third, where the copy sits — keeps the
+            rest of the photo (and the hiker) clear and unobstructed. */}
+        <div className="absolute inset-x-0 top-0 h-2/3 bg-gradient-to-b from-black/55 via-black/15 to-transparent" />
 
-        <div className="relative h-full max-w-6xl mx-auto px-6 flex flex-col justify-center">
+        <div className="relative h-full max-w-6xl mx-auto px-6 flex flex-col justify-start pt-20 sm:pt-28">
           <div className="max-w-xl">
-            <h1 className="text-white text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight">
+            <h1 className="font-display text-white text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight leading-[1.1]">
               It's not the mountain we conquer, but ourselves.
             </h1>
 

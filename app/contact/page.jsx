@@ -49,13 +49,13 @@ const Contact = () => {
     <>
       <Navbar />
       <div className="max-w-4xl mx-auto px-6 py-16 sm:py-20">
-        <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 text-center mb-3">Contact TrekTrails</h1>
-        <p className="text-center text-gray-600 mb-12">
+        <h1 className="font-display text-3xl sm:text-4xl font-semibold text-gray-900 mb-3">Contact TrekTrails</h1>
+        <p className="text-gray-600 mb-12">
           Planning your next adventure? Reach out and let's help you make it unforgettable.
         </p>
 
         <div className="grid sm:grid-cols-2 gap-12">
-          <div className="space-y-5">
+          <div className="flex flex-col justify-center bg-gray-50 border border-gray-200 rounded-xl p-8 space-y-6">
             <div className="flex items-center gap-3 text-gray-700">
               <Phone className="text-green-700 shrink-0" size={20} />
               <span>+91 9729605399</span>
@@ -67,6 +67,9 @@ const Contact = () => {
             <div className="flex items-center gap-3 text-gray-700">
               <MapPin className="text-green-700 shrink-0" size={20} />
               <span>New Delhi, India</span>
+            </div>
+            <div className="border-t border-gray-200 pt-6 text-sm text-gray-500">
+              We typically reply within 24 hours, Monday to Saturday.
             </div>
 
             {popupVisible && (

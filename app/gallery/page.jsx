@@ -13,7 +13,7 @@ const Gallery = () => {
         <div className="bg-gray-100 rounded-full p-5 mb-6">
           <Images className="w-8 h-8 text-gray-500" />
         </div>
-        <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">
+        <h1 className="font-display text-2xl sm:text-3xl font-semibold text-gray-900 mb-2">
           The Gallery Is Coming Soon
         </h1>
         <p className="text-gray-500 max-w-md mb-8">

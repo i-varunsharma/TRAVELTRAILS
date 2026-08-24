@@ -1,12 +1,12 @@
 import Navbar from '@/components/Navbar';
-import { Compass, Sparkles } from 'lucide-react';
+import { Compass, Sparkles, Star } from 'lucide-react';
 
 const stats = [
   { value: '15+', label: 'Years of Experience' },
   { value: '200+', label: 'Trekking Destinations' },
   { value: '10K+', label: 'Happy Trekkers' },
   { value: '99%', label: 'Customer Satisfaction' },
-  { value: '4.9★', label: 'Average Rating' },
+  { value: '4.9', label: 'Average Rating', icon: Star },
   { value: '100%', label: 'Safety Record' },
 ];
 
@@ -16,11 +16,11 @@ const About = () => {
       <Navbar />
 
       <div className="max-w-4xl mx-auto px-6 py-16 sm:py-20">
-        <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 text-center mb-6">
+        <h1 className="font-display text-3xl sm:text-4xl font-semibold text-gray-900 mb-6 max-w-2xl">
           Discover the Spirit of Adventure with TrekTrails
         </h1>
 
-        <p className="text-lg text-gray-600 text-center mb-16 leading-relaxed">
+        <p className="text-lg text-gray-600 mb-16 leading-relaxed max-w-2xl">
           At <span className="font-semibold text-gray-900">TrekTrails</span>, we believe every mountain has a story and every trekker deserves to be part of it. With over a decade of experience guiding thrill-seekers across India's breathtaking trails, we're here to turn your hiking dreams into unforgettable journeys.
         </p>
 
@@ -49,17 +49,20 @@ const About = () => {
         </div>
 
         <div className="border-t border-gray-200 pt-12 mb-16">
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 text-center">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-8">
             {stats.map((stat) => (
               <div key={stat.label}>
-                <p className="text-3xl font-bold text-gray-900">{stat.value}</p>
+                <p className="flex items-center gap-1.5 text-3xl font-bold text-gray-900">
+                  {stat.value}
+                  {stat.icon && <stat.icon className="w-5 h-5 fill-gray-900" />}
+                </p>
                 <p className="text-sm text-gray-500 mt-1">{stat.label}</p>
               </div>
             ))}
           </div>
         </div>
 
-        <div className="text-center">
+        <div className="max-w-2xl">
           <p className="text-gray-600">
             Join TrekTrails and become a part of India's fastest-growing trekking community. Whether you're aiming for the snowy Himalayas or the tropical Western Ghats, we're here to guide you, protect you, and help you explore with confidence.
           </p>
