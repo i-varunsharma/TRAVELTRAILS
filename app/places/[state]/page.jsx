@@ -2,10 +2,10 @@
 
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation';
-import Navbar from '@/app/components/Navbar';
-import TrekImage from '@/app/components/TrekImage';
-import TrekBookingForm from '@/app/components/TrekBookingForm';
-import { fromSlug } from '@/lib/slug';
+import Navbar from '@/components/Navbar';
+import TrekImage from '@/components/TrekImage';
+import TrekBookingForm from '@/components/TrekBookingForm';
+import { fromSlug } from '@/lib/utils/slug';
 
 const StatePage = () => {
   const { state: stateSlug } = useParams();

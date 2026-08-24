@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { fetchCurrentUser, logout } from '@/lib/auth-client';
+import { fetchCurrentUser, logout } from '@/lib/client/auth-client';
 
 const navLinks = [
   { name: 'About', path: '/about' },

@@ -1,7 +1,7 @@
-import connectDB from '@/lib/mongodb';
+import connectDB from '@/lib/server/mongodb';
 import User from '@/models/User';
-import { hashPassword } from '@/lib/password';
-import { createSessionResponse } from '@/lib/jwt';
+import { hashPassword } from '@/lib/server/password';
+import { createSessionResponse } from '@/lib/server/jwt';
 
 export async function POST(request) {
   try {

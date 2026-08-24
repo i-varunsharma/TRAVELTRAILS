@@ -1,4 +1,4 @@
-import connectDB from '@/lib/mongodb';
+import connectDB from '@/lib/server/mongodb';
 import ContactMessage from '@/models/ContactMessage';
 
 export async function POST(request) {

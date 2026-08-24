@@ -1,9 +1,9 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
-import Navbar from '@/app/components/Navbar';
-import TrekImage from '@/app/components/TrekImage';
-import { toSlug } from '@/lib/slug';
+import Navbar from '@/components/Navbar';
+import TrekImage from '@/components/TrekImage';
+import { toSlug } from '@/lib/utils/slug';
 
 const Places = () => {
   const [states, setStates] = useState([]);

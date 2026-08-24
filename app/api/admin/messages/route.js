@@ -1,6 +1,6 @@
-import connectDB from '@/lib/mongodb';
+import connectDB from '@/lib/server/mongodb';
 import ContactMessage from '@/models/ContactMessage';
-import { getSessionUser } from '@/lib/getSessionUser';
+import { getSessionUser } from '@/lib/server/getSessionUser';
 
 export async function GET() {
   const sessionUser = await getSessionUser();

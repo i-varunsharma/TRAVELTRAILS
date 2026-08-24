@@ -1,6 +1,6 @@
 'use client';
 import React, { useEffect, useState } from 'react';
-import Navbar from '@/app/components/Navbar';
+import Navbar from '@/components/Navbar';
 
 // Simple read-only view for the site owner: everyone who submitted a trek
 // booking or a contact message. The API routes this calls (/api/admin/*)

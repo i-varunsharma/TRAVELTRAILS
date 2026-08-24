@@ -1,6 +1,6 @@
-import connectDB from '@/lib/mongodb';
+import connectDB from '@/lib/server/mongodb';
 import Booking from '@/models/Booking';
-import { getSessionUser } from '@/lib/getSessionUser';
+import { getSessionUser } from '@/lib/server/getSessionUser';
 
 export async function POST(request) {
   try {

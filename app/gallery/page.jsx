@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from '@/app/components/Navbar';
+import Navbar from '@/components/Navbar';
 
 // Placeholder page: the photo gallery itself hasn't been built yet, this
 // just sets up the background and navbar so the route doesn't 404.

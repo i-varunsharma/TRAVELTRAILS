@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { verifyToken } from '@/lib/jwt';
+import { verifyToken } from '@/lib/server/jwt';
 
 // Routes that require a logged-in session
 const protectedRoutes = ['/places', '/contact', '/about', '/admin'];

@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import Navbar from '@/app/components/Navbar';
+import Navbar from '@/components/Navbar';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 
 const Contact = () => {
