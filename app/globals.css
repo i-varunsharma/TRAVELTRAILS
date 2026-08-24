@@ -3,6 +3,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
 /* Fade-and-rise-in animation, used by the "animate-fade-in" class. */
 @keyframes fadeIn {
   from {

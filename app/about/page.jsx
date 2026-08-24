@@ -1,4 +1,5 @@
 import Navbar from '@/components/Navbar';
+import { Compass, Sparkles, Trophy } from 'lucide-react';
 
 const About = () => {
   return (
@@ -23,14 +24,18 @@ const About = () => {
           {/* Mission + Why Choose Us */}
           <div className="grid md:grid-cols-2 gap-10 mb-12">
             <div>
-              <h2 className="text-xl sm:text-2xl font-bold text-yellow-400 mb-4">🌄 Our Mission</h2>
+              <h2 className="flex items-center gap-2 text-xl sm:text-2xl font-bold text-yellow-400 mb-4">
+                <Compass className="w-6 h-6" /> Our Mission
+              </h2>
               <p className="text-sm sm:text-md leading-relaxed">
                 To promote responsible trekking, empower local communities, and make adventure tourism safe, accessible, and life-changing for everyone — from beginners to seasoned hikers.
               </p>
             </div>
 
             <div>
-              <h2 className="text-xl sm:text-2xl font-bold text-yellow-400 mb-4">🌟 Why Choose Us?</h2>
+              <h2 className="flex items-center gap-2 text-xl sm:text-2xl font-bold text-yellow-400 mb-4">
+                <Sparkles className="w-6 h-6" /> Why Choose Us?
+              </h2>
               <ul className="list-disc list-inside space-y-2 text-sm sm:text-md">
                 <li>Certified and experienced trek leaders</li>
                 <li>Customizable trek packages for all fitness levels</li>
@@ -43,7 +48,9 @@ const About = () => {
 
           {/* Achievements */}
           <div className="bg-yellow-100/10 rounded-2xl p-6 sm:p-8 backdrop-blur-sm shadow-xl mb-12">
-            <h2 className="text-2xl sm:text-3xl font-bold text-center text-yellow-300 mb-6">🏆 Our Achievements</h2>
+            <h2 className="flex items-center justify-center gap-2 text-2xl sm:text-3xl font-bold text-center text-yellow-300 mb-6">
+              <Trophy className="w-7 h-7" /> Our Achievements
+            </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-center text-sm sm:text-lg font-medium">
               <div>
                 <p className="text-2xl sm:text-4xl font-bold text-white">15+</p>
