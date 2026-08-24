@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation';
 import Link from 'next/link';
-import { ArrowLeft, Mountain, Clock, Tag, Route, CalendarDays } from 'lucide-react';
+import { ArrowLeft, Mountain, Clock, Route, CalendarDays } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import TrekImage from '@/components/TrekImage';
 import TrekBookingForm from '@/components/TrekBookingForm';
@@ -37,73 +37,67 @@ const StatePage = () => {
     if (stateSlug) getData();
   }, [stateSlug]);
 
-  if (loading) return <div className="text-center py-10 text-lg text-blue-600 animate-pulse">Loading...</div>;
+  if (loading) return <div className="text-center py-10 text-gray-500">Loading...</div>;
   if (error) return <div className="text-center py-10 text-red-600 font-semibold">{error}</div>;
 
   return (
-    <div className="relative min-h-screen">
-      <div className="fixed inset-0 bg-[url('/bgimg.jpg')] bg-cover bg-center blur-sm" />
-      <div className="fixed inset-0 bg-black/55" />
+    <>
+      <Navbar />
+      <div className="max-w-6xl mx-auto px-6 py-12">
+        <Link
+          href="/places"
+          className="inline-flex items-center gap-1.5 text-sm text-gray-500 hover:text-gray-900 transition-colors mb-4"
+        >
+          <ArrowLeft size={16} /> Back to states
+        </Link>
 
-      <div className="relative">
-        <Navbar />
+        <h1 className="text-3xl font-bold text-gray-900 mb-1">{stateData.name}</h1>
+        <p className="text-gray-500 mb-10">{stateData.trekData.length} treks to choose from</p>
 
-        <div className="pt-28 pb-16 px-6 max-w-7xl mx-auto">
-          <Link
-            href="/places"
-            className="inline-flex items-center gap-1.5 text-sm text-gray-300 hover:text-white transition-colors mb-4"
-          >
-            <ArrowLeft size={16} /> Back to states
-          </Link>
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
+          {stateData.trekData.map((trek, idx) => (
+            <div
+              key={idx}
+              className="flex flex-col rounded-xl overflow-hidden border border-gray-200 hover:shadow-md transition-shadow"
+            >
+              <TrekImage
+                src={trek.image_url}
+                alt={trek.name}
+                className="w-full h-44 object-cover"
+              />
+              <div className="p-5 flex flex-col gap-3 grow">
+                <h2 className="text-lg font-semibold text-gray-900">
+                  {trek.name}
+                </h2>
 
-          <h1 className="text-3xl sm:text-4xl font-extrabold text-white mb-1">{stateData.name}</h1>
-          <p className="text-gray-300 mb-10">{stateData.trekData.length} treks to choose from</p>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
-            {stateData.trekData.map((trek, idx) => (
-              <div
-                key={idx}
-                className="flex flex-col bg-black/40 backdrop-blur-xl rounded-2xl overflow-hidden shadow-xl border border-white/15 hover:border-white/30 hover:-translate-y-1 transition-all duration-300"
-              >
-                <TrekImage
-                  src={trek.image_url}
-                  alt={trek.name}
-                  className="w-full h-48 object-cover object-center"
-                />
-                <div className="p-5 flex flex-col gap-3 text-gray-100 grow">
-                  <h2 className="text-xl font-bold text-white tracking-tight">
-                    {trek.name}
-                  </h2>
-
-                  <div className="grid grid-cols-2 gap-y-2 text-sm">
-                    <div className="flex items-center gap-1.5 text-gray-300">
-                      <Mountain size={14} className="text-green-400 shrink-0" /> {trek.height}
-                    </div>
-                    <div className="flex items-center gap-1.5 text-gray-300">
-                      <Clock size={14} className="text-green-400 shrink-0" /> {trek.duration}
-                    </div>
-                    <div className="flex items-center gap-1.5 text-gray-300">
-                      <Route size={14} className="text-green-400 shrink-0" /> {trek.distance}
-                    </div>
-                    <div className="flex items-center gap-1.5 text-gray-300 col-span-2">
-                      <CalendarDays size={14} className="text-green-400 shrink-0" /> {trek.best_time}
-                    </div>
+                <div className="grid grid-cols-2 gap-y-1.5 text-sm text-gray-600">
+                  <div className="flex items-center gap-1.5">
+                    <Mountain size={14} className="text-gray-400 shrink-0" /> {trek.height}
                   </div>
-
-                  <div className="flex items-center gap-1.5 text-lg font-bold text-yellow-400 mt-1">
-                    <Tag size={16} /> {trek.cost} <span className="text-xs font-normal text-gray-400">+ 5% GST</span>
+                  <div className="flex items-center gap-1.5">
+                    <Clock size={14} className="text-gray-400 shrink-0" /> {trek.duration}
                   </div>
-
-                  <button
-                    onClick={() => setBookingTrek(trek)}
-                    className="mt-auto bg-green-600 hover:bg-green-500 px-5 py-2.5 text-white font-semibold rounded-xl shadow-md hover:shadow-xl transition duration-300 cursor-pointer"
-                  >
-                    Enquire Now
-                  </button>
+                  <div className="flex items-center gap-1.5">
+                    <Route size={14} className="text-gray-400 shrink-0" /> {trek.distance}
+                  </div>
+                  <div className="flex items-center gap-1.5 col-span-2">
+                    <CalendarDays size={14} className="text-gray-400 shrink-0" /> {trek.best_time}
+                  </div>
                 </div>
+
+                <div className="text-lg font-bold text-gray-900 mt-1">
+                  {trek.cost} <span className="text-xs font-normal text-gray-400">+ 5% GST</span>
+                </div>
+
+                <button
+                  onClick={() => setBookingTrek(trek)}
+                  className="mt-auto bg-gray-900 hover:bg-gray-700 px-5 py-2.5 text-white font-medium rounded-lg transition-colors cursor-pointer"
+                >
+                  Enquire Now
+                </button>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </div>
 
@@ -114,7 +108,7 @@ const StatePage = () => {
           onClose={() => setBookingTrek(null)}
         />
       )}
-    </div>
+    </>
   );
 };
 

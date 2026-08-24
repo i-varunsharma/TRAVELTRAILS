@@ -38,20 +38,20 @@ function Navbar() {
   };
 
   return (
-    <header className='fixed top-5 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-[1000px] px-4 py-2 sm:py-3 rounded-2xl shadow-xl bg-white/90 backdrop-blur-md text-zinc-800'>
-      <nav className='flex items-center justify-between'>
-        <Link href='/' className='text-lg sm:text-2xl md:text-3xl font-extrabold text-green-700'>
+    <header className='sticky top-0 z-50 bg-white border-b border-gray-200'>
+      <nav className='max-w-6xl mx-auto flex items-center justify-between px-6 py-4'>
+        <Link href='/' className='text-xl font-bold text-gray-900'>
           TrekTrails
         </Link>
 
-        <div className='flex items-center gap-3 sm:gap-5'>
-          <ul className='flex items-center gap-3 sm:gap-5'>
+        <div className='flex items-center gap-6 sm:gap-8'>
+          <ul className='flex items-center gap-6 sm:gap-8'>
             {navLinks.map((link) => (
               <li key={link.path}>
                 <Link
                   href={link.path}
                   onClick={(e) => handleProtectedClick(e, link.path)}
-                  className='text-xs sm:text-sm md:text-base font-medium uppercase hover:text-green-500 transition-all duration-200'
+                  className='text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors'
                 >
                   {link.name}
                 </Link>
@@ -61,7 +61,7 @@ function Navbar() {
               <li>
                 <Link
                   href='/admin'
-                  className='text-xs sm:text-sm md:text-base font-medium uppercase text-green-700 hover:text-green-500 transition-all duration-200'
+                  className='text-sm font-medium text-green-700 hover:text-green-800 transition-colors'
                 >
                   Admin
                 </Link>
@@ -72,14 +72,14 @@ function Navbar() {
           {!isLoggedIn ? (
             <Link
               href='/login'
-              className='bg-green-700 text-white text-xs sm:text-sm px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl hover:bg-green-600 transition duration-300'
+              className='bg-gray-900 text-white text-sm font-medium px-4 py-2 rounded-lg hover:bg-gray-700 transition-colors'
             >
               Login
             </Link>
           ) : (
             <button
               onClick={handleLogout}
-              className='bg-red-600 text-white text-xs sm:text-sm px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl hover:bg-red-500 transition duration-300'
+              className='text-sm font-medium text-gray-600 border border-gray-300 px-4 py-2 rounded-lg hover:bg-gray-50 transition-colors'
             >
               Logout
             </button>

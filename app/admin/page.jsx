@@ -36,116 +36,111 @@ const AdminPage = () => {
   }, []);
 
   return (
-    <div className="relative min-h-screen">
-      <div className="fixed inset-0 bg-[url('/bgimg.jpg')] bg-cover bg-center" />
-      <div className="fixed inset-0 bg-black/70 backdrop-blur-sm" />
+    <>
+      <Navbar />
 
-      <div className="relative">
-        <Navbar />
+      <div className="max-w-6xl mx-auto px-6 py-12 space-y-10">
+        <h1 className="text-2xl font-bold text-gray-900">Admin Dashboard</h1>
 
-        <div className="max-w-6xl mx-auto pt-28 pb-16 px-6 space-y-10">
-          <h1 className="text-3xl font-extrabold text-white">Admin Dashboard</h1>
+        {loading && <p className="text-gray-500">Loading...</p>}
 
-          {loading && <p className="text-gray-300">Loading...</p>}
+        {forbidden && (
+          <div className="flex items-center gap-3 bg-red-50 border border-red-200 rounded-lg p-4 text-red-700">
+            <ShieldAlert className="shrink-0" size={20} />
+            <p className="font-medium">
+              You don't have access to this page. Only admin accounts can view bookings and messages.
+            </p>
+          </div>
+        )}
 
-          {forbidden && (
-            <div className="flex items-center gap-3 bg-red-500/10 border border-red-500/30 rounded-xl p-4 text-red-300">
-              <ShieldAlert className="shrink-0" size={20} />
-              <p className="font-medium">
-                You don't have access to this page. Only admin accounts can view bookings and messages.
-              </p>
-            </div>
-          )}
-
-          {!loading && !forbidden && (
-            <>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <div className="flex items-center gap-4 bg-white/10 border border-white/15 rounded-2xl p-5">
-                  <div className="bg-green-500/20 p-3 rounded-xl">
-                    <CalendarCheck className="text-green-400" size={22} />
-                  </div>
-                  <div>
-                    <p className="text-2xl font-bold text-white">{bookings.length}</p>
-                    <p className="text-sm text-gray-300">Trek Bookings</p>
-                  </div>
+        {!loading && !forbidden && (
+          <>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div className="flex items-center gap-4 border border-gray-200 rounded-xl p-5">
+                <div className="bg-green-50 p-3 rounded-lg">
+                  <CalendarCheck className="text-green-700" size={20} />
                 </div>
-                <div className="flex items-center gap-4 bg-white/10 border border-white/15 rounded-2xl p-5">
-                  <div className="bg-green-500/20 p-3 rounded-xl">
-                    <Mail className="text-green-400" size={22} />
-                  </div>
-                  <div>
-                    <p className="text-2xl font-bold text-white">{messages.length}</p>
-                    <p className="text-sm text-gray-300">Contact Messages</p>
-                  </div>
+                <div>
+                  <p className="text-2xl font-bold text-gray-900">{bookings.length}</p>
+                  <p className="text-sm text-gray-500">Trek Bookings</p>
                 </div>
               </div>
-
-              <section>
-                <h2 className="text-xl font-bold text-white mb-4">Trek Bookings</h2>
-                <div className="overflow-x-auto rounded-2xl border border-white/15 bg-white/10 backdrop-blur-xl">
-                  <table className="w-full text-left text-sm text-gray-100">
-                    <thead className="bg-white/10 text-gray-300 uppercase text-xs tracking-wide">
-                      <tr>
-                        <th className="p-3">Trek</th>
-                        <th className="p-3">State</th>
-                        <th className="p-3">Date</th>
-                        <th className="p-3">People</th>
-                        <th className="p-3">Contact Name</th>
-                        <th className="p-3">WhatsApp</th>
-                        <th className="p-3">Booked By</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {bookings.map((b) => (
-                        <tr key={b._id} className="border-t border-white/10 hover:bg-white/5">
-                          <td className="p-3">{b.trekName}</td>
-                          <td className="p-3">{b.stateName}</td>
-                          <td className="p-3">{b.date}</td>
-                          <td className="p-3">{b.people}</td>
-                          <td className="p-3">{b.contactName}</td>
-                          <td className="p-3">{b.whatsapp}</td>
-                          <td className="p-3">{b.userEmail}</td>
-                        </tr>
-                      ))}
-                      {bookings.length === 0 && (
-                        <tr><td className="p-3 text-gray-400" colSpan={7}>No bookings yet.</td></tr>
-                      )}
-                    </tbody>
-                  </table>
+              <div className="flex items-center gap-4 border border-gray-200 rounded-xl p-5">
+                <div className="bg-green-50 p-3 rounded-lg">
+                  <Mail className="text-green-700" size={20} />
                 </div>
-              </section>
-
-              <section>
-                <h2 className="text-xl font-bold text-white mb-4">Contact Messages</h2>
-                <div className="overflow-x-auto rounded-2xl border border-white/15 bg-white/10 backdrop-blur-xl">
-                  <table className="w-full text-left text-sm text-gray-100">
-                    <thead className="bg-white/10 text-gray-300 uppercase text-xs tracking-wide">
-                      <tr>
-                        <th className="p-3">Name</th>
-                        <th className="p-3">Email</th>
-                        <th className="p-3">Message</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {messages.map((m) => (
-                        <tr key={m._id} className="border-t border-white/10 hover:bg-white/5">
-                          <td className="p-3">{m.name}</td>
-                          <td className="p-3">{m.email}</td>
-                          <td className="p-3">{m.message}</td>
-                        </tr>
-                      ))}
-                      {messages.length === 0 && (
-                        <tr><td className="p-3 text-gray-400" colSpan={3}>No messages yet.</td></tr>
-                      )}
-                    </tbody>
-                  </table>
+                <div>
+                  <p className="text-2xl font-bold text-gray-900">{messages.length}</p>
+                  <p className="text-sm text-gray-500">Contact Messages</p>
                 </div>
-              </section>
-            </>
-          )}
-        </div>
+              </div>
+            </div>
+
+            <section>
+              <h2 className="text-lg font-semibold text-gray-900 mb-4">Trek Bookings</h2>
+              <div className="overflow-x-auto rounded-xl border border-gray-200">
+                <table className="w-full text-left text-sm">
+                  <thead className="bg-gray-50 text-gray-500 text-xs uppercase tracking-wide">
+                    <tr>
+                      <th className="p-3">Trek</th>
+                      <th className="p-3">State</th>
+                      <th className="p-3">Date</th>
+                      <th className="p-3">People</th>
+                      <th className="p-3">Contact Name</th>
+                      <th className="p-3">WhatsApp</th>
+                      <th className="p-3">Booked By</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {bookings.map((b) => (
+                      <tr key={b._id} className="border-t border-gray-200 text-gray-700">
+                        <td className="p-3">{b.trekName}</td>
+                        <td className="p-3">{b.stateName}</td>
+                        <td className="p-3">{b.date}</td>
+                        <td className="p-3">{b.people}</td>
+                        <td className="p-3">{b.contactName}</td>
+                        <td className="p-3">{b.whatsapp}</td>
+                        <td className="p-3">{b.userEmail}</td>
+                      </tr>
+                    ))}
+                    {bookings.length === 0 && (
+                      <tr><td className="p-3 text-gray-400" colSpan={7}>No bookings yet.</td></tr>
+                    )}
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section>
+              <h2 className="text-lg font-semibold text-gray-900 mb-4">Contact Messages</h2>
+              <div className="overflow-x-auto rounded-xl border border-gray-200">
+                <table className="w-full text-left text-sm">
+                  <thead className="bg-gray-50 text-gray-500 text-xs uppercase tracking-wide">
+                    <tr>
+                      <th className="p-3">Name</th>
+                      <th className="p-3">Email</th>
+                      <th className="p-3">Message</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {messages.map((m) => (
+                      <tr key={m._id} className="border-t border-gray-200 text-gray-700">
+                        <td className="p-3">{m.name}</td>
+                        <td className="p-3">{m.email}</td>
+                        <td className="p-3">{m.message}</td>
+                      </tr>
+                    ))}
+                    {messages.length === 0 && (
+                      <tr><td className="p-3 text-gray-400" colSpan={3}>No messages yet.</td></tr>
+                    )}
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          </>
+        )}
       </div>
-    </div>
+    </>
   );
 };
 

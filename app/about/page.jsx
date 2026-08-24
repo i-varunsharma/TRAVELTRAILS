@@ -1,93 +1,71 @@
 import Navbar from '@/components/Navbar';
-import { Compass, Sparkles, Trophy } from 'lucide-react';
+import { Compass, Sparkles } from 'lucide-react';
+
+const stats = [
+  { value: '15+', label: 'Years of Experience' },
+  { value: '200+', label: 'Trekking Destinations' },
+  { value: '10K+', label: 'Happy Trekkers' },
+  { value: '99%', label: 'Customer Satisfaction' },
+  { value: '4.9★', label: 'Average Rating' },
+  { value: '100%', label: 'Safety Record' },
+];
 
 const About = () => {
   return (
     <>
       <Navbar />
 
-      <div className="relative min-h-screen bg-[url('/bgimg.jpg')] bg-cover bg-center pt-20">
-        {/* Dark blur overlay */}
-        <div className="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
+      <div className="max-w-4xl mx-auto px-6 py-16 sm:py-20">
+        <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 text-center mb-6">
+          Discover the Spirit of Adventure with TrekTrails
+        </h1>
 
-        <div className="relative z-10 max-w-5xl mx-auto py-20 px-4 sm:px-6 text-white">
-          {/* Heading */}
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center mb-8">
-            Discover the Spirit of Adventure with TrekTrails
-          </h1>
+        <p className="text-lg text-gray-600 text-center mb-16 leading-relaxed">
+          At <span className="font-semibold text-gray-900">TrekTrails</span>, we believe every mountain has a story and every trekker deserves to be part of it. With over a decade of experience guiding thrill-seekers across India's breathtaking trails, we're here to turn your hiking dreams into unforgettable journeys.
+        </p>
 
-          {/* Intro */}
-          <p className="text-base sm:text-lg text-center mb-10">
-            At <span className="font-semibold text-yellow-400">TrekTrails</span>, we believe every mountain has a story and every trekker deserves to be part of it. With over a decade of experience guiding thrill-seekers across India’s breathtaking trails, we're here to turn your hiking dreams into unforgettable journeys.
-          </p>
-
-          {/* Mission + Why Choose Us */}
-          <div className="grid md:grid-cols-2 gap-10 mb-12">
-            <div>
-              <h2 className="flex items-center gap-2 text-xl sm:text-2xl font-bold text-yellow-400 mb-4">
-                <Compass className="w-6 h-6" /> Our Mission
-              </h2>
-              <p className="text-sm sm:text-md leading-relaxed">
-                To promote responsible trekking, empower local communities, and make adventure tourism safe, accessible, and life-changing for everyone — from beginners to seasoned hikers.
-              </p>
-            </div>
-
-            <div>
-              <h2 className="flex items-center gap-2 text-xl sm:text-2xl font-bold text-yellow-400 mb-4">
-                <Sparkles className="w-6 h-6" /> Why Choose Us?
-              </h2>
-              <ul className="list-disc list-inside space-y-2 text-sm sm:text-md">
-                <li>Certified and experienced trek leaders</li>
-                <li>Customizable trek packages for all fitness levels</li>
-                <li>Eco-friendly and sustainable trekking practices</li>
-                <li>24/7 support and safety-first approach</li>
-                <li>1000+ 5-star reviews from happy trekkers</li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Achievements */}
-          <div className="bg-yellow-100/10 rounded-2xl p-6 sm:p-8 backdrop-blur-sm shadow-xl mb-12">
-            <h2 className="flex items-center justify-center gap-2 text-2xl sm:text-3xl font-bold text-center text-yellow-300 mb-6">
-              <Trophy className="w-7 h-7" /> Our Achievements
+        <div className="grid sm:grid-cols-2 gap-12 mb-16">
+          <div>
+            <h2 className="flex items-center gap-2 text-lg font-semibold text-gray-900 mb-3">
+              <Compass className="w-5 h-5 text-green-700" /> Our Mission
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-center text-sm sm:text-lg font-medium">
-              <div>
-                <p className="text-2xl sm:text-4xl font-bold text-white">15+</p>
-                <p>Years of Experience</p>
-              </div>
-              <div>
-                <p className="text-2xl sm:text-4xl font-bold text-white">200+</p>
-                <p>Trekking Destinations</p>
-              </div>
-              <div>
-                <p className="text-2xl sm:text-4xl font-bold text-white">10K+</p>
-                <p>Happy Trekkers</p>
-              </div>
-              <div>
-                <p className="text-2xl sm:text-4xl font-bold text-white">99%</p>
-                <p>Customer Satisfaction</p>
-              </div>
-              <div>
-                <p className="text-2xl sm:text-4xl font-bold text-white">4.9★</p>
-                <p>Average Rating</p>
-              </div>
-              <div>
-                <p className="text-2xl sm:text-4xl font-bold text-white">100%</p>
-                <p>Safety Record</p>
-              </div>
-            </div>
+            <p className="text-gray-600 leading-relaxed">
+              To promote responsible trekking, empower local communities, and make adventure tourism safe, accessible, and life-changing for everyone — from beginners to seasoned hikers.
+            </p>
           </div>
 
-          {/* Trust message */}
-          <div className="text-center text-base sm:text-lg mt-12">
-            <p>
-              Join <span className="text-yellow-300 font-semibold">TrekTrails</span> and become a part of India’s fastest-growing trekking community. Whether you're aiming for the snowy Himalayas or the tropical Western Ghats, we’re here to guide you, protect you, and help you explore with confidence.
-            </p>
-            <p className="mt-6 font-bold text-lg sm:text-xl text-yellow-400">
-              Adventure Awaits. Let's Trek Together! 🥾
-            </p>
+          <div>
+            <h2 className="flex items-center gap-2 text-lg font-semibold text-gray-900 mb-3">
+              <Sparkles className="w-5 h-5 text-green-700" /> Why Choose Us?
+            </h2>
+            <ul className="text-gray-600 space-y-2">
+              <li>Certified and experienced trek leaders</li>
+              <li>Customizable trek packages for all fitness levels</li>
+              <li>Eco-friendly and sustainable trekking practices</li>
+              <li>24/7 support and safety-first approach</li>
+              <li>1000+ 5-star reviews from happy trekkers</li>
+            </ul>
           </div>
+        </div>
+
+        <div className="border-t border-gray-200 pt-12 mb-16">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 text-center">
+            {stats.map((stat) => (
+              <div key={stat.label}>
+                <p className="text-3xl font-bold text-gray-900">{stat.value}</p>
+                <p className="text-sm text-gray-500 mt-1">{stat.label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="text-center">
+          <p className="text-gray-600">
+            Join TrekTrails and become a part of India's fastest-growing trekking community. Whether you're aiming for the snowy Himalayas or the tropical Western Ghats, we're here to guide you, protect you, and help you explore with confidence.
+          </p>
+          <p className="mt-4 font-semibold text-gray-900">
+            Adventure Awaits. Let's Trek Together.
+          </p>
         </div>
       </div>
     </>

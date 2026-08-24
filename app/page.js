@@ -6,25 +6,22 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <div className="relative h-screen bg-cover bg-center bg-[url('/bgimg.jpg')] overflow-hidden">
-        {/* Dark overlay for better contrast, stronger toward the bottom where the copy sits */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-black/10" />
+      <div className="relative h-[85vh] bg-cover bg-center bg-[url('/bgimg.jpg')] overflow-hidden">
+        <div className="absolute inset-0 bg-black/35" />
 
-        <div className="absolute inset-x-0 bottom-16 sm:bottom-20 px-6 sm:px-10">
-          <div className="max-w-2xl ml-auto text-right animate-fade-in">
-            <h1 className="text-white text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight drop-shadow-sm">
-              It's not the mountain we conquer,
-              <br />
-              but ourselves.
+        <div className="relative h-full max-w-6xl mx-auto px-6 flex flex-col justify-center">
+          <div className="max-w-xl">
+            <h1 className="text-white text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight">
+              It's not the mountain we conquer, but ourselves.
             </h1>
 
-            <p className="mt-4 text-lg sm:text-xl text-gray-200 font-medium tracking-wide">
+            <p className="mt-5 text-lg text-gray-100">
               Trek the unbeaten paths. Find your limits. Reconnect with nature.
             </p>
 
             <Link
               href="/places"
-              className="mt-8 inline-flex items-center gap-2 bg-green-600 hover:bg-green-500 text-white font-semibold px-6 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:gap-3"
+              className="mt-8 inline-flex items-center gap-2 bg-white text-gray-900 font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition-colors"
             >
               Explore Treks
               <ArrowRight size={18} />
