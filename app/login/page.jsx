@@ -50,7 +50,7 @@ export default function LoginSignupPage() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-pine bg-contours px-4">
+    <div className="min-h-screen flex items-center justify-center bg-ink bg-contours px-4">
       <div className="w-full max-w-md">
         <div className="bg-cream rounded-2xl shadow-xl p-8">
           {/* Header */}
@@ -60,10 +60,10 @@ export default function LoginSignupPage() {
                 <Mountain className="w-7 h-7 text-rust" />
               </div>
             </div>
-            <h1 className="font-display uppercase text-3xl text-pine mb-1">
+            <h1 className="font-display uppercase text-3xl text-ink mb-1">
               {isLogin ? 'Welcome Back' : 'Join TrekTrails'}
             </h1>
-            <p className="text-gray-500 text-sm">
+            <p className="text-stone-500 text-sm">
               {isLogin ? 'Sign in to continue' : 'Create an account to continue'}
             </p>
           </div>
@@ -80,14 +80,14 @@ export default function LoginSignupPage() {
             {/* Name Field (Signup only) */}
             {!isLogin && (
               <div className="space-y-1.5">
-                <label className="text-gray-700 text-sm font-medium">Full Name</label>
+                <label className="text-stone-700 text-sm font-medium">Full Name</label>
                 <div className="relative">
-                  <User className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" />
+                  <User className="absolute left-3 top-1/2 -translate-y-1/2 text-stone-400 w-5 h-5" />
                   <input
                     type="text"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
-                    className="w-full border border-gray-300 rounded-lg py-2.5 pl-11 pr-4 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-rust focus:border-transparent"
+                    className="w-full border border-stone-300 rounded-lg py-2.5 pl-11 pr-4 text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-rust focus:border-transparent"
                     placeholder="Enter your full name"
                     required={!isLogin}
                   />
@@ -97,14 +97,14 @@ export default function LoginSignupPage() {
 
             {/* Email Field */}
             <div className="space-y-1.5">
-              <label className="text-gray-700 text-sm font-medium">Email Address</label>
+              <label className="text-stone-700 text-sm font-medium">Email Address</label>
               <div className="relative">
-                <Mail className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" />
+                <Mail className="absolute left-3 top-1/2 -translate-y-1/2 text-stone-400 w-5 h-5" />
                 <input
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full border border-gray-300 rounded-lg py-2.5 pl-11 pr-4 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-rust focus:border-transparent"
+                  className="w-full border border-stone-300 rounded-lg py-2.5 pl-11 pr-4 text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-rust focus:border-transparent"
                   placeholder="Enter your email"
                   required
                 />
@@ -113,14 +113,14 @@ export default function LoginSignupPage() {
 
             {/* Password Field */}
             <div className="space-y-1.5">
-              <label className="text-gray-700 text-sm font-medium">Password</label>
+              <label className="text-stone-700 text-sm font-medium">Password</label>
               <div className="relative">
-                <Lock className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" />
+                <Lock className="absolute left-3 top-1/2 -translate-y-1/2 text-stone-400 w-5 h-5" />
                 <input
                   type={showPassword ? 'text' : 'password'}
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  className="w-full border border-gray-300 rounded-lg py-2.5 pl-11 pr-11 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-rust focus:border-transparent"
+                  className="w-full border border-stone-300 rounded-lg py-2.5 pl-11 pr-11 text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-rust focus:border-transparent"
                   placeholder="Enter your password"
                   autoComplete="off"
                   data-form-type="other"
@@ -132,7 +132,7 @@ export default function LoginSignupPage() {
                 <button
                   type="button"
                   onClick={() => setShowPassword(!showPassword)}
-                  className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-700 transition-colors"
+                  className="absolute right-3 top-1/2 -translate-y-1/2 text-stone-400 hover:text-stone-700 transition-colors"
                 >
                   {showPassword ? <EyeOff className="w-5 h-5" /> : <Eye className="w-5 h-5" />}
                 </button>
@@ -143,7 +143,7 @@ export default function LoginSignupPage() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full bg-rust hover:bg-rust-dark text-cream font-semibold py-2.5 px-6 rounded-full transition-colors disabled:opacity-50"
+              className="w-full bg-rust hover:bg-rust-dark text-cream font-semibold py-3 px-6 rounded-full transition-colors disabled:opacity-50"
             >
               {loading ? (
                 <div className="flex items-center justify-center space-x-2">
@@ -158,7 +158,7 @@ export default function LoginSignupPage() {
 
           {/* Toggle Login/Signup */}
           <div className="mt-6 text-center">
-            <p className="text-gray-500 text-sm">
+            <p className="text-stone-500 text-sm">
               {isLogin ? "Don't have an account?" : "Already have an account?"}
               <button
                 onClick={() => {

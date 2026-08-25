@@ -40,9 +40,9 @@ const AdminPage = () => {
       <Navbar />
 
       <div className="max-w-6xl mx-auto px-6 py-12 space-y-10">
-        <h1 className="font-display uppercase text-4xl text-pine">Admin Dashboard</h1>
+        <h1 className="font-display uppercase text-4xl text-ink">Admin Dashboard</h1>
 
-        {loading && <p className="text-gray-500">Loading...</p>}
+        {loading && <p className="text-stone-500">Loading...</p>}
 
         {forbidden && (
           <div className="flex items-center gap-3 bg-red-50 border border-red-200 rounded-lg p-4 text-red-700">
@@ -56,7 +56,7 @@ const AdminPage = () => {
         {!loading && !forbidden && (
           <>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              <div className="flex items-center gap-4 bg-pine rounded-xl p-5">
+              <div className="flex items-center gap-4 bg-ink rounded-xl p-5">
                 <div className="bg-rust/20 p-3 rounded-lg">
                   <CalendarCheck className="text-rust" size={20} />
                 </div>
@@ -65,7 +65,7 @@ const AdminPage = () => {
                   <p className="text-sm text-cream/70">Trek Bookings</p>
                 </div>
               </div>
-              <div className="flex items-center gap-4 bg-pine rounded-xl p-5">
+              <div className="flex items-center gap-4 bg-ink rounded-xl p-5">
                 <div className="bg-rust/20 p-3 rounded-lg">
                   <Mail className="text-rust" size={20} />
                 </div>
@@ -77,10 +77,10 @@ const AdminPage = () => {
             </div>
 
             <section>
-              <h2 className="font-display uppercase text-2xl text-pine mb-4">Trek Bookings</h2>
-              <div className="overflow-x-auto rounded-xl border border-gray-200">
+              <h2 className="font-display uppercase text-2xl text-ink mb-4">Trek Bookings</h2>
+              <div className="overflow-x-auto rounded-xl border border-stone-200">
                 <table className="w-full text-left text-sm">
-                  <thead className="bg-pine/5 text-pine text-xs font-bold uppercase tracking-wide">
+                  <thead className="bg-ink/5 text-ink text-xs font-bold uppercase tracking-wide">
                     <tr>
                       <th className="p-3">Trek</th>
                       <th className="p-3">State</th>
@@ -93,7 +93,7 @@ const AdminPage = () => {
                   </thead>
                   <tbody>
                     {bookings.map((b) => (
-                      <tr key={b._id} className="border-t border-gray-200 text-gray-700">
+                      <tr key={b._id} className="border-t border-stone-200 text-stone-700">
                         <td className="p-3">{b.trekName}</td>
                         <td className="p-3">{b.stateName}</td>
                         <td className="p-3">{b.date}</td>
@@ -104,7 +104,7 @@ const AdminPage = () => {
                       </tr>
                     ))}
                     {bookings.length === 0 && (
-                      <tr><td className="p-3 text-gray-400" colSpan={7}>No bookings yet.</td></tr>
+                      <tr><td className="p-3 text-stone-400" colSpan={7}>No bookings yet.</td></tr>
                     )}
                   </tbody>
                 </table>
@@ -112,10 +112,10 @@ const AdminPage = () => {
             </section>
 
             <section>
-              <h2 className="font-display uppercase text-2xl text-pine mb-4">Contact Messages</h2>
-              <div className="overflow-x-auto rounded-xl border border-gray-200">
+              <h2 className="font-display uppercase text-2xl text-ink mb-4">Contact Messages</h2>
+              <div className="overflow-x-auto rounded-xl border border-stone-200">
                 <table className="w-full text-left text-sm">
-                  <thead className="bg-pine/5 text-pine text-xs font-bold uppercase tracking-wide">
+                  <thead className="bg-ink/5 text-ink text-xs font-bold uppercase tracking-wide">
                     <tr>
                       <th className="p-3">Name</th>
                       <th className="p-3">Email</th>
@@ -124,14 +124,14 @@ const AdminPage = () => {
                   </thead>
                   <tbody>
                     {messages.map((m) => (
-                      <tr key={m._id} className="border-t border-gray-200 text-gray-700">
+                      <tr key={m._id} className="border-t border-stone-200 text-stone-700">
                         <td className="p-3">{m.name}</td>
                         <td className="p-3">{m.email}</td>
                         <td className="p-3">{m.message}</td>
                       </tr>
                     ))}
                     {messages.length === 0 && (
-                      <tr><td className="p-3 text-gray-400" colSpan={3}>No messages yet.</td></tr>
+                      <tr><td className="p-3 text-stone-400" colSpan={3}>No messages yet.</td></tr>
                     )}
                   </tbody>
                 </table>

@@ -1,252 +1,238 @@
 [
-    {
-      "name": "Himachal Pradesh",
-      "imgUrl": "https://montaxe.com/wp-content/uploads/2024/04/Himachal-Tourism.webp",
-      "treks": [
-        "Rupin Pass Trek",
-        "Hampta Pass Trek",
-        "Lamkhaga Pass Trek",
-        "Bhrigu Lake Trek",
-        "Kheerganga Trek",
-        "Pin Parvati Trek",
-        "Beas Kund Trek",
-        "Bhaba Pass Trek",
-        "Deo Tibba Base Camp Trek",
-        "Janjehli Valley Trek",
-        "Malana Village Trek",
-        "Triund Trek",
-        "Prashar Lake Trek",
-        "Nag Tibba Trek",
-        "Kareri Lake Trek",
-        "Chandratal Lake Trek",
-        "Sar Pass Trek",
-        "Tosh Valley Trek",
-        "Bali Pass Trek",
-        "Parvati Valley Trek",
-        "Saurkundi Pass Trek",
-        "Indrahar Pass Trek",
-        "Kinnaur Kailash Trek",
-        "Pin Bhaba Pass Trek"
-      ],
-      "trekData": [
-                  {
-                    "name": "Rupin Pass Trek",
-                    "height": "4650 m",
-                    "cost": "₹11,500",
-                    "duration": "7 days",
-                    "best_time": "May to June, Sept–Oct",
-                    "distance": "52 km",
-                    "image_url": "https://d2qa7a8q0vuocm.cloudfront.net/images/34407720200329142143.png"
-                  },
-                  {
-                    "name": "Hampta Pass Trek",
-                    "height": "4270 m",
-                    "cost": "₹9,000",
-                    "duration": "5 days",
-                    "best_time": "June to September",
-                    "distance": "35 km",
-                    "image_url": "https://hellohikers.in/wp-content/uploads/2025/01/HamptaPass.jpg"
-                  },
-          
-                  {
-                    "name": "Bhrigu Lake Trek",
-                    "height": "4300 m",
-                    "cost": "₹7,500",
-                    "duration": "3 days",
-                    "best_time": "June to September",
-                    "distance": "25 km",
-                    "image_url": "https://www.akzn.me/blog/bhrigu-lake-trek/images/2019-07-31-11.43.52-1.jpg"
-                  },
-                  {
-                    "name": "Kheerganga Trek",
-                    "height": "2950 m",
-                    "cost": "₹2,500",
-                    "duration": "2 days",
-                    "best_time": "April to June, Sept–Nov",
-                    "distance": "24 km",
-                    "image_url": "https://www.pelago.com/img/products/IN-India/kasol-kheerganga-trek-3d-2n-all-inclusive-with-banbanjara/be310822-ae21-4976-8c3d-ab340f6a36fb_kasol-kheerganga-trek-3d-2n-all-inclusive-with-banbanjara-xlarge.webp"
-                  },
-                  {
-                    "name": "Pin Parvati Trek",
-                    "height": "5319 m",
-                    "cost": "₹20,000",
-                    "duration": "10 days",
-                    "best_time": "July to September",
-                    "distance": "110 km",
-                    "image_url": "https://kailashrath.com/_next/image?url=https%3A%2F%2Fkailash-rath-treks.s3.ap-south-1.amazonaws.com%2Fdji_0245-PXvbZBiS.webp&w=3840&q=75"
-                  },
-                  {
-                    "name": "Beas Kund Trek",
-                    "height": "3700 m",
-                    "cost": "₹6,500",
-                    "duration": "3 days",
-                    "best_time": "May to October",
-                    "distance": "16 km",
-                    "image_url": "https://himalayanambition.in/wp-content/uploads/2023/09/img-Beas-kund-trek44-Bikat-Adventures.jpg"
-                  },
-                  {
-                    "name": "Bhaba Pass Trek",
-                    "height": "4890 m",
-                    "cost": "₹14,000",
-                    "duration": "7 days",
-                    "best_time": "June to October",
-                    "distance": "50 km",
-                    "image_url": "https://www.himalayanhikers.in/wp-content/uploads/2019/11/pin-bhaba2.jpg"
-                  },
-                  {
-                    "name": "Deo Tibba Base Camp Trek",
-                    "height": "4480 m",
-                    "cost": "₹13,000",
-                    "duration": "6 days",
-                    "best_time": "May to October",
-                    "distance": "37 km",
-                    "image_url": "https://www.bikatadventures.com/images/Gallery/IMG1000X548/img-deo-tibba-base-camp-trek2027-Bikat-Adventures.jpg"
-                  },
-              
-                 
-                  {
-                    "name": "Triund Trek",
-                    "height": "2850 m",
-                    "cost": "₹2,000",
-                    "duration": "2 days",
-                    "best_time": "March to June, Sept–Dec",
-                    "distance": "14 km",
-                    "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Triund-trek-mcleodganj-himachal-pradesh-india.jpg"
-                  },
-                 
-                 
-                  {
-                    "name": "Kareri Lake Trek",
-                    "height": "2934 m",
-                    "cost": "₹3,200",
-                    "duration": "2 days",
-                    "best_time": "May–July, Sept–Nov",
-                    "distance": "26 km",
-                    "image_url": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/10/be/ef/kareri-lake-is-a-beautiful.jpg?w=1200&h=-1&s=1"
-                  },
-                  {
-                    "name": "Chandratal Lake Trek",
-                    "height": "4300 m",
-                    "cost": "₹6,500",
-                    "duration": "3 days",
-                    "best_time": "July–October",
-                    "distance": "20 km",
-                    "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Chandratal_1.JPG"
-                  },
-                  {
-                    "name": "Sar Pass Trek",
-                    "height": "4220 m",
-                    "cost": "₹9,500",
-                    "duration": "5 days",
-                    "best_time": "May to October",
-                    "distance": "48 km",
-                    "image_url": "https://gonobeltrips.com/new-assets/img/trek/sar-pass.webp"
-                  },
-                 
-                  {
-                    "name": "Bali Pass Trek",
-                    "height": "4950 m",
-                    "cost": "₹15,500",
-                    "duration": "8 days",
-                    "best_time": "May–June, Sept–Oct",
-                    "distance": "67 km",
-                    "image_url": "https://harkidun.org/wp-content/uploads/2021/02/balipass.jpg"
-                  },
-                  {
-                    "name": "Parvati Valley Trek",
-                    "height": "3500 m",
-                    "cost": "₹8,500",
-                    "duration": "5 days",
-                    "best_time": "April to November",
-                    "distance": "45 km",
-                    "image_url": "https://www.himalayanhikers.in/wp-content/uploads/2020/03/Parvati-Valley-Trek.jpg"
-                  },
-              
-                  {
-                    "name": "Indrahar Pass Trek",
-                    "height": "4350 m",
-                    "cost": "₹7,000",
-                    "duration": "4 days",
-                    "best_time": "May to October",
-                    "distance": "35 km",
-                    "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Looking_up_to_the_Indrahar_Pass_%2822356846090%29.jpg"
-                  },
-                  {
-                    "name": "Kinnaur Kailash Trek",
-                    "height": "5242 m",
-                    "cost": "₹18,000",
-                    "duration": "9 days",
-                    "best_time": "June to September",
-                    "distance": "61 km",
-                    "image_url": "https://live.staticflickr.com/8446/7788768318_611a90036d_b.jpg"
-                  },
-                  {
-                    "name": "Pin Bhaba Pass Trek",
-                    "height": "4850 m",
-                    "cost": "₹16,000",
-                    "duration": "9 days",
-                    "best_time": "June to September",
-                    "distance": "51 km",
-                    "image_url": "https://www.himalayanhikers.in/wp-content/uploads/2019/11/pin-bhaba.jpg"
-                  }
-                 
-                
-                 
-                ]
-
-    },
-
-    {
-      "name": "Karnataka",
-      "imgUrl": "https://i.ytimg.com/vi/EP9T0kZZs2w/mqdefault.jpg?days_since_epoch=20196",
-      "treks": [
-        "Kumara Parvatha Trek",
-        "Tadiandamol Trek",
-        "Kudremukh Trek"
-       
-      ],
-      "trekData": [{
-    "name": "Kumara Parvatha Trek",
-    "height": "1712 m",
-    "cost": "₹2,500",
-    "duration": "2 days",
-    "best_time": "October to February",
-    "distance": "22 km",
-    "image_url": "https://thrilltourism.com/storage/4846/YmRqP1NcUoknL80t6MWVjd5NN6OHjxPIJxS5x2KR.webp"
-},
-{
-    "name": "Tadiandamol Trek",
-    "height": "1748 m",
-    "cost": "₹2,200",
-    "duration": "1–2 days",
-    "best_time": "October to March",
-    "distance": "15 km",
-    "image_url": "https://d2u4nbh57f39jw.cloudfront.net/1729317218449-downpic.cc-101936712.jpg"
-},
-
-{
-    "name": "Kudremukh Trek",
-    "height": "1894 m",
-    "cost": "₹2,800",
-    "duration": "2 days",
-    "best_time": "October to February",
-    "distance": "20 km",
-    "image_url": "https://www.trekupindia.com/wp-content/uploads/1715/89/kudremukh-trek.jpg"
-}
-]
-    },
-    {
-      "name": "Kerala",
-      "imgUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/c9/7b/10/ranipuram-hills.jpg?w=500&h=500&s=1",
-      "treks": [
-        "Agasthyakoodam Trek",
-        "Chembra Peak Trek",
-        "Meesapulimala Trek",
-        "Anamudi Peak Trek"
-       
-      ],
-      "trekData": [
-    {
+  {
+    "name": "Himachal Pradesh",
+    "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Landscape_of_Himachal_Pradesh_%2828606107915%29.jpg/960px-Landscape_of_Himachal_Pradesh_%2828606107915%29.jpg",
+    "treks": [
+      "Rupin Pass Trek",
+      "Hampta Pass Trek",
+      "Lamkhaga Pass Trek",
+      "Bhrigu Lake Trek",
+      "Kheerganga Trek",
+      "Pin Parvati Trek",
+      "Beas Kund Trek",
+      "Bhaba Pass Trek",
+      "Deo Tibba Base Camp Trek",
+      "Janjehli Valley Trek",
+      "Malana Village Trek",
+      "Triund Trek",
+      "Prashar Lake Trek",
+      "Nag Tibba Trek",
+      "Kareri Lake Trek",
+      "Chandratal Lake Trek",
+      "Sar Pass Trek",
+      "Tosh Valley Trek",
+      "Bali Pass Trek",
+      "Parvati Valley Trek",
+      "Saurkundi Pass Trek",
+      "Indrahar Pass Trek",
+      "Kinnaur Kailash Trek",
+      "Pin Bhaba Pass Trek"
+    ],
+    "trekData": [
+      {
+        "name": "Rupin Pass Trek",
+        "height": "4650 m",
+        "cost": "₹11,500",
+        "duration": "7 days",
+        "best_time": "May to June, Sept–Oct",
+        "distance": "52 km",
+        "image_url": "https://d2qa7a8q0vuocm.cloudfront.net/images/34407720200329142143.png"
+      },
+      {
+        "name": "Hampta Pass Trek",
+        "height": "4270 m",
+        "cost": "₹9,000",
+        "duration": "5 days",
+        "best_time": "June to September",
+        "distance": "35 km",
+        "image_url": "https://hellohikers.in/wp-content/uploads/2025/01/HamptaPass.jpg"
+      },
+      {
+        "name": "Bhrigu Lake Trek",
+        "height": "4300 m",
+        "cost": "₹7,500",
+        "duration": "3 days",
+        "best_time": "June to September",
+        "distance": "25 km",
+        "image_url": "https://www.akzn.me/blog/bhrigu-lake-trek/images/2019-07-31-11.43.52-1.jpg"
+      },
+      {
+        "name": "Kheerganga Trek",
+        "height": "2950 m",
+        "cost": "₹2,500",
+        "duration": "2 days",
+        "best_time": "April to June, Sept–Nov",
+        "distance": "24 km",
+        "image_url": "https://www.pelago.com/img/products/IN-India/kasol-kheerganga-trek-3d-2n-all-inclusive-with-banbanjara/be310822-ae21-4976-8c3d-ab340f6a36fb_kasol-kheerganga-trek-3d-2n-all-inclusive-with-banbanjara-xlarge.webp"
+      },
+      {
+        "name": "Pin Parvati Trek",
+        "height": "5319 m",
+        "cost": "₹20,000",
+        "duration": "10 days",
+        "best_time": "July to September",
+        "distance": "110 km",
+        "image_url": "https://kailashrath.com/_next/image?url=https%3A%2F%2Fkailash-rath-treks.s3.ap-south-1.amazonaws.com%2Fdji_0245-PXvbZBiS.webp&w=3840&q=75"
+      },
+      {
+        "name": "Beas Kund Trek",
+        "height": "3700 m",
+        "cost": "₹6,500",
+        "duration": "3 days",
+        "best_time": "May to October",
+        "distance": "16 km",
+        "image_url": "https://himalayanambition.in/wp-content/uploads/2023/09/img-Beas-kund-trek44-Bikat-Adventures.jpg"
+      },
+      {
+        "name": "Bhaba Pass Trek",
+        "height": "4890 m",
+        "cost": "₹14,000",
+        "duration": "7 days",
+        "best_time": "June to October",
+        "distance": "50 km",
+        "image_url": "https://www.himalayanhikers.in/wp-content/uploads/2019/11/pin-bhaba2.jpg"
+      },
+      {
+        "name": "Deo Tibba Base Camp Trek",
+        "height": "4480 m",
+        "cost": "₹13,000",
+        "duration": "6 days",
+        "best_time": "May to October",
+        "distance": "37 km",
+        "image_url": "https://www.bikatadventures.com/images/Gallery/IMG1000X548/img-deo-tibba-base-camp-trek2027-Bikat-Adventures.jpg"
+      },
+      {
+        "name": "Triund Trek",
+        "height": "2850 m",
+        "cost": "₹2,000",
+        "duration": "2 days",
+        "best_time": "March to June, Sept–Dec",
+        "distance": "14 km",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Triund-trek-mcleodganj-himachal-pradesh-india.jpg"
+      },
+      {
+        "name": "Kareri Lake Trek",
+        "height": "2934 m",
+        "cost": "₹3,200",
+        "duration": "2 days",
+        "best_time": "May–July, Sept–Nov",
+        "distance": "26 km",
+        "image_url": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/10/be/ef/kareri-lake-is-a-beautiful.jpg?w=1200&h=-1&s=1"
+      },
+      {
+        "name": "Chandratal Lake Trek",
+        "height": "4300 m",
+        "cost": "₹6,500",
+        "duration": "3 days",
+        "best_time": "July–October",
+        "distance": "20 km",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Chandratal_1.JPG"
+      },
+      {
+        "name": "Sar Pass Trek",
+        "height": "4220 m",
+        "cost": "₹9,500",
+        "duration": "5 days",
+        "best_time": "May to October",
+        "distance": "48 km",
+        "image_url": "https://gonobeltrips.com/new-assets/img/trek/sar-pass.webp"
+      },
+      {
+        "name": "Bali Pass Trek",
+        "height": "4950 m",
+        "cost": "₹15,500",
+        "duration": "8 days",
+        "best_time": "May–June, Sept–Oct",
+        "distance": "67 km",
+        "image_url": "https://harkidun.org/wp-content/uploads/2021/02/balipass.jpg"
+      },
+      {
+        "name": "Parvati Valley Trek",
+        "height": "3500 m",
+        "cost": "₹8,500",
+        "duration": "5 days",
+        "best_time": "April to November",
+        "distance": "45 km",
+        "image_url": "https://www.himalayanhikers.in/wp-content/uploads/2020/03/Parvati-Valley-Trek.jpg"
+      },
+      {
+        "name": "Indrahar Pass Trek",
+        "height": "4350 m",
+        "cost": "₹7,000",
+        "duration": "4 days",
+        "best_time": "May to October",
+        "distance": "35 km",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Looking_up_to_the_Indrahar_Pass_%2822356846090%29.jpg"
+      },
+      {
+        "name": "Kinnaur Kailash Trek",
+        "height": "5242 m",
+        "cost": "₹18,000",
+        "duration": "9 days",
+        "best_time": "June to September",
+        "distance": "61 km",
+        "image_url": "https://live.staticflickr.com/8446/7788768318_611a90036d_b.jpg"
+      },
+      {
+        "name": "Pin Bhaba Pass Trek",
+        "height": "4850 m",
+        "cost": "₹16,000",
+        "duration": "9 days",
+        "best_time": "June to September",
+        "distance": "51 km",
+        "image_url": "https://www.himalayanhikers.in/wp-content/uploads/2019/11/pin-bhaba.jpg"
+      }
+    ]
+  },
+  {
+    "name": "Karnataka",
+    "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Kuduremukha-NationalPark_Grassland.jpg/960px-Kuduremukha-NationalPark_Grassland.jpg",
+    "treks": [
+      "Kumara Parvatha Trek",
+      "Tadiandamol Trek",
+      "Kudremukh Trek"
+    ],
+    "trekData": [
+      {
+        "name": "Kumara Parvatha Trek",
+        "height": "1712 m",
+        "cost": "₹2,500",
+        "duration": "2 days",
+        "best_time": "October to February",
+        "distance": "22 km",
+        "image_url": "https://thrilltourism.com/storage/4846/YmRqP1NcUoknL80t6MWVjd5NN6OHjxPIJxS5x2KR.webp"
+      },
+      {
+        "name": "Tadiandamol Trek",
+        "height": "1748 m",
+        "cost": "₹2,200",
+        "duration": "1–2 days",
+        "best_time": "October to March",
+        "distance": "15 km",
+        "image_url": "https://d2u4nbh57f39jw.cloudfront.net/1729317218449-downpic.cc-101936712.jpg"
+      },
+      {
+        "name": "Kudremukh Trek",
+        "height": "1894 m",
+        "cost": "₹2,800",
+        "duration": "2 days",
+        "best_time": "October to February",
+        "distance": "20 km",
+        "image_url": "https://www.trekupindia.com/wp-content/uploads/1715/89/kudremukh-trek.jpg"
+      }
+    ]
+  },
+  {
+    "name": "Kerala",
+    "imgUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/c9/7b/10/ranipuram-hills.jpg?w=500&h=500&s=1",
+    "treks": [
+      "Agasthyakoodam Trek",
+      "Chembra Peak Trek",
+      "Meesapulimala Trek",
+      "Anamudi Peak Trek"
+    ],
+    "trekData": [
+      {
         "name": "Agasthyakoodam Trek",
         "height": "1868 m",
         "cost": "₹3,000",
@@ -254,8 +240,8 @@
         "best_time": "January to March",
         "distance": "20 km",
         "image_url": "https://www.keralatourism.org/images/enchanting_kerala/large/agasthyakoodam_hills20200226114644_989_1.jpg"
-    },
-    {
+      },
+      {
         "name": "Chembra Peak Trek",
         "height": "2100 m",
         "cost": "₹1,800",
@@ -263,8 +249,8 @@
         "best_time": "September to February",
         "distance": "7 km",
         "image_url": "https://static2.tripoto.com/media/filter/tst/img/184160/TripDocument/1452312008_1452311995588.jpg"
-    },
-    {
+      },
+      {
         "name": "Meesapulimala Trek",
         "height": "2640 m",
         "cost": "₹2,500",
@@ -272,8 +258,8 @@
         "best_time": "October to March",
         "distance": "15 km",
         "image_url": "https://keralatrekking.in/wp-content/uploads/2025/04/meesapulimala.jpeg"
-    },
-    {
+      },
+      {
         "name": "Anamudi Peak Trek",
         "height": "2695 m (highest in South India)",
         "cost": "₹3,200",
@@ -281,40 +267,24 @@
         "best_time": "October to February",
         "distance": "16 km",
         "image_url": "https://www.munnar.holiday/munnartourism/wp-content/uploads/2022/05/Anamudi.jpg"
-    }
-  
-]
-
-    },
-    {
-      "name": "Maharashtra",
-      "imgUrl": "https://www.treksandtrails.org/blog/wp-content/uploads/2021/06/Harihar-Monsoon-trek-7-1024x768.jpg",
-      "treks": [
-        "Harishchandragad Trek",
-
-       
-        "Kalsubai Peak Trek",
-
-        "Torna Fort Trek",
-        "Lohagad Fort Trek",
-       
-      
-        
-        "Sandhan Valley Trek",
-        
-     
-        "Rajgad Fort Trek",
-       
-        
-        
-        "Kalavantin Durg Trek",
-       
-        "Vasota Trek"
-        
-    
-      ],
-      "trekData": [
-    {
+      }
+    ]
+  },
+  {
+    "name": "Maharashtra",
+    "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Harihar_-_Sunlit_Valley_%2811253945843%29.jpg/960px-Harihar_-_Sunlit_Valley_%2811253945843%29.jpg",
+    "treks": [
+      "Harishchandragad Trek",
+      "Kalsubai Peak Trek",
+      "Torna Fort Trek",
+      "Lohagad Fort Trek",
+      "Sandhan Valley Trek",
+      "Rajgad Fort Trek",
+      "Kalavantin Durg Trek",
+      "Vasota Trek"
+    ],
+    "trekData": [
+      {
         "name": "Harishchandragad Trek",
         "height": "1422 m",
         "cost": "₹1,200",
@@ -322,9 +292,8 @@
         "best_time": "October to February",
         "distance": "18 km",
         "image_url": "https://adventure-pulse.com/wp-content/uploads/2025/06/WhatsApp-Image-2025-06-24-at-17.03.07-1-scaled.jpeg"
-    },
-   
-    {
+      },
+      {
         "name": "Kalsubai Peak Trek",
         "height": "1646 m (highest in Maharashtra)",
         "cost": "₹1,400",
@@ -332,8 +301,8 @@
         "best_time": "October to March",
         "distance": "12 km",
         "image_url": "https://d26dp53kz39178.cloudfront.net/media/uploads/products/trekking_1-1684825465269.webp"
-    },
-    {
+      },
+      {
         "name": "Torna Fort Trek",
         "height": "1403 m",
         "cost": "₹1,000",
@@ -341,8 +310,8 @@
         "best_time": "October to March",
         "distance": "10 km",
         "image_url": "https://www.adventurush.com/wp-content/uploads/2023/07/shutterstock_1817012579-1.jpg"
-    },
-    {
+      },
+      {
         "name": "Lohagad Fort Trek",
         "height": "1033 m",
         "cost": "₹800",
@@ -350,11 +319,8 @@
         "best_time": "June to August",
         "distance": "6 km",
         "image_url": "https://www.thefreebird.net/wp-content/uploads/2024/06/10-PXL_20240617_034305630.jpg"
-    },
-   
-   
-   
-    {
+      },
+      {
         "name": "Sandhan Valley Trek",
         "height": "1000 m",
         "cost": "₹1,800",
@@ -362,12 +328,8 @@
         "best_time": "November to February",
         "distance": "14 km",
         "image_url": "https://www.treksandtrails.org/system/images/000/190/681/e32c3c89b6e342bd74f8d4eb59010053/original/Sandhan_Valley_April_2017_-_12.JPG?1749749529"
-    },
-   
-  
-
-   
-    {
+      },
+      {
         "name": "Rajgad Fort Trek",
         "height": "1374 m",
         "cost": "₹1,200",
@@ -375,11 +337,8 @@
         "best_time": "October to March",
         "distance": "11 km",
         "image_url": "https://escape2explore.s3.ap-south-1.amazonaws.com/StaticMedia/13b7ca10-36bf-4709-b49b-22f76b523d0c.jpg"
-    },
-   
-  
-   
-    {
+      },
+      {
         "name": "Kalavantin Durg Trek",
         "height": "686 m",
         "cost": "₹1,000",
@@ -387,9 +346,8 @@
         "best_time": "October to March",
         "distance": "6 km",
         "image_url": "https://res.cloudinary.com/dyiffrkzh/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_center,h_400,q_auto,w_700/v1699340336/bbj/rvobx8akihbabyalvmbr.jpg"
-    },
-   
-    {
+      },
+      {
         "name": "Vasota Trek",
         "height": "1171 m",
         "cost": "₹1,500",
@@ -397,23 +355,18 @@
         "best_time": "November to March",
         "distance": "10 km",
         "image_url": "https://www.treksandtrails.org/system/images/000/366/122/5b79b216b678d039bf38cbc64ed90419/banner/Vasota-Fort-Trek.jpg?1572934541"
-    }
-   
-   
-    
-    
-]
-
-    },
-    {
-      "name": "Manipur",
-      "imgUrl": "https://res.cloudinary.com/dyiffrkzh/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_center,h_400,q_auto,w_700/v1703751666/bbj/jpjbwzd78modbhnjhx7g.webp",
-      "treks": [
-        "Dzukou Valley Trek",
-        "Loktak Lake Trek"
-      ],
-      "trekData": [
-    {
+      }
+    ]
+  },
+  {
+    "name": "Manipur",
+    "imgUrl": "https://res.cloudinary.com/dyiffrkzh/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_center,h_400,q_auto,w_700/v1703751666/bbj/jpjbwzd78modbhnjhx7g.webp",
+    "treks": [
+      "Dzukou Valley Trek",
+      "Loktak Lake Trek"
+    ],
+    "trekData": [
+      {
         "name": "Dzukou Valley Trek",
         "height": "2452 m",
         "cost": "₹3,500",
@@ -421,8 +374,8 @@
         "best_time": "June to September",
         "distance": "17 km",
         "image_url": "https://s7ap1.scene7.com/is/image/incredibleindia/Dzukou-Valley-Nagaland-Guide-To-Hidden-Valley19-hero?qlt=82&ts=1726817575460"
-    },
-    {
+      },
+      {
         "name": "Loktak Lake Trek",
         "height": "850 m",
         "cost": "₹2,000",
@@ -430,20 +383,17 @@
         "best_time": "November to March",
         "distance": "10 km",
         "image_url": "https://live.staticflickr.com/8619/16495734198_148f6a99c9_b.jpg"
-    }
-]
-
-    },
-    {
-      "name": "Meghalaya",
-      "imgUrl": "https://www.lovelytrails.com/admin/image.php?path=privateToursImages%2F16274744660.jpg",
-      "treks": [
-       
-        "Double Decker Living Root Bridge Trek"
-      ],
-      "trekData": [
-   
-    {
+      }
+    ]
+  },
+  {
+    "name": "Meghalaya",
+    "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Living_root_bridges%2C_Nongriat_village%2C_Meghalaya.jpg/960px-Living_root_bridges%2C_Nongriat_village%2C_Meghalaya.jpg",
+    "treks": [
+      "Double Decker Living Root Bridge Trek"
+    ],
+    "trekData": [
+      {
         "name": "Double Decker Living Root Bridge Trek",
         "height": "1,200 m",
         "cost": "₹3,500",
@@ -451,19 +401,17 @@
         "best_time": "October to March",
         "distance": "6–7 km (one way)",
         "image_url": "https://res.cloudinary.com/kmadmin/image/upload/v1618829759/kiomoi/Cherrapunji_Double_Decker_Living_Root_Bridge_1618829757722.jpg"
-    }
-]
-
-    },
-    {
-      "name": "Mizoram",
-      "imgUrl": "https://www.india.com/wp-content/uploads/2024/07/Phawngpui-Peak-Trek.jpg",
-      "treks": [
-        "Phawngpui Trek (Blue Mountain)"
-        
-      ],
-      "trekData": [
-    {
+      }
+    ]
+  },
+  {
+    "name": "Mizoram",
+    "imgUrl": "https://www.india.com/wp-content/uploads/2024/07/Phawngpui-Peak-Trek.jpg",
+    "treks": [
+      "Phawngpui Trek (Blue Mountain)"
+    ],
+    "trekData": [
+      {
         "name": "Phawngpui Trek (Blue Mountain)",
         "height": "2,157 m",
         "cost": "₹4,000",
@@ -471,21 +419,18 @@
         "best_time": "November to April",
         "distance": "20 km",
         "image_url": "https://plus.unsplash.com/premium_photo-1674917000586-b7564f21540e?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aGlsbHxlbnwwfHwwfHx8MA%3D%3D"
-    }
-   
-]
-
-    },
-    {
-      "name": "Nagaland",
-      "imgUrl": "https://altitudeadventureholidays.com/wp-content/uploads/2024/04/IMG_20191210_1600370001-scaled-1.webp",
-      "treks": [
-        "Dzükou Valley Trek",
-        "Mount Saramati Trek"
-       
-      ],
-      "trekData": [
-    {
+      }
+    ]
+  },
+  {
+    "name": "Nagaland",
+    "imgUrl": "https://altitudeadventureholidays.com/wp-content/uploads/2024/04/IMG_20191210_1600370001-scaled-1.webp",
+    "treks": [
+      "Dzükou Valley Trek",
+      "Mount Saramati Trek"
+    ],
+    "trekData": [
+      {
         "name": "Dzükou Valley Trek",
         "height": "2,452 m",
         "cost": "₹3,500",
@@ -493,8 +438,8 @@
         "best_time": "June to September",
         "distance": "17 km",
         "image_url": "https://roytellstales.com/wp-content/uploads/2020/01/IMG_20191210_1600370001-scaled.jpg"
-    },
-    {
+      },
+      {
         "name": "Mount Saramati Trek",
         "height": "3,826 m",
         "cost": "₹6,500",
@@ -502,22 +447,18 @@
         "best_time": "October to April",
         "distance": "22 km",
         "image_url": "https://assamthynk.com/wp-content/uploads/2025/05/mount-saramati-1.png"
-    }
-]
-
-    },
-    {
-      "name": "Odisha",
-      "imgUrl": "https://blogs.revv.co.in/blogs/wp-content/uploads/2021/12/Daringbadi-1024x603.png",
-      "treks": [
-       
-        "Daringbadi Trek",
-        "Deomali Trek"
-   
-      ],
-      "trekData": [
-   
-    {
+      }
+    ]
+  },
+  {
+    "name": "Odisha",
+    "imgUrl": "https://blogs.revv.co.in/blogs/wp-content/uploads/2021/12/Daringbadi-1024x603.png",
+    "treks": [
+      "Daringbadi Trek",
+      "Deomali Trek"
+    ],
+    "trekData": [
+      {
         "name": "Daringbadi Trek",
         "height": "915 m",
         "cost": "₹3,200",
@@ -525,8 +466,8 @@
         "best_time": "October to March",
         "distance": "14 km",
         "image_url": "https://hotelutopia.in/wp-content/uploads/2020/05/FB_IMG_1589731062991.jpg"
-    },
-    {
+      },
+      {
         "name": "Deomali Trek",
         "height": "1,672 m",
         "cost": "₹4,000",
@@ -534,22 +475,20 @@
         "best_time": "October to February",
         "distance": "16 km",
         "image_url": "https://media.istockphoto.com/id/1290711211/photo/deomali-hill-top-of-koraput-district-of-odisha-best-tourism-place-in-india.jpg?s=612x612&w=0&k=20&c=e_WKeAxexvzDCyHg_oWU3A_OTk8boi5HRb9H-754964="
-    }
-]
-
-    },
-    {
-      "name": "Sikkim",
-      "imgUrl": "https://www.trekkinginsikkim.com/assets/images/tour/sikkim-trekking-05.webp",
-      "treks": [
-        "Goechala Trek",
-        "Dzongri Trek",
-        "Kanchenjunga Base Camp Trek",
-        "Singalila Ridge Trek"
-        
-      ],
-      "trekData": [
-    {
+      }
+    ]
+  },
+  {
+    "name": "Sikkim",
+    "imgUrl": "https://www.trekkinginsikkim.com/assets/images/tour/sikkim-trekking-05.webp",
+    "treks": [
+      "Goechala Trek",
+      "Dzongri Trek",
+      "Kanchenjunga Base Camp Trek",
+      "Singalila Ridge Trek"
+    ],
+    "trekData": [
+      {
         "name": "Goechala Trek",
         "height": "4,940 m",
         "cost": "₹16,000",
@@ -557,8 +496,8 @@
         "best_time": "April to June, September to November",
         "distance": "90 km",
         "image_url": "https://www.himalayajourneys.com/assets/images/india/sikkim-goecha-la-trek.jpg"
-    },
-    {
+      },
+      {
         "name": "Dzongri Trek",
         "height": "4,020 m",
         "cost": "₹12,000",
@@ -566,8 +505,8 @@
         "best_time": "March to May, September to November",
         "distance": "50 km",
         "image_url": "https://captureatrip-cms-storage.s3.ap-south-1.amazonaws.com/Dzongri_Viewpoint_70ed0ae94a.webp"
-    },
-    {
+      },
+      {
         "name": "Kanchenjunga Base Camp Trek",
         "height": "5,143 m",
         "cost": "₹22,000",
@@ -575,8 +514,8 @@
         "best_time": "March to May, September to November",
         "distance": "100–110 km",
         "image_url": "https://abovethehimalaya.com/wp-content/uploads/2018/05/kanchenjunga-trek.jpg"
-    },
-    {
+      },
+      {
         "name": "Singalila Ridge Trek",
         "height": "3,636 m",
         "cost": "₹10,000",
@@ -584,20 +523,18 @@
         "best_time": "March to May, October to December",
         "distance": "55 km",
         "image_url": "https://www.farouttrek.com/wp-content/uploads/2024/11/20231109_113004-copy-scaled.jpg"
-    }
-]
-
-    },
-    {
-      "name": "Tamil Nadu",
-      "imgUrl": "https://s3.india.com/wp-content/uploads/2024/11/Yelagiri-trekking.jpg",
-      "treks": [
-        "Meesapulimala Trek",
-        
-        "Nilgiri Hills Trek"
-      ],
-      "trekData": [
-    {
+      }
+    ]
+  },
+  {
+    "name": "Tamil Nadu",
+    "imgUrl": "https://s3.india.com/wp-content/uploads/2024/11/Yelagiri-trekking.jpg",
+    "treks": [
+      "Meesapulimala Trek",
+      "Nilgiri Hills Trek"
+    ],
+    "trekData": [
+      {
         "name": "Meesapulimala Trek",
         "height": "2,640 m",
         "cost": "₹2,000",
@@ -605,9 +542,8 @@
         "best_time": "October to February",
         "distance": "15 km",
         "image_url": "https://i0.wp.com/aravindgundumane.com/wp-content/uploads/2020/02/DSC_5994.jpg?resize=1140%2C760&ssl=1"
-    },
-    
-    {
+      },
+      {
         "name": "Nilgiri Hills Trek",
         "height": "2,637 m",
         "cost": "₹3,000",
@@ -615,18 +551,17 @@
         "best_time": "September to May",
         "distance": "20 km",
         "image_url": "https://live.staticflickr.com/65535/52367942791_3a37840b8c_b.jpg"
-    }
-]
-
-    },
-    {
-      "name": "Tripura",
-      "imgUrl": "https://content3.jdmagicbox.com/comp/west_tripura/m9/9999px381.x381.230909033356.p4m9/catalogue/montang-valley-west-tripura-tourist-attraction-fC1BHCDMbp.jpg",
-      "treks": [
-        "Jampui Hills Trek"
-      ],
-      "trekData": [
-    {
+      }
+    ]
+  },
+  {
+    "name": "Tripura",
+    "imgUrl": "https://content3.jdmagicbox.com/comp/west_tripura/m9/9999px381.x381.230909033356.p4m9/catalogue/montang-valley-west-tripura-tourist-attraction-fC1BHCDMbp.jpg",
+    "treks": [
+      "Jampui Hills Trek"
+    ],
+    "trekData": [
+      {
         "name": "Jampui Hills Trek",
         "height": "1,000 m",
         "cost": "₹1,200",
@@ -634,43 +569,41 @@
         "best_time": "October to February",
         "distance": "8–10 km",
         "image_url": "https://i.ytimg.com/vi/Bmb_ykoAFhk/maxresdefault.jpg"
-    }
-]
-
-    },
-    {
-      "name": "Uttarakhand",
-      "imgUrl": "https://media.istockphoto.com/id/484389570/photo/himalayas.jpg?s=612x612&w=0&k=20&c=6jM32XJBWlvv6x7AF-av52jlncPkz5hn_AEhjaDSFYI=",
-      "treks": [
-        "Valley of Flowers Trek",
-        "Roopkund Trek",
-        "Har Ki Dun Trek",
-        "Kedarkantha Trek",
-        "Nanda Devi Base Camp Trek",
-        "Chopta Tungnath Trek",
-        "Kuari Pass Trek",
-        "Dayara Bugyal Trek",
-        "Pindari Glacier Trek",
-        "Brahmatal Trek",
-        "Gaumukh Tapovan Trek",
-        "Hemkund Sahib Trek",
-        "Satopanth Tal Trek",
-        "Kedarnath Trek",
-        
-        "Deoria Tal Trek",
-        "Munsiyari Trek"
-      ],
-      "trekData": [
-    {
+      }
+    ]
+  },
+  {
+    "name": "Uttarakhand",
+    "imgUrl": "https://media.istockphoto.com/id/484389570/photo/himalayas.jpg?s=612x612&w=0&k=20&c=6jM32XJBWlvv6x7AF-av52jlncPkz5hn_AEhjaDSFYI=",
+    "treks": [
+      "Valley of Flowers Trek",
+      "Roopkund Trek",
+      "Har Ki Dun Trek",
+      "Kedarkantha Trek",
+      "Nanda Devi Base Camp Trek",
+      "Chopta Tungnath Trek",
+      "Kuari Pass Trek",
+      "Dayara Bugyal Trek",
+      "Pindari Glacier Trek",
+      "Brahmatal Trek",
+      "Gaumukh Tapovan Trek",
+      "Hemkund Sahib Trek",
+      "Satopanth Tal Trek",
+      "Kedarnath Trek",
+      "Deoria Tal Trek",
+      "Munsiyari Trek"
+    ],
+    "trekData": [
+      {
         "name": "Valley of Flowers Trek",
         "height": "3,658 m",
         "cost": "₹6,000",
         "duration": "6 days",
         "best_time": "July to September",
         "distance": "38 km",
-        "image_url":"https://valleyofflowers.info/wp-content/uploads/2015/03/Valley-of-flowers-piture-gallery-and-wallpaper-3.jpg"
-    },
-    {
+        "image_url": "https://valleyofflowers.info/wp-content/uploads/2015/03/Valley-of-flowers-piture-gallery-and-wallpaper-3.jpg"
+      },
+      {
         "name": "Roopkund Trek",
         "height": "5,029 m",
         "cost": "₹9,000",
@@ -678,8 +611,8 @@
         "best_time": "May to June, September to October",
         "distance": "53 km",
         "image_url": "https://terranovaadventure.com/wp-content/uploads/2025/03/roopkund-1200x900-1.jpg"
-    },
-    {
+      },
+      {
         "name": "Har Ki Dun Trek",
         "height": "3,566 m",
         "cost": "₹8,000",
@@ -687,9 +620,8 @@
         "best_time": "April to June, September to December",
         "distance": "44 km",
         "image_url": "https://i0.wp.com/www.tusktravel.com/blog/wp-content/uploads/2021/02/Har-Ki-Dun-Trek-Uttarakhand.jpg?fit=1024%2C682&ssl=1"
-    },
-  
-    {
+      },
+      {
         "name": "Kedarkantha Trek",
         "height": "3,800 m",
         "cost": "₹6,500",
@@ -697,8 +629,8 @@
         "best_time": "December to April",
         "distance": "20 km",
         "image_url": "https://images.unsplash.com/photo-1715757495960-f3faa8cd2802?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8a2VkYXJrYW50aGElMjB0cmVrfGVufDB8fDB8fHww"
-    },
-    {
+      },
+      {
         "name": "Nanda Devi Base Camp Trek",
         "height": "4,000 m",
         "cost": "₹12,000",
@@ -706,53 +638,53 @@
         "best_time": "May to June, September to October",
         "distance": "110 km",
         "image_url": "https://hillwaytravels.in/wp-content/uploads/Nanda-Devi-Base-Camp-Trek.jpg"
-    },
-    {
+      },
+      {
         "name": "Chopta Tungnath Trek",
         "height": "3,680 m",
         "cost": "₹3,500",
         "duration": "3 days",
         "best_time": "March to May, September to November",
         "distance": "10 km",
-        "image_url":"https://www.treksandtrails.org/system/images/000/659/459/d0fe14e727f6e32234c5f0d330c4cb7f/banner/chandrashila-top-view.jpg?1674130382"
-    },
-    {
+        "image_url": "https://www.treksandtrails.org/system/images/000/659/459/d0fe14e727f6e32234c5f0d330c4cb7f/banner/chandrashila-top-view.jpg?1674130382"
+      },
+      {
         "name": "Kuari Pass Trek",
         "height": "3,658 m",
         "cost": "₹6,000",
         "duration": "6 days",
         "best_time": "March to June, September to November",
         "distance": "33 km",
-        "image_url":  "https://blogs.tripzygo.in/wp-content/uploads/2025/03/kuari-pass-trek.jpg"
-    },
-    {
+        "image_url": "https://blogs.tripzygo.in/wp-content/uploads/2025/03/kuari-pass-trek.jpg"
+      },
+      {
         "name": "Dayara Bugyal Trek",
         "height": "3,408 m",
         "cost": "₹5,500",
         "duration": "5 days",
         "best_time": "May to July, September to December",
         "distance": "20 km",
-        "image_url":"https://upload.wikimedia.org/wikipedia/commons/3/39/Dayara_Bugyal.jpg"
-    },
-    {
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Dayara_Bugyal.jpg"
+      },
+      {
         "name": "Pindari Glacier Trek",
         "height": "3,660 m",
         "cost": "₹7,000",
         "duration": "7 days",
         "best_time": "April to June, September to October",
         "distance": "90 km",
-        "image_url":  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc-KRP_gyTSZQ1xY53yZcGV8UAcPwa1DY65Q&s"
-    },
-    {
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc-KRP_gyTSZQ1xY53yZcGV8UAcPwa1DY65Q&s"
+      },
+      {
         "name": "Brahmatal Trek",
         "height": "3,734 m",
         "cost": "₹6,000",
         "duration": "6 days",
         "best_time": "December to March",
         "distance": "22 km",
-        "image_url":  "https://thetravelboat.com/wp-content/uploads/2023/01/image_123986672-1080x710.jpg"
-    },
-    {
+        "image_url": "https://thetravelboat.com/wp-content/uploads/2023/01/image_123986672-1080x710.jpg"
+      },
+      {
         "name": "Gaumukh Tapovan Trek",
         "height": "4,463 m",
         "cost": "₹8,500",
@@ -760,8 +692,8 @@
         "best_time": "May to June, September to October",
         "distance": "46 km",
         "image_url": "https://mountainhikers.in/wp-content/uploads/2023/08/Gomukh-Tapovan-Trek-Package-Mountain-Hikers.webp"
-    },
-    {
+      },
+      {
         "name": "Hemkund Sahib Trek",
         "height": "4,572 m",
         "cost": "₹5,500",
@@ -769,8 +701,8 @@
         "best_time": "June to October",
         "distance": "12 km",
         "image_url": "https://studentsofyogibhajan.com/wp-content/uploads/2021/04/Hemkunt-Sahib-Tour-1024x577.jpg"
-    },
-    {
+      },
+      {
         "name": "Satopanth Tal Trek",
         "height": "4,600 m",
         "cost": "₹9,000",
@@ -778,8 +710,8 @@
         "best_time": "May to June, September",
         "distance": "60 km",
         "image_url": "https://www.himalayanhikers.in/wp-content/uploads/2019/03/Satopanth-lake-9.jpg"
-    },
-    {
+      },
+      {
         "name": "Kedarnath Trek",
         "height": "3,583 m",
         "cost": "₹2,000",
@@ -787,9 +719,8 @@
         "best_time": "May to June, September to October",
         "distance": "16 km",
         "image_url": "https://wallpapers.com/images/featured/kedarnath-4k-9pd6c84fjldyenjg.jpg"
-    },
-    
-    {
+      },
+      {
         "name": "Deoria Tal Trek",
         "height": "2,438 m",
         "cost": "₹3,000",
@@ -797,8 +728,8 @@
         "best_time": "March to May, September to November",
         "distance": "3 km",
         "image_url": "https://travellingslacker.com/wp-content/uploads/2014/05/Deoria-Tal-3-1024x680.jpg"
-    },
-    {
+      },
+      {
         "name": "Munsiyari Trek",
         "height": "2,298 m",
         "cost": "₹7,000",
@@ -806,21 +737,19 @@
         "best_time": "April to June, September to October",
         "distance": "45 km",
         "image_url": "https://i.ytimg.com/vi/mJaW68f1r4g/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDld8JflPTMj10TzSYYNu36Ve62-A"
-    }
-]
-
-    },
-    {
-      "name": "West Bengal",
-      "imgUrl": "https://backiee.com/static/wallpapers/560x315/325947.jpg",
-      "treks": [
-        "Sandakphu Trek",
-        "Goechala Trek",
-        "Singalila Ridge Trek"
-        
-      ],
-      "trekData": [
-    {
+      }
+    ]
+  },
+  {
+    "name": "West Bengal",
+    "imgUrl": "https://backiee.com/static/wallpapers/560x315/325947.jpg",
+    "treks": [
+      "Sandakphu Trek",
+      "Goechala Trek",
+      "Singalila Ridge Trek"
+    ],
+    "trekData": [
+      {
         "name": "Sandakphu Trek",
         "height": "3636 m",
         "cost": "₹9,500",
@@ -828,8 +757,8 @@
         "best_time": "April to May, October to December",
         "distance": "52 km",
         "image_url": "https://trekthehimalayas.com/images/HomePageImages/Desktop/0948eddb-fe4e-4022-89a6-df00e43cd350_ebc%20(5).webp"
-    },
-    {
+      },
+      {
         "name": "Goechala Trek",
         "height": "4940 m",
         "cost": "₹17,000",
@@ -837,8 +766,8 @@
         "best_time": "April to June, September to November",
         "distance": "90 km",
         "image_url": "https://www.trekupindia.com/wp-content/uploads/1715/38/Goechala-Trek.jpg"
-    },
-    {
+      },
+      {
         "name": "Singalila Ridge Trek",
         "height": "3600 m",
         "cost": "₹10,000",
@@ -846,9 +775,7 @@
         "best_time": "March to June, October to December",
         "distance": "60 km",
         "image_url": "https://www.farouttrek.com/wp-content/uploads/2024/11/20231109_113004-copy-scaled.jpg"
-    }
+      }
+    ]
+  }
 ]
-
-    }
-  ]
-  

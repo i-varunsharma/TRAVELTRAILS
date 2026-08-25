@@ -3,11 +3,15 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation';
 import Link from 'next/link';
+import { AnimatePresence, motion } from 'framer-motion';
 import { ArrowLeft, Mountain, Clock, Route, CalendarDays } from 'lucide-react';
 import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 import TrekImage from '@/components/TrekImage';
 import TrekBookingForm from '@/components/TrekBookingForm';
 import { fromSlug } from '@/lib/utils/slug';
+
+const ease = [0.16, 1, 0.3, 1];
 
 const StatePage = () => {
   const { state: stateSlug } = useParams();
@@ -37,13 +41,13 @@ const StatePage = () => {
     if (stateSlug) getData();
   }, [stateSlug]);
 
-  if (loading) return <div className="text-center py-10 text-gray-500">Loading...</div>;
+  if (loading) return <div className="text-center py-10 text-stone-500">Loading...</div>;
   if (error) return <div className="text-center py-10 text-red-600 font-semibold">{error}</div>;
 
   return (
     <>
       <Navbar />
-      <div className="bg-pine bg-contours px-6 py-12">
+      <div className="bg-ink bg-contours px-6 py-14">
         <div className="max-w-6xl mx-auto">
           <Link
             href="/places"
@@ -60,21 +64,28 @@ const StatePage = () => {
       <div className="max-w-6xl mx-auto px-6 py-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
           {stateData.trekData.map((trek, idx) => (
-            <div
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.5, delay: (idx % 6) * 0.05, ease }}
               key={idx}
-              className="flex flex-col rounded-xl overflow-hidden border-2 border-pine/10 hover:border-rust transition-colors bg-white"
+              className="group flex flex-col rounded-xl overflow-hidden border border-ink/10 bg-white shadow-sm hover:shadow-lg hover:border-rust transition-all duration-300"
             >
-              <TrekImage
-                src={trek.image_url}
-                alt={trek.name}
-                className="w-full h-44 object-cover"
-              />
+              <div className="relative overflow-hidden">
+                <TrekImage
+                  src={trek.image_url}
+                  alt={trek.name}
+                  className="w-full h-44 object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-black/0 to-black/0" />
+              </div>
               <div className="p-5 flex flex-col gap-3 grow">
-                <h2 className="font-display uppercase text-xl text-pine">
+                <h2 className="font-display uppercase text-xl text-ink">
                   {trek.name}
                 </h2>
 
-                <div className="grid grid-cols-2 gap-y-1.5 text-sm text-gray-600">
+                <div className="grid grid-cols-2 gap-y-1.5 text-sm text-stone-600">
                   <div className="flex items-center gap-1.5">
                     <Mountain size={14} className="text-rust shrink-0" /> {trek.height}
                   </div>
@@ -89,8 +100,8 @@ const StatePage = () => {
                   </div>
                 </div>
 
-                <div className="font-display text-2xl text-pine mt-1">
-                  {trek.cost} <span className="text-xs font-sans font-normal text-gray-400">+ 5% GST</span>
+                <div className="font-display text-2xl text-ink mt-1">
+                  {trek.cost} <span className="text-xs font-sans font-normal text-stone-400">+ 5% GST</span>
                 </div>
 
                 <button
@@ -100,18 +111,21 @@ const StatePage = () => {
                   Enquire Now
                 </button>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
 
-      {bookingTrek && (
-        <TrekBookingForm
-          trekName={bookingTrek.name}
-          stateName={stateData.name}
-          onClose={() => setBookingTrek(null)}
-        />
-      )}
+      <AnimatePresence>
+        {bookingTrek && (
+          <TrekBookingForm
+            trek={{ name: bookingTrek.name, state: stateData.name }}
+            onClose={() => setBookingTrek(null)}
+          />
+        )}
+      </AnimatePresence>
+
+      <Footer />
     </>
   );
 };

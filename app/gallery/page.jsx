@@ -9,7 +9,7 @@ const Gallery = () => {
   return (
     <>
       <Navbar />
-      <div className="min-h-[calc(100vh-73px)] bg-pine bg-contours flex flex-col items-center justify-center text-center px-6">
+      <div className="min-h-[calc(100vh-73px)] bg-ink bg-contours flex flex-col items-center justify-center text-center px-6">
         <div className="bg-rust/15 rounded-full p-5 mb-6">
           <Images className="w-8 h-8 text-rust" />
         </div>

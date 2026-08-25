@@ -1,7 +1,9 @@
 'use client';
 import React, { useState } from 'react';
 import Navbar from '@/components/Navbar';
-import { Mail, Phone, MapPin, Send, CheckCircle2 } from 'lucide-react';
+import Footer from '@/components/Footer';
+import Reveal from '@/components/Reveal';
+import { Mail, Phone, MapPin, Send, CheckCircle2, Mountain } from 'lucide-react';
 
 const Contact = () => {
   const [popupVisible, setPopupVisible] = useState(false);
@@ -48,37 +50,50 @@ const Contact = () => {
   return (
     <>
       <Navbar />
-      <div className="max-w-4xl mx-auto px-6 py-16 sm:py-20">
-        <h1 className="font-display uppercase text-4xl sm:text-5xl text-pine mb-3">Contact TrekTrails</h1>
-        <p className="text-gray-600 mb-12">
-          Planning your next adventure? Reach out and let's help you make it unforgettable.
-        </p>
+      <div className="bg-ink bg-contours px-6 py-14">
+        <div className="max-w-6xl mx-auto">
+          <h1 className="font-display uppercase text-cream text-5xl sm:text-6xl">Contact TrekTrails</h1>
+          <p className="text-cream/70 mt-1 max-w-xl">
+            Planning your next adventure? Reach out and let's help you make it unforgettable.
+          </p>
+        </div>
+      </div>
 
+      <div className="max-w-6xl mx-auto px-6 py-16">
         <div className="grid sm:grid-cols-2 gap-8">
-          <div className="flex flex-col justify-center bg-pine bg-contours rounded-2xl p-8 space-y-6">
-            <div className="flex items-center gap-3 text-cream">
-              <Phone className="text-rust shrink-0" size={20} />
-              <span>+91 9729605399</span>
+          <Reveal className="relative flex flex-col justify-between overflow-hidden bg-ink bg-contours rounded-2xl p-8 min-h-105">
+            <Mountain
+              className="absolute -bottom-8 -right-8 w-48 h-48 text-cream/5 pointer-events-none"
+              strokeWidth={1}
+            />
+
+            <div className="relative space-y-6">
+              <div className="flex items-center gap-3 text-cream">
+                <Phone className="text-rust shrink-0" size={20} />
+                <span>+91 9729605399</span>
+              </div>
+              <div className="flex items-center gap-3 text-cream">
+                <Mail className="text-rust shrink-0" size={20} />
+                <span>contact@trektrails.in</span>
+              </div>
+              <div className="flex items-center gap-3 text-cream">
+                <MapPin className="text-rust shrink-0" size={20} />
+                <span>New Delhi, India</span>
+              </div>
+
+              {popupVisible && (
+                <div className="flex items-center gap-2 bg-cream/10 border border-cream/30 rounded-lg p-3 text-cream text-sm">
+                  <CheckCircle2 size={16} className="text-rust" /> Message sent successfully!
+                </div>
+              )}
             </div>
-            <div className="flex items-center gap-3 text-cream">
-              <Mail className="text-rust shrink-0" size={20} />
-              <span>contact@trektrails.in</span>
-            </div>
-            <div className="flex items-center gap-3 text-cream">
-              <MapPin className="text-rust shrink-0" size={20} />
-              <span>New Delhi, India</span>
-            </div>
-            <div className="border-t border-cream/20 pt-6 text-sm text-cream/70">
+
+            <div className="relative border-t border-cream/20 pt-6 text-sm text-cream/70">
               We typically reply within 24 hours, Monday to Saturday.
             </div>
+          </Reveal>
 
-            {popupVisible && (
-              <div className="flex items-center gap-2 bg-cream/10 border border-cream/30 rounded-lg p-3 text-cream text-sm">
-                <CheckCircle2 size={16} className="text-rust" /> Message sent successfully!
-              </div>
-            )}
-          </div>
-
+          <Reveal delay={0.1}>
           <form className="space-y-5" onSubmit={handleSubmit}>
             {error && (
               <div className="bg-red-50 border border-red-200 rounded-lg p-3">
@@ -86,36 +101,36 @@ const Contact = () => {
               </div>
             )}
             <div>
-              <label className="block mb-1.5 text-sm font-semibold uppercase tracking-wide text-pine">Full Name</label>
+              <label className="block mb-1.5 text-sm font-semibold uppercase tracking-wide text-ink">Full Name</label>
               <input
                 type="text"
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
-                className="w-full border-2 border-pine/15 px-4 py-2.5 rounded-lg focus:outline-none focus:border-rust transition-colors"
+                className="w-full border-2 border-ink/15 px-4 py-2.5 rounded-lg focus:outline-none focus:border-rust transition-colors"
                 placeholder="Your Name"
                 required
               />
             </div>
             <div>
-              <label className="block mb-1.5 text-sm font-semibold uppercase tracking-wide text-pine">Email Address</label>
+              <label className="block mb-1.5 text-sm font-semibold uppercase tracking-wide text-ink">Email Address</label>
               <input
                 type="email"
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full border-2 border-pine/15 px-4 py-2.5 rounded-lg focus:outline-none focus:border-rust transition-colors"
+                className="w-full border-2 border-ink/15 px-4 py-2.5 rounded-lg focus:outline-none focus:border-rust transition-colors"
                 placeholder="you@example.com"
                 required
               />
             </div>
             <div>
-              <label className="block mb-1.5 text-sm font-semibold uppercase tracking-wide text-pine">Message</label>
+              <label className="block mb-1.5 text-sm font-semibold uppercase tracking-wide text-ink">Message</label>
               <textarea
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                className="w-full border-2 border-pine/15 px-4 py-3 rounded-lg focus:outline-none focus:border-rust transition-colors"
+                className="w-full border-2 border-ink/15 px-4 py-3 rounded-lg focus:outline-none focus:border-rust transition-colors"
                 rows="5"
                 placeholder="Tell us about your trekking needs..."
                 required
@@ -130,8 +145,11 @@ const Contact = () => {
               {sending ? 'Sending...' : 'Send Message'}
             </button>
           </form>
+          </Reveal>
         </div>
       </div>
+
+      <Footer />
     </>
   );
 };
