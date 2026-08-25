@@ -15,19 +15,22 @@ const About = () => {
     <>
       <Navbar />
 
-      <div className="max-w-4xl mx-auto px-6 py-16 sm:py-20">
-        <h1 className="font-display text-3xl sm:text-4xl font-semibold text-gray-900 mb-6 max-w-2xl">
-          Discover the Spirit of Adventure with TrekTrails
-        </h1>
+      <div className="bg-pine bg-contours px-6 py-20">
+        <div className="max-w-4xl mx-auto">
+          <h1 className="font-display uppercase text-cream text-5xl sm:text-6xl mb-6 max-w-2xl leading-[0.95]">
+            Discover the Spirit of Adventure
+          </h1>
+          <p className="text-lg text-cream/85 max-w-2xl leading-relaxed">
+            At <span className="font-semibold text-cream">TrekTrails</span>, we believe every mountain has a story and every trekker deserves to be part of it. With over a decade of experience guiding thrill-seekers across India's breathtaking trails, we're here to turn your hiking dreams into unforgettable journeys.
+          </p>
+        </div>
+      </div>
 
-        <p className="text-lg text-gray-600 mb-16 leading-relaxed max-w-2xl">
-          At <span className="font-semibold text-gray-900">TrekTrails</span>, we believe every mountain has a story and every trekker deserves to be part of it. With over a decade of experience guiding thrill-seekers across India's breathtaking trails, we're here to turn your hiking dreams into unforgettable journeys.
-        </p>
-
+      <div className="max-w-4xl mx-auto px-6 py-16">
         <div className="grid sm:grid-cols-2 gap-12 mb-16">
           <div>
-            <h2 className="flex items-center gap-2 text-lg font-semibold text-gray-900 mb-3">
-              <Compass className="w-5 h-5 text-green-700" /> Our Mission
+            <h2 className="flex items-center gap-2 font-display uppercase text-2xl text-pine mb-3">
+              <Compass className="w-5 h-5 text-rust" /> Our Mission
             </h2>
             <p className="text-gray-600 leading-relaxed">
               To promote responsible trekking, empower local communities, and make adventure tourism safe, accessible, and life-changing for everyone — from beginners to seasoned hikers.
@@ -35,8 +38,8 @@ const About = () => {
           </div>
 
           <div>
-            <h2 className="flex items-center gap-2 text-lg font-semibold text-gray-900 mb-3">
-              <Sparkles className="w-5 h-5 text-green-700" /> Why Choose Us?
+            <h2 className="flex items-center gap-2 font-display uppercase text-2xl text-pine mb-3">
+              <Sparkles className="w-5 h-5 text-rust" /> Why Choose Us?
             </h2>
             <ul className="text-gray-600 space-y-2">
               <li>Certified and experienced trek leaders</li>
@@ -48,27 +51,27 @@ const About = () => {
           </div>
         </div>
 
-        <div className="border-t border-gray-200 pt-12 mb-16">
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-8">
-            {stats.map((stat) => (
-              <div key={stat.label}>
-                <p className="flex items-center gap-1.5 text-3xl font-bold text-gray-900">
-                  {stat.value}
-                  {stat.icon && <stat.icon className="w-5 h-5 fill-gray-900" />}
-                </p>
-                <p className="text-sm text-gray-500 mt-1">{stat.label}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-
         <div className="max-w-2xl">
           <p className="text-gray-600">
             Join TrekTrails and become a part of India's fastest-growing trekking community. Whether you're aiming for the snowy Himalayas or the tropical Western Ghats, we're here to guide you, protect you, and help you explore with confidence.
           </p>
-          <p className="mt-4 font-semibold text-gray-900">
+          <p className="mt-4 font-semibold text-pine">
             Adventure Awaits. Let's Trek Together.
           </p>
+        </div>
+      </div>
+
+      <div className="bg-cream-dark px-6 py-16">
+        <div className="max-w-4xl mx-auto grid grid-cols-2 sm:grid-cols-3 gap-x-8 gap-y-10">
+          {stats.map((stat) => (
+            <div key={stat.label}>
+              <p className="flex items-center gap-2 font-display text-5xl text-rust">
+                {stat.value}
+                {stat.icon && <stat.icon className="w-7 h-7 fill-rust mb-1" />}
+              </p>
+              <p className="text-sm font-semibold uppercase tracking-wide text-pine mt-1">{stat.label}</p>
+            </div>
+          ))}
         </div>
       </div>
     </>

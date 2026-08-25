@@ -65,15 +65,15 @@ function TrekBookingForm({ trekName, stateName, onClose }) {
   };
 
   return (
-    <div className="fixed inset-0 bg-black/40 flex items-center justify-center z-50 p-4">
-      <div className="bg-white text-gray-900 p-6 rounded-xl w-full max-w-md shadow-xl">
+    <div className="fixed inset-0 bg-pine/70 flex items-center justify-center z-50 p-4">
+      <div className="bg-white text-gray-900 p-6 rounded-2xl w-full max-w-md shadow-xl">
         {submitted ? (
           <div className="text-center text-gray-700 py-4">
             Thanks for showing interest! Details and procedure will be shared on your WhatsApp soon.
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="space-y-4">
-            <h2 className="text-lg font-semibold mb-1">Book {trekName}</h2>
+            <h2 className="font-display uppercase text-2xl text-pine mb-1">Book {trekName}</h2>
 
             {error && <p className="text-red-600 text-sm">{error}</p>}
 
@@ -84,7 +84,7 @@ function TrekBookingForm({ trekName, stateName, onClose }) {
               value={formData.date}
               onChange={handleInputChange}
               required
-              className="w-full border border-gray-300 px-3 py-2.5 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent"
+              className="w-full border-2 border-pine/15 px-3 py-2.5 rounded-lg focus:outline-none focus:border-rust transition-colors"
             />
             <input
               type="number"
@@ -93,7 +93,7 @@ function TrekBookingForm({ trekName, stateName, onClose }) {
               value={formData.people}
               onChange={handleInputChange}
               required
-              className="w-full border border-gray-300 px-3 py-2.5 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent"
+              className="w-full border-2 border-pine/15 px-3 py-2.5 rounded-lg focus:outline-none focus:border-rust transition-colors"
             />
             <input
               type="text"
@@ -102,7 +102,7 @@ function TrekBookingForm({ trekName, stateName, onClose }) {
               value={formData.name}
               onChange={handleInputChange}
               required
-              className="w-full border border-gray-300 px-3 py-2.5 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent"
+              className="w-full border-2 border-pine/15 px-3 py-2.5 rounded-lg focus:outline-none focus:border-rust transition-colors"
             />
             <input
               type="tel"
@@ -111,21 +111,21 @@ function TrekBookingForm({ trekName, stateName, onClose }) {
               value={formData.whatsapp}
               onChange={handleInputChange}
               required
-              className="w-full border border-gray-300 px-3 py-2.5 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent"
+              className="w-full border-2 border-pine/15 px-3 py-2.5 rounded-lg focus:outline-none focus:border-rust transition-colors"
             />
 
             <div className="flex justify-end gap-3 pt-2">
               <button
                 type="button"
                 onClick={onClose}
-                className="text-sm font-medium px-4 py-2 rounded-lg text-gray-600 hover:bg-gray-100"
+                className="text-sm font-semibold px-4 py-2 rounded-full text-pine hover:bg-pine/5"
               >
                 Cancel
               </button>
               <button
                 type="submit"
                 disabled={sending}
-                className="text-sm font-medium px-4 py-2 rounded-lg bg-gray-900 text-white hover:bg-gray-700 disabled:opacity-50"
+                className="text-sm font-semibold px-5 py-2 rounded-full bg-rust text-cream hover:bg-rust-dark disabled:opacity-50"
               >
                 {sending ? 'Submitting...' : 'Submit'}
               </button>

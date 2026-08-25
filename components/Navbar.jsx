@@ -38,20 +38,20 @@ function Navbar() {
   };
 
   return (
-    <header className='sticky top-0 z-50 bg-white border-b border-gray-200'>
+    <header className='sticky top-0 z-50 bg-pine'>
       <nav className='max-w-6xl mx-auto flex items-center justify-between px-6 py-4'>
-        <Link href='/' className='text-xl font-bold text-gray-900'>
+        <Link href='/' className='font-display text-3xl text-cream'>
           TrekTrails
         </Link>
 
         <div className='flex items-center gap-6 sm:gap-8'>
-          <ul className='flex items-center gap-6 sm:gap-8'>
+          <ul className='hidden sm:flex items-center gap-6 sm:gap-8'>
             {navLinks.map((link) => (
               <li key={link.path}>
                 <Link
                   href={link.path}
                   onClick={(e) => handleProtectedClick(e, link.path)}
-                  className='text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors'
+                  className='text-sm font-semibold uppercase tracking-wide text-cream/80 hover:text-cream transition-colors'
                 >
                   {link.name}
                 </Link>
@@ -61,7 +61,7 @@ function Navbar() {
               <li>
                 <Link
                   href='/admin'
-                  className='text-sm font-medium text-green-700 hover:text-green-800 transition-colors'
+                  className='text-sm font-semibold uppercase tracking-wide text-rust hover:text-rust-dark transition-colors'
                 >
                   Admin
                 </Link>
@@ -72,14 +72,14 @@ function Navbar() {
           {!isLoggedIn ? (
             <Link
               href='/login'
-              className='bg-gray-900 text-white text-sm font-medium px-4 py-2 rounded-lg hover:bg-gray-700 transition-colors'
+              className='bg-rust text-cream text-sm font-semibold px-5 py-2 rounded-full hover:bg-rust-dark transition-colors'
             >
               Login
             </Link>
           ) : (
             <button
               onClick={handleLogout}
-              className='text-sm font-medium text-gray-600 border border-gray-300 px-4 py-2 rounded-lg hover:bg-gray-50 transition-colors'
+              className='text-sm font-semibold text-cream/80 border border-cream/30 px-5 py-2 rounded-full hover:bg-pine-light transition-colors'
             >
               Logout
             </button>

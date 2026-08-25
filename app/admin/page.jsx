@@ -40,7 +40,7 @@ const AdminPage = () => {
       <Navbar />
 
       <div className="max-w-6xl mx-auto px-6 py-12 space-y-10">
-        <h1 className="text-2xl font-bold text-gray-900">Admin Dashboard</h1>
+        <h1 className="font-display uppercase text-4xl text-pine">Admin Dashboard</h1>
 
         {loading && <p className="text-gray-500">Loading...</p>}
 
@@ -56,31 +56,31 @@ const AdminPage = () => {
         {!loading && !forbidden && (
           <>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              <div className="flex items-center gap-4 border border-gray-200 rounded-xl p-5">
-                <div className="bg-green-50 p-3 rounded-lg">
-                  <CalendarCheck className="text-green-700" size={20} />
+              <div className="flex items-center gap-4 bg-pine rounded-xl p-5">
+                <div className="bg-rust/20 p-3 rounded-lg">
+                  <CalendarCheck className="text-rust" size={20} />
                 </div>
                 <div>
-                  <p className="text-2xl font-bold text-gray-900">{bookings.length}</p>
-                  <p className="text-sm text-gray-500">Trek Bookings</p>
+                  <p className="font-display text-3xl text-cream">{bookings.length}</p>
+                  <p className="text-sm text-cream/70">Trek Bookings</p>
                 </div>
               </div>
-              <div className="flex items-center gap-4 border border-gray-200 rounded-xl p-5">
-                <div className="bg-green-50 p-3 rounded-lg">
-                  <Mail className="text-green-700" size={20} />
+              <div className="flex items-center gap-4 bg-pine rounded-xl p-5">
+                <div className="bg-rust/20 p-3 rounded-lg">
+                  <Mail className="text-rust" size={20} />
                 </div>
                 <div>
-                  <p className="text-2xl font-bold text-gray-900">{messages.length}</p>
-                  <p className="text-sm text-gray-500">Contact Messages</p>
+                  <p className="font-display text-3xl text-cream">{messages.length}</p>
+                  <p className="text-sm text-cream/70">Contact Messages</p>
                 </div>
               </div>
             </div>
 
             <section>
-              <h2 className="text-lg font-semibold text-gray-900 mb-4">Trek Bookings</h2>
+              <h2 className="font-display uppercase text-2xl text-pine mb-4">Trek Bookings</h2>
               <div className="overflow-x-auto rounded-xl border border-gray-200">
                 <table className="w-full text-left text-sm">
-                  <thead className="bg-gray-50 text-gray-500 text-xs uppercase tracking-wide">
+                  <thead className="bg-pine/5 text-pine text-xs font-bold uppercase tracking-wide">
                     <tr>
                       <th className="p-3">Trek</th>
                       <th className="p-3">State</th>
@@ -112,10 +112,10 @@ const AdminPage = () => {
             </section>
 
             <section>
-              <h2 className="text-lg font-semibold text-gray-900 mb-4">Contact Messages</h2>
+              <h2 className="font-display uppercase text-2xl text-pine mb-4">Contact Messages</h2>
               <div className="overflow-x-auto rounded-xl border border-gray-200">
                 <table className="w-full text-left text-sm">
-                  <thead className="bg-gray-50 text-gray-500 text-xs uppercase tracking-wide">
+                  <thead className="bg-pine/5 text-pine text-xs font-bold uppercase tracking-wide">
                     <tr>
                       <th className="p-3">Name</th>
                       <th className="p-3">Email</th>

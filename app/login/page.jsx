@@ -50,17 +50,17 @@ export default function LoginSignupPage() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50 px-4">
+    <div className="min-h-screen flex items-center justify-center bg-pine bg-contours px-4">
       <div className="w-full max-w-md">
-        <div className="bg-white border border-gray-200 rounded-2xl shadow-sm p-8">
+        <div className="bg-cream rounded-2xl shadow-xl p-8">
           {/* Header */}
           <div className="text-center mb-8">
             <div className="flex justify-center mb-4">
-              <div className="bg-gray-100 p-3 rounded-full">
-                <Mountain className="w-7 h-7 text-gray-900" />
+              <div className="bg-rust/10 p-3 rounded-full">
+                <Mountain className="w-7 h-7 text-rust" />
               </div>
             </div>
-            <h1 className="text-2xl font-bold text-gray-900 mb-1">
+            <h1 className="font-display uppercase text-3xl text-pine mb-1">
               {isLogin ? 'Welcome Back' : 'Join TrekTrails'}
             </h1>
             <p className="text-gray-500 text-sm">
@@ -87,7 +87,7 @@ export default function LoginSignupPage() {
                     type="text"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
-                    className="w-full border border-gray-300 rounded-lg py-2.5 pl-11 pr-4 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent"
+                    className="w-full border border-gray-300 rounded-lg py-2.5 pl-11 pr-4 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-rust focus:border-transparent"
                     placeholder="Enter your full name"
                     required={!isLogin}
                   />
@@ -104,7 +104,7 @@ export default function LoginSignupPage() {
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full border border-gray-300 rounded-lg py-2.5 pl-11 pr-4 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent"
+                  className="w-full border border-gray-300 rounded-lg py-2.5 pl-11 pr-4 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-rust focus:border-transparent"
                   placeholder="Enter your email"
                   required
                 />
@@ -120,7 +120,7 @@ export default function LoginSignupPage() {
                   type={showPassword ? 'text' : 'password'}
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  className="w-full border border-gray-300 rounded-lg py-2.5 pl-11 pr-11 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent"
+                  className="w-full border border-gray-300 rounded-lg py-2.5 pl-11 pr-11 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-rust focus:border-transparent"
                   placeholder="Enter your password"
                   autoComplete="off"
                   data-form-type="other"
@@ -143,7 +143,7 @@ export default function LoginSignupPage() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full bg-gray-900 hover:bg-gray-700 text-white font-semibold py-2.5 px-6 rounded-lg transition-colors disabled:opacity-50"
+              className="w-full bg-rust hover:bg-rust-dark text-cream font-semibold py-2.5 px-6 rounded-full transition-colors disabled:opacity-50"
             >
               {loading ? (
                 <div className="flex items-center justify-center space-x-2">
@@ -168,7 +168,7 @@ export default function LoginSignupPage() {
                   setEmail('');
                   setPassword('');
                 }}
-                className="ml-2 text-gray-900 font-semibold hover:underline"
+                className="ml-2 text-rust font-semibold hover:underline"
               >
                 {isLogin ? 'Sign up' : 'Sign in'}
               </button>

@@ -43,22 +43,26 @@ const StatePage = () => {
   return (
     <>
       <Navbar />
+      <div className="bg-pine bg-contours px-6 py-12">
+        <div className="max-w-6xl mx-auto">
+          <Link
+            href="/places"
+            className="inline-flex items-center gap-1.5 text-sm text-cream/70 hover:text-cream transition-colors mb-4"
+          >
+            <ArrowLeft size={16} /> Back to states
+          </Link>
+
+          <h1 className="font-display uppercase text-cream text-5xl sm:text-6xl">{stateData.name}</h1>
+          <p className="text-cream/70 mt-1">{stateData.trekData.length} treks to choose from</p>
+        </div>
+      </div>
+
       <div className="max-w-6xl mx-auto px-6 py-12">
-        <Link
-          href="/places"
-          className="inline-flex items-center gap-1.5 text-sm text-gray-500 hover:text-gray-900 transition-colors mb-4"
-        >
-          <ArrowLeft size={16} /> Back to states
-        </Link>
-
-        <h1 className="font-display text-3xl font-semibold text-gray-900 mb-1">{stateData.name}</h1>
-        <p className="text-gray-500 mb-10">{stateData.trekData.length} treks to choose from</p>
-
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
           {stateData.trekData.map((trek, idx) => (
             <div
               key={idx}
-              className="flex flex-col rounded-xl overflow-hidden border border-gray-200 hover:shadow-md transition-shadow"
+              className="flex flex-col rounded-xl overflow-hidden border-2 border-pine/10 hover:border-rust transition-colors bg-white"
             >
               <TrekImage
                 src={trek.image_url}
@@ -66,32 +70,32 @@ const StatePage = () => {
                 className="w-full h-44 object-cover"
               />
               <div className="p-5 flex flex-col gap-3 grow">
-                <h2 className="font-display text-lg font-semibold text-gray-900">
+                <h2 className="font-display uppercase text-xl text-pine">
                   {trek.name}
                 </h2>
 
                 <div className="grid grid-cols-2 gap-y-1.5 text-sm text-gray-600">
                   <div className="flex items-center gap-1.5">
-                    <Mountain size={14} className="text-gray-400 shrink-0" /> {trek.height}
+                    <Mountain size={14} className="text-rust shrink-0" /> {trek.height}
                   </div>
                   <div className="flex items-center gap-1.5">
-                    <Clock size={14} className="text-gray-400 shrink-0" /> {trek.duration}
+                    <Clock size={14} className="text-rust shrink-0" /> {trek.duration}
                   </div>
                   <div className="flex items-center gap-1.5">
-                    <Route size={14} className="text-gray-400 shrink-0" /> {trek.distance}
+                    <Route size={14} className="text-rust shrink-0" /> {trek.distance}
                   </div>
                   <div className="flex items-center gap-1.5 col-span-2">
-                    <CalendarDays size={14} className="text-gray-400 shrink-0" /> {trek.best_time}
+                    <CalendarDays size={14} className="text-rust shrink-0" /> {trek.best_time}
                   </div>
                 </div>
 
-                <div className="text-lg font-bold text-gray-900 mt-1">
-                  {trek.cost} <span className="text-xs font-normal text-gray-400">+ 5% GST</span>
+                <div className="font-display text-2xl text-pine mt-1">
+                  {trek.cost} <span className="text-xs font-sans font-normal text-gray-400">+ 5% GST</span>
                 </div>
 
                 <button
                   onClick={() => setBookingTrek(trek)}
-                  className="mt-auto bg-gray-900 hover:bg-gray-700 px-5 py-2.5 text-white font-medium rounded-lg transition-colors cursor-pointer"
+                  className="mt-auto bg-rust hover:bg-rust-dark px-5 py-2.5 text-cream font-semibold rounded-full transition-colors cursor-pointer"
                 >
                   Enquire Now
                 </button>

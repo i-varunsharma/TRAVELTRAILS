@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+@theme {
+  --color-pine: #16302a;
+  --color-pine-light: #234a3b;
+  --color-cream: #f5efdd;
+  --color-cream-dark: #e9dfc4;
+  --color-rust: #c1502e;
+  --color-rust-dark: #a13f22;
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;
@@ -7,13 +16,26 @@
 
   body {
     font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
-    background-color: #FAFAF8;
+    background-color: var(--color-cream);
   }
 }
 
 @layer utilities {
+  /* Tall condensed poster type for headlines — see layout.js for why. */
   .font-display {
-    font-family: var(--font-fraunces), Georgia, serif;
+    font-family: var(--font-bebas), Impact, sans-serif;
+    letter-spacing: 0.02em;
+  }
+
+  /* Faint contour-line texture, used as a brand motif on dark sections
+     instead of a plain flat fill. */
+  .bg-contours {
+    background-image: repeating-radial-gradient(
+      circle at 20% 30%,
+      transparent 0,
+      transparent 38px,
+      rgba(245, 239, 221, 0.05) 39px,
+      rgba(245, 239, 221, 0.05) 40px
+    );
   }
 }
-
