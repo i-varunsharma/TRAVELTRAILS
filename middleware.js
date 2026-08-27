@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 import { verifyToken } from '@/lib/server/jwt';
 
 // Routes that require a logged-in session
-const protectedRoutes = ['/admin'];
+const protectedRoutes = ['/places', '/about', '/contact', '/admin'];
 
 export async function middleware(request) {
   const { pathname } = request.nextUrl;
@@ -25,5 +25,5 @@ export async function middleware(request) {
 }
 
 export const config = {
-  matcher: ['/admin/:path*']
+  matcher: ['/places/:path*', '/about/:path*', '/contact/:path*', '/admin/:path*']
 };

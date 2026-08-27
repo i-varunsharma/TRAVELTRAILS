@@ -50,9 +50,16 @@ export default function LoginSignupPage() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-ink bg-contours px-4">
-      <div className="w-full max-w-md">
-        <div className="bg-cream rounded-2xl shadow-xl p-8">
+    <div className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 bg-cream">
+      {/* Soft, out-of-focus colour fields instead of a photo background. */}
+      <div aria-hidden className="pointer-events-none absolute inset-0">
+        <div className="blob absolute -left-24 -top-24 h-96 w-96 rounded-full bg-rust/30 blur-3xl" />
+        <div className="blob absolute -right-28 top-1/3 h-96 w-96 rounded-full bg-ink/20 blur-3xl" />
+        <div className="blob absolute -bottom-32 left-1/3 h-96 w-96 rounded-full bg-cream-dark blur-3xl" />
+      </div>
+
+      <div className="relative w-full max-w-md">
+        <div className="rounded-2xl border border-white/50 bg-card/70 p-8 shadow-soft backdrop-blur-xl">
           {/* Header */}
           <div className="text-center mb-8">
             <div className="flex justify-center mb-4">
@@ -87,7 +94,7 @@ export default function LoginSignupPage() {
                     type="text"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
-                    className="w-full border border-stone-300 rounded-lg py-2.5 pl-11 pr-4 text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-rust focus:border-transparent"
+                    className="w-full border border-stone-300 bg-white/60 rounded-lg py-2.5 pl-11 pr-4 text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-rust focus:border-transparent"
                     placeholder="Enter your full name"
                     required={!isLogin}
                   />
@@ -104,7 +111,7 @@ export default function LoginSignupPage() {
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full border border-stone-300 rounded-lg py-2.5 pl-11 pr-4 text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-rust focus:border-transparent"
+                  className="w-full border border-stone-300 bg-white/60 rounded-lg py-2.5 pl-11 pr-4 text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-rust focus:border-transparent"
                   placeholder="Enter your email"
                   required
                 />
@@ -120,7 +127,7 @@ export default function LoginSignupPage() {
                   type={showPassword ? 'text' : 'password'}
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  className="w-full border border-stone-300 rounded-lg py-2.5 pl-11 pr-11 text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-rust focus:border-transparent"
+                  className="w-full border border-stone-300 bg-white/60 rounded-lg py-2.5 pl-11 pr-11 text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-rust focus:border-transparent"
                   placeholder="Enter your password"
                   autoComplete="off"
                   data-form-type="other"

@@ -58,4 +58,25 @@
   .shadow-soft {
     box-shadow: 0 10px 26px rgba(33, 29, 26, 0.16);
   }
+
+  /* Large out-of-focus colour fields used behind the auth card, drifting
+     slowly so the frosted-glass panel has some life behind it. */
+  .blob {
+    animation: blob-drift 16s ease-in-out infinite alternate;
+  }
+}
+
+@keyframes blob-drift {
+  from {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  to {
+    transform: translate3d(24px, -32px, 0) scale(1.12);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .blob {
+    animation: none;
+  }
 }

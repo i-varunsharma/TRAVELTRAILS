@@ -25,66 +25,66 @@ const trekFacts = [
     name: 'Bhrigu Lake Trek', state: 'Himachal Pradesh', peak: 4300, days: 3, distance: 25,
     season: 'June to September', price: 7500, level: 'Moderate', fitness: 3,
     caveat: 'Weather turns fast above the treeline — afternoons often bring sudden hail even in July.',
-    nextBatch: '21 Jun 2027', image: 'https://www.akzn.me/blog/bhrigu-lake-trek/images/2019-07-31-11.43.52-1.jpg',
+    nextBatch: '21 Jun 2027', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/A_Spectacular_view_of_the_Himachal_Valley.jpg/960px-A_Spectacular_view_of_the_Himachal_Valley.jpg',
   },
   // Uttarakhand
   {
     name: 'Valley of Flowers Trek', state: 'Uttarakhand', peak: 3658, days: 6, distance: 38,
     season: 'July to September', price: 6000, level: 'Moderate', fitness: 3,
     caveat: 'The valley itself is a gentle walk, but the approach trail has a long, exposed monsoon stretch.',
-    nextBatch: '19 Jul 2027', image: 'https://valleyofflowers.info/wp-content/uploads/2015/03/Valley-of-flowers-trek.jpg',
+    nextBatch: '19 Jul 2027', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/A_glacier_in_the_Valley_of_Flowers.jpg/960px-A_glacier_in_the_Valley_of_Flowers.jpg',
   },
   {
     name: 'Har Ki Dun Trek', state: 'Uttarakhand', peak: 3566, days: 7, distance: 44,
     season: 'April to June, September to December', price: 8000, level: 'Moderate', fitness: 3,
     caveat: 'Long trekking days early on — the first two days cover most of the distance.',
-    nextBatch: '3 Oct 2026', image: 'https://i0.wp.com/www.tusktravel.com/blog/wp-content/uploads/2021/02/Har-Ki-Dun-Trek.jpg',
+    nextBatch: '3 Oct 2026', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/HarkiDhunLandscape.jpg/960px-HarkiDhunLandscape.jpg',
   },
   // Sikkim
   {
     name: 'Dzongri Trek', state: 'Sikkim', peak: 4020, days: 6, distance: 50,
     season: 'March to May, September to November', price: 12000, level: 'Moderate', fitness: 4,
     caveat: 'A genuine high-altitude trek — build in the acclimatization day rather than skipping it.',
-    nextBatch: '10 Oct 2026', image: 'https://captureatrip-cms-storage.s3.ap-south-1.amazonaws.com/Dzongri_Valley_Sikkim.jpg',
+    nextBatch: '10 Oct 2026', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Kanchenjunga_from_Zuluk%2C_Sikkim_%28cropped%29.jpg/960px-Kanchenjunga_from_Zuluk%2C_Sikkim_%28cropped%29.jpg',
   },
   {
     name: 'Goechala Trek', state: 'Sikkim', peak: 4940, days: 10, distance: 90,
     season: 'April to June, September to November', price: 16000, level: 'Difficult', fitness: 5,
     caveat: 'The summit push starts at 2am in sub-zero cold — previous high-altitude experience is strongly recommended.',
-    nextBatch: '24 Oct 2026', image: 'https://www.himalayajourneys.com/assets/images/india/sikkim-goecha-la-trek.jpg',
+    nextBatch: '24 Oct 2026', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Sunrise_over_Kangchenjunga.jpg/960px-Sunrise_over_Kangchenjunga.jpg',
   },
   // West Bengal
   {
     name: 'Sandakphu Trek', state: 'West Bengal', peak: 3636, days: 6, distance: 52,
     season: 'April to May, October to December', price: 9500, level: 'Moderate', fitness: 3,
     caveat: 'Trail follows a motorable road for stretches — beautiful views, but less "wilderness" than other Himalayan treks.',
-    nextBatch: '17 Oct 2026', image: 'https://trekthehimalayas.com/images/HomePageImages/Desktop/0948eddb-fe.jpg',
+    nextBatch: '17 Oct 2026', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Sunrise_at_sandakphu.jpg/960px-Sunrise_at_sandakphu.jpg',
   },
   {
     name: 'Singalila Ridge Trek', state: 'West Bengal', peak: 3600, days: 6, distance: 60,
     season: 'March to June, October to December', price: 10000, level: 'Difficult', fitness: 4,
     caveat: 'Longest daily distances of any trek we run in this region — good base fitness matters more than altitude here.',
-    nextBatch: '7 Nov 2026', image: 'https://www.farouttrek.com/wp-content/uploads/2024/11/20231109_113004.jpg',
+    nextBatch: '7 Nov 2026', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Kunchenjunga.jpg/960px-Kunchenjunga.jpg',
   },
   // Karnataka
   {
     name: 'Kudremukh Trek', state: 'Karnataka', peak: 1894, days: 2, distance: 20,
     season: 'October to February', price: 2800, level: 'Beginner', fitness: 2,
     caveat: 'Grasslands turn slippery after rain — carry proper grip trekking shoes, not running shoes.',
-    nextBatch: '7 Nov 2026', image: 'https://www.trekupindia.com/wp-content/uploads/1715/89/kudremukh-trek.jpg',
+    nextBatch: '7 Nov 2026', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Beautiful_Kudremukha_trek_Buddha_rock.jpg/960px-Beautiful_Kudremukha_trek_Buddha_rock.jpg',
   },
   {
     name: 'Kumara Parvatha Trek', state: 'Karnataka', peak: 1712, days: 2, distance: 22,
     season: 'October to February', price: 2500, level: 'Difficult', fitness: 4,
     caveat: 'Deceptively tough for its altitude — locals call it one of South India\'s hardest day-and-a-half treks.',
-    nextBatch: '14 Nov 2026', image: 'https://thrilltourism.com/storage/4846/YmRqP1NcUoknL80t6MWVjd5NN6OHjxP.jpg',
+    nextBatch: '14 Nov 2026', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Shola_Grasslands_and_forests_in_the_Kudremukh_National_Park%2C_Western_Ghats%2C_Karnataka.jpg/960px-Shola_Grasslands_and_forests_in_the_Kudremukh_National_Park%2C_Western_Ghats%2C_Karnataka.jpg',
   },
   // Kerala
   {
     name: 'Chembra Peak Trek', state: 'Kerala', peak: 2100, days: 1, distance: 7,
     season: 'September to February', price: 1800, level: 'Beginner', fitness: 2,
     caveat: 'Forest department caps daily visitors — book your slot at least a week ahead in peak season.',
-    nextBatch: '21 Nov 2026', image: 'https://static2.tripoto.com/media/filter/tst/img/184160/TripDocument/chembra-peak.jpg',
+    nextBatch: '21 Nov 2026', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Chembra_peak.jpg/960px-Chembra_peak.jpg',
   },
   {
     name: 'Meesapulimala Trek', state: 'Kerala', peak: 2640, days: 2, distance: 15,
@@ -97,44 +97,44 @@ const trekFacts = [
     name: 'Kalsubai Peak Trek', state: 'Maharashtra', peak: 1646, days: 1, distance: 12,
     season: 'October to March', price: 1400, level: 'Beginner', fitness: 2,
     caveat: 'Maharashtra\'s highest point and one of its busiest trails — go on a weekday to skip the queue at the ladders.',
-    nextBatch: '5 Dec 2026', image: 'https://d26dp53kz39178.cloudfront.net/media/uploads/products/trekking_kalsubai.jpg',
+    nextBatch: '5 Dec 2026', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Kalsubai%2C_Western_Ghats.jpg/960px-Kalsubai%2C_Western_Ghats.jpg',
   },
   {
     name: 'Harishchandragad Trek', state: 'Maharashtra', peak: 1422, days: 2, distance: 18,
     season: 'October to February', price: 1200, level: 'Moderate', fitness: 3,
     caveat: 'The Nalichi Vaat approach has an exposed rock-cut staircase — we default to the easier Pachnai route instead.',
-    nextBatch: '12 Dec 2026', image: 'https://adventure-pulse.com/wp-content/uploads/2025/06/harishchandragad.jpg',
+    nextBatch: '12 Dec 2026', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Harishchandragarh-landscape.jpg/960px-Harishchandragarh-landscape.jpg',
   },
   // North East
   {
     name: 'Dzukou Valley Trek', state: 'Manipur', peak: 2452, days: 2, distance: 17,
     season: 'June to September', price: 3500, level: 'Moderate', fitness: 3,
     caveat: 'Best known for its June–September lily bloom, which also means monsoon mud on the approach climb.',
-    nextBatch: '13 Jun 2027', image: 'https://s7ap1.scene7.com/is/image/incredibleindia/Dzukou-Valley-Nagaland.jpg',
+    nextBatch: '13 Jun 2027', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/The_Dzukou_Valley.JPG/960px-The_Dzukou_Valley.JPG',
   },
   {
     name: 'Double Decker Root Bridge Trek', state: 'Meghalaya', peak: 1200, days: 2, distance: 7,
     season: 'October to March', price: 3500, level: 'Beginner', fitness: 2,
     caveat: 'Roughly 3,500 mossy stone steps down and back up — knees feel this one more than lungs.',
-    nextBatch: '19 Dec 2026', image: 'https://res.cloudinary.com/kmadmin/image/upload/v1618829759/kiomoi/double-decker-root-bridge.jpg',
+    nextBatch: '19 Dec 2026', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Living_root_bridges%2C_Nongriat_village%2C_Meghalaya.jpg/960px-Living_root_bridges%2C_Nongriat_village%2C_Meghalaya.jpg',
   },
   {
     name: 'Phawngpui Trek', state: 'Mizoram', peak: 2157, days: 3, distance: 20,
     season: 'November to April', price: 4000, level: 'Moderate', fitness: 3,
     caveat: 'Mizoram\'s highest peak sees very few trekkers — expect a quiet trail and basic village homestays.',
-    nextBatch: '26 Dec 2026', image: 'https://plus.unsplash.com/premium_photo-1674917000586-b7564f21540e.jpg',
+    nextBatch: '26 Dec 2026', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Mountain_Valley_from_Hlimen_Damveng%2C_Mizoram.jpg/960px-Mountain_Valley_from_Hlimen_Damveng%2C_Mizoram.jpg',
   },
   {
     name: 'Mount Saramati Trek', state: 'Nagaland', peak: 3826, days: 5, distance: 22,
     season: 'October to April', price: 6500, level: 'Difficult', fitness: 4,
     caveat: 'Nagaland\'s highest point, close to the Myanmar border — permits take longer to process here, so book early.',
-    nextBatch: '9 Jan 2027', image: 'https://assamthynk.com/wp-content/uploads/2025/05/mount-saramati-1.png',
+    nextBatch: '9 Jan 2027', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/A_view_of_Naga_Hills%2C_Kiphire_district%2C_Nagaland.jpg/960px-A_view_of_Naga_Hills%2C_Kiphire_district%2C_Nagaland.jpg',
   },
   {
     name: 'Deomali Trek', state: 'Odisha', peak: 1672, days: 3, distance: 16,
     season: 'October to February', price: 4000, level: 'Beginner', fitness: 2,
     caveat: "Odisha's second-highest peak, with a gentle gradient — a good first multi-day trek.",
-    nextBatch: '16 Jan 2027', image: 'https://media.istockphoto.com/id/1290711211/photo/deomali-hill-top.jpg',
+    nextBatch: '16 Jan 2027', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Deomali_hills.jpg/960px-Deomali_hills.jpg',
   },
   {
     name: 'Jampui Hills Trek', state: 'Tripura', peak: 1000, days: 2, distance: 9,
@@ -152,8 +152,6 @@ const trekFacts = [
 ];
 
 // -- Everything below is derived from the facts above, not hand-written. --
-
-const LEVEL_ORDER = ['Beginner', 'Moderate', 'Difficult'];
 
 // A short, honest set of what's included/excluded. This genuinely is the
 // same for every trek we run (same operator, same standard package), so it
@@ -276,12 +274,4 @@ export const treks = trekFacts.map((fact, index) => {
 
 export function getTrekBySlug(slug) {
   return treks.find((trek) => trek.slug === slug) || null;
-}
-
-export function getTreksByState(stateName) {
-  return treks.filter((trek) => trek.state === stateName);
-}
-
-export function levelRank(level) {
-  return LEVEL_ORDER.indexOf(level);
 }

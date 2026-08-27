@@ -1,5 +1,5 @@
 'use client';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Mountain } from 'lucide-react';
 
 const LOAD_TIMEOUT_MS = 6000;
@@ -12,13 +12,18 @@ const LOAD_TIMEOUT_MS = 6000;
 // mountain mark) — instead of leaving a broken-image icon on screen.
 function TrekImage({ src, alt, className }) {
   const [failed, setFailed] = useState(false);
+  const timerRef = useRef(null);
 
   // If the image hasn't loaded (or errored) within a few seconds, treat it
-  // as failed too, so a stalled request can never get stuck forever.
+  // as failed too, so a stalled request can never get stuck forever. The
+  // timer lives in a ref so onLoad/onError below can cancel this exact
+  // timer — without that, a slow-but-eventually-successful load would still
+  // get flipped to "failed" once the timeout fires later, even though the
+  // real photo is already on screen.
   useEffect(() => {
     setFailed(false);
-    const timer = setTimeout(() => setFailed(true), LOAD_TIMEOUT_MS);
-    return () => clearTimeout(timer);
+    timerRef.current = setTimeout(() => setFailed(true), LOAD_TIMEOUT_MS);
+    return () => clearTimeout(timerRef.current);
   }, [src]);
 
   if (failed) {
@@ -35,8 +40,14 @@ function TrekImage({ src, alt, className }) {
       src={src}
       alt={alt}
       className={className}
-      onLoad={() => setFailed(false)}
-      onError={() => setFailed(true)}
+      onLoad={() => {
+        clearTimeout(timerRef.current);
+        setFailed(false);
+      }}
+      onError={() => {
+        clearTimeout(timerRef.current);
+        setFailed(true);
+      }}
     />
   );
 }
